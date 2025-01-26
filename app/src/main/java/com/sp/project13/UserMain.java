@@ -16,7 +16,7 @@ import com.sp.project13.databinding.ActivityMainBinding;
 
 public class UserMain extends AppCompatActivity {
 
-    DrawerLayout drawerLayout;
+    DrawerLayout drawerLayout; // for the navigation drawer
     ActivityMainBinding binding;
 
     @Override
@@ -26,7 +26,7 @@ public class UserMain extends AppCompatActivity {
         setContentView(binding.getRoot());
         replaceFragment(new Biz_HomeFragment());
 
-        drawerLayout = findViewById(R.id.drawer_layout);
+        drawerLayout = findViewById(R.id.drawer_layout);                    //line 29 to 41 lines are for drawer navigation bar
         NavigationView navigationView = findViewById(R.id.nav_view);
         Toolbar toolbar = findViewById(R.id.toolbar);
 
