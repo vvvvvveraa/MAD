@@ -1,64 +1,166 @@
 package com.sp.project13;
 
+import android.app.DatePickerDialog;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link NewActFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.MaterialAutoCompleteTextView;
+import com.google.android.material.textfield.TextInputLayout;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
 public class NewActFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private static final int PICK_IMAGE_REQUEST = 1;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private TextView text;
+    private MaterialButton dialog_button;
+    private ImageView imagePicker;
+    private EditText activityNameEditText, activityCodeEditText;
+    private MaterialAutoCompleteTextView interestAutoCompleteTextView;
+    private TextInputLayout interestLayout;
+    private Uri imageUri;
 
     public NewActFragment() {
         // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment NewActFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static NewActFragment newInstance(String param1, String param2) {
-        NewActFragment fragment = new NewActFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_new_act, container, false);
+        View view = inflater.inflate(R.layout.fragment_new_act, container, false);
+
+        text = view.findViewById(R.id.showText);
+        dialog_button = view.findViewById(R.id.dialog_button);
+        imagePicker = view.findViewById(R.id.image_picker);
+        activityNameEditText = view.findViewById(R.id.activity_name);
+        activityCodeEditText = view.findViewById(R.id.activity_code);
+        interestAutoCompleteTextView = view.findViewById(R.id.interestTV);
+        interestLayout = view.findViewById(R.id.interest_layout);
+        MaterialButton submitButton = view.findViewById(R.id.submit_button);
+        TextView errMsg = view.findViewById(R.id.errMsg);
+
+        // Set up image picker
+        imagePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openImageChooser();
+            }
+        });
+
+        // Set up date picker dialog
+        dialog_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDialog();
+            }
+        });
+
+        // Set up submit button
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (validateForm(errMsg)) {
+                    // Proceed to Submit_newAct.java
+                    Intent intent = new Intent(getActivity(), Submit_newAct.class);
+                    startActivity(intent);
+                } else {
+                    errMsg.setText("Please fill all up");
+                }
+            }
+        });
+
+        return view;
+    }
+
+    private void openImageChooser() {
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE_REQUEST);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == getActivity().RESULT_OK && data != null && data.getData() != null) {
+            imageUri = data.getData();
+            try {
+                Bitmap bitmap = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), imageUri);
+                imagePicker.setImageBitmap(bitmap);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private boolean validateForm(TextView errMsg) {
+        boolean isValid = true;
+
+        if (activityNameEditText.getText().toString().isEmpty()) {
+            activityNameEditText.setError("Activity name is required");
+            isValid = false;
+        }
+
+        if (activityCodeEditText.getText().toString().isEmpty()) {
+            activityCodeEditText.setError("Activity code is required");
+            isValid = false;
+        }
+
+        if (interestAutoCompleteTextView.getText().toString().isEmpty()) {
+            interestLayout.setError("Please select an option");
+            isValid = false;
+        }
+
+        if (imageUri == null) {
+            Toast.makeText(getActivity(), "Please upload an image", Toast.LENGTH_SHORT).show();
+            isValid = false;
+        }
+
+        return isValid;
+    }
+
+    private void openDialog() {
+        // Get the current date
+        final Calendar calendar = Calendar.getInstance();
+        int year = calendar.get(Calendar.YEAR);
+        int month = calendar.get(Calendar.MONTH);
+        int day = calendar.get(Calendar.DAY_OF_MONTH);
+
+        DatePickerDialog dialog = new DatePickerDialog(getActivity(), R.style.Theme_Project13, new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                // Format the date
+                String formattedDate = String.format(Locale.getDefault(), "%02d %s %d", day, getMonthString(month), year);
+                text.setText(formattedDate);
+            }
+        }, year, month, day);
+
+        dialog.show();
+    }
+
+    private String getMonthString(int month) {
+        // Array of month names
+        String[] monthNames = new String[]{"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+        return monthNames[month];
     }
 }

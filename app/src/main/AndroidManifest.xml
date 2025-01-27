@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Project13"
         tools:targetApi="31">
         <activity
+            android:name=".Submit_newAct"
+            android:exported="false" />
+        <activity
+            android:name=".Close_currentAct"
+            android:exported="false" />
+        <activity
+            android:name=".biz_currentAct"
+            android:exported="false" />
+        <activity
             android:name=".UserMain"
             android:exported="true">
             <intent-filter>
