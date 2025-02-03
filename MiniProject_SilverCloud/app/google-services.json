@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "826431254257",
+    "project_id": "slivercloud",
+    "storage_bucket": "slivercloud.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826431254257:android:79c74221a1a9f595af8350",
+        "android_client_info": {
+          "package_name": "com.sp.project1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg667vdLxyPO0W-t-kwZgB6gq7bVLooF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826431254257:android:ff26b51d3037021faf8350",
+        "android_client_info": {
+          "package_name": "com.sp.silvercloud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg667vdLxyPO0W-t-kwZgB6gq7bVLooF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

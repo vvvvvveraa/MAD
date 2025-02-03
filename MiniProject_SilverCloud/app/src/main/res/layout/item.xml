@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Image on the left -->
+            <ImageView
+                android:id="@+id/act_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/exercise"
+                android:contentDescription="Exercise Image"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"/>
+
+            <!-- Main TextView on the right of the ImageView -->
+            <TextView
+                android:id="@+id/act_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/act_img"
+                android:layout_marginStart="16dp"
+                android:layout_alignTop="@id/act_img"
+                android:text="Main Title"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+
+            <!-- Description TextView below the main TextView -->
+            <TextView
+                android:id="@+id/act_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/act_name"
+                android:layout_toEndOf="@id/act_img"
+                android:layout_marginStart="16dp"
+                android:layout_alignStart="@id/act_name"
+                android:text="This is a description"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
