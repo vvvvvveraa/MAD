@@ -21,6 +21,8 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.MaterialAutoCompleteTextView;
 import com.google.android.material.textfield.TextInputLayout;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -30,14 +32,14 @@ import java.util.Locale;
 public class NewActFragment extends Fragment {
 
     private static final int PICK_IMAGE_REQUEST = 1;
-
     private TextView text;
     private MaterialButton dialog_button;
     private ImageView imagePicker;
-    private EditText activityNameEditText, activityCodeEditText;
+    private EditText activityNameEditText, activityCodeEditText, newDescriptionEditText; // Add newDescriptionEditText
     private MaterialAutoCompleteTextView interestAutoCompleteTextView;
     private TextInputLayout interestLayout;
     private Uri imageUri;
+    private DatabaseReference rootDatabaseref;
 
     public NewActFragment() {
         // Required empty public constructor
@@ -49,15 +51,19 @@ public class NewActFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_new_act, container, false);
 
+        // Initialize views
         text = view.findViewById(R.id.showText);
         dialog_button = view.findViewById(R.id.dialog_button);
         imagePicker = view.findViewById(R.id.image_picker);
         activityNameEditText = view.findViewById(R.id.activity_name);
         activityCodeEditText = view.findViewById(R.id.activity_code);
+        newDescriptionEditText = view.findViewById(R.id.newDescription); // Initialize newDescriptionEditText
         interestAutoCompleteTextView = view.findViewById(R.id.interestTV);
         interestLayout = view.findViewById(R.id.interest_layout);
         MaterialButton submitButton = view.findViewById(R.id.submit_button);
         TextView errMsg = view.findViewById(R.id.errMsg);
+
+        rootDatabaseref = FirebaseDatabase.getInstance().getReference("events");
 
         // Set up image picker
         imagePicker.setOnClickListener(new View.OnClickListener() {
@@ -80,9 +86,33 @@ public class NewActFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if (validateForm(errMsg)) {
-                    // Proceed to Submit_newAct.java
-                    Intent intent = new Intent(getActivity(), Submit_newAct.class);
-                    startActivity(intent);
+                    // Gather input data
+                    String activityName = activityNameEditText.getText().toString().trim();
+                    String activityCode = activityCodeEditText.getText().toString().trim();
+                    String interest = interestAutoCompleteTextView.getText().toString().trim();
+                    String imageUriString = imageUri != null ? imageUri.toString() : null; // Convert Uri to String
+                    String newDescription = newDescriptionEditText.getText().toString().trim(); // Get new description
+
+                    // Create a unique key for the new event
+                    String eventId = rootDatabaseref.push().getKey();
+
+                    // Create an Event object
+                    Event newEvent = new Event(activityName, activityCode, "05/02/2025", interest, "Full description here", imageUriString, "organizer1", newDescription);
+
+                    // Set the event in the database
+                    rootDatabaseref.child(eventId).setValue(newEvent).addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(getActivity(), "Event created successfully", Toast.LENGTH_SHORT).show();
+
+                            // Create an Intent to start Submit_newAct
+                            Intent intent = new Intent(getActivity(), Submit_newAct.class);
+                            intent.putExtra("activityName", activityName); // Pass the activity name
+                            intent.putExtra("eventId", eventId); // Optionally pass the event ID if needed
+                            startActivity(intent);
+                        } else {
+                            errMsg.setText("Failed to create event");
+                        }
+                    });
                 } else {
                     errMsg.setText("Please fill all up");
                 }
@@ -113,6 +143,7 @@ public class NewActFragment extends Fragment {
         }
     }
 
+
     private boolean validateForm(TextView errMsg) {
         boolean isValid = true;
 
@@ -128,6 +159,11 @@ public class NewActFragment extends Fragment {
 
         if (interestAutoCompleteTextView.getText().toString().isEmpty()) {
             interestLayout.setError("Please select an option");
+            isValid = false;
+        }
+
+        if (newDescriptionEditText.getText().toString().isEmpty()) {
+            newDescriptionEditText.setError("New description is required");
             isValid = false;
         }
 

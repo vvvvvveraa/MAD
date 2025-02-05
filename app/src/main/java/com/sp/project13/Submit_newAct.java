@@ -5,13 +5,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Submit_newAct extends AppCompatActivity {
+
+    private TextView actNameTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_submit_new);
+
+        // Find the TextView by its ID
+        actNameTextView = findViewById(R.id.actName);
+
+        // Retrieve the activity name from the Intent
+        String activityName = getIntent().getStringExtra("activityName");
+
+        // Set the activity name to the TextView
+        if (activityName != null) {
+            actNameTextView.setText(activityName);
+        }
 
         // Find the button by its ID
         Button backButton = findViewById(R.id.b2home1);
