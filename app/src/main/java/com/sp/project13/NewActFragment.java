@@ -23,6 +23,8 @@ import com.google.android.material.textfield.MaterialAutoCompleteTextView;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -35,7 +37,7 @@ public class NewActFragment extends Fragment {
     private TextView text;
     private MaterialButton dialog_button;
     private ImageView imagePicker;
-    private EditText activityNameEditText, activityCodeEditText, newDescriptionEditText; // Add newDescriptionEditText
+    private EditText activityNameEditText, activityCodeEditText, newDescriptionEditText;
     private MaterialAutoCompleteTextView interestAutoCompleteTextView;
     private TextInputLayout interestLayout;
     private Uri imageUri;
@@ -57,7 +59,7 @@ public class NewActFragment extends Fragment {
         imagePicker = view.findViewById(R.id.image_picker);
         activityNameEditText = view.findViewById(R.id.activity_name);
         activityCodeEditText = view.findViewById(R.id.activity_code);
-        newDescriptionEditText = view.findViewById(R.id.newDescription); // Initialize newDescriptionEditText
+        newDescriptionEditText = view.findViewById(R.id.newDescription);
         interestAutoCompleteTextView = view.findViewById(R.id.interestTV);
         interestLayout = view.findViewById(R.id.interest_layout);
         MaterialButton submitButton = view.findViewById(R.id.submit_button);
@@ -90,29 +92,10 @@ public class NewActFragment extends Fragment {
                     String activityName = activityNameEditText.getText().toString().trim();
                     String activityCode = activityCodeEditText.getText().toString().trim();
                     String interest = interestAutoCompleteTextView.getText().toString().trim();
-                    String imageUriString = imageUri != null ? imageUri.toString() : null; // Convert Uri to String
-                    String newDescription = newDescriptionEditText.getText().toString().trim(); // Get new description
+                    String newDescription = newDescriptionEditText.getText().toString().trim();
 
-                    // Create a unique key for the new event
-                    String eventId = rootDatabaseref.push().getKey();
-
-                    // Create an Event object
-                    Event newEvent = new Event(activityName, activityCode, "05/02/2025", interest, "Full description here", imageUriString, "organizer1", newDescription);
-
-                    // Set the event in the database
-                    rootDatabaseref.child(eventId).setValue(newEvent).addOnCompleteListener(task -> {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(getActivity(), "Event created successfully", Toast.LENGTH_SHORT).show();
-
-                            // Create an Intent to start Submit_newAct
-                            Intent intent = new Intent(getActivity(), Submit_newAct.class);
-                            intent.putExtra("activityName", activityName); // Pass the activity name
-                            intent.putExtra("eventId", eventId); // Optionally pass the event ID if needed
-                            startActivity(intent);
-                        } else {
-                            errMsg.setText("Failed to create event");
-                        }
-                    });
+                    // Upload the image and save the event
+                    uploadImage(imageUri, activityName, activityCode, interest, newDescription);
                 } else {
                     errMsg.setText("Please fill all up");
                 }
@@ -142,7 +125,6 @@ public class NewActFragment extends Fragment {
             }
         }
     }
-
 
     private boolean validateForm(TextView errMsg) {
         boolean isValid = true;
@@ -198,5 +180,47 @@ public class NewActFragment extends Fragment {
         // Array of month names
         String[] monthNames = new String[]{"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
         return monthNames[month];
+    }
+
+    // New method to upload the image and save the event
+    private void uploadImage(Uri imageUri, String activityName, String activityCode, String interest, String newDescription) {
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference storageRef = storage.getReference();
+
+        // Create a reference for the image file
+        StorageReference imageRef = storageRef.child("images/" + imageUri.getLastPathSegment());
+
+        // Upload the image
+        imageRef.putFile(imageUri)
+                .addOnSuccessListener(taskSnapshot -> {
+                    // Get the download URL
+                    imageRef.getDownloadUrl().addOnSuccessListener(uri -> {
+                        String imageUrl = uri.toString();
+                        // Create a unique key for the new event
+                        String eventId = rootDatabaseref.push().getKey();
+
+                        // Create an Event object
+                        Event newEvent = new Event(activityName, activityCode, "05/02/2025", interest, "Full description here", imageUrl, "organizer1", newDescription);
+
+                        // Set the event in the database
+                        rootDatabaseref.child(eventId).setValue(newEvent).addOnCompleteListener(task -> {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(getActivity(), "Event created successfully", Toast.LENGTH_SHORT).show();
+
+                                // Create an Intent to start Submit_newAct
+                                Intent intent = new Intent(getActivity(), Submit_newAct.class);
+                                intent.putExtra("activityName", activityName); // Pass the activity name
+                                intent.putExtra("eventId", eventId); // Optionally pass the event ID if needed
+                                startActivity(intent);
+                            } else {
+                                Toast.makeText(getActivity(), "Failed to create event", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    });
+                })
+                .addOnFailureListener(exception -> {
+                    // Handle unsuccessful uploads
+                    Toast.makeText(getActivity(), "Upload failed: " + exception.getMessage(), Toast.LENGTH_SHORT).show();
+                });
     }
 }
