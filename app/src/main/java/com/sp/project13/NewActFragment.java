@@ -30,6 +30,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
+import java.util.UUID;
 
 public class NewActFragment extends Fragment {
 
@@ -187,8 +188,11 @@ public class NewActFragment extends Fragment {
         FirebaseStorage storage = FirebaseStorage.getInstance();
         StorageReference storageRef = storage.getReference();
 
+        // Create a unique ID for the image
+        String imageId = UUID.randomUUID().toString(); // Generate a unique ID
+
         // Create a reference for the image file
-        StorageReference imageRef = storageRef.child("images/" + imageUri.getLastPathSegment());
+        StorageReference imageRef = storageRef.child("images/" + imageId + ".jpg"); // Use the imageId as part of the filename
 
         // Upload the image
         imageRef.putFile(imageUri)
@@ -199,8 +203,8 @@ public class NewActFragment extends Fragment {
                         // Create a unique key for the new event
                         String eventId = rootDatabaseref.push().getKey();
 
-                        // Create an Event object
-                        Event newEvent = new Event(activityName, activityCode, "05/02/2025", interest, "Full description here", imageUrl, "organizer1", newDescription);
+                        // Create an Event object with the imageId
+                        Event newEvent = new Event(activityName, activityCode, "05/02/2025", interest, "Full description here", imageUrl, "organizer1", newDescription, imageId);
 
                         // Set the event in the database
                         rootDatabaseref.child(eventId).setValue(newEvent).addOnCompleteListener(task -> {
