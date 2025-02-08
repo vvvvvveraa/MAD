@@ -53,6 +53,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
             intent.putExtra("description", event.getNewDescription());
             intent.putExtra("date", event.getDate()); // Assuming you have a date field in Event
             intent.putExtra("activityCode", event.getEventCode()); // Assuming you have an event code field in Event
+            intent.putExtra("eventId", event.getEventId()); // Pass the correct eventId from the Event object
             holder.itemView.getContext().startActivity(intent);
         });
     }

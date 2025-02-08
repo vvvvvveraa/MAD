@@ -16,9 +16,6 @@
             android:name=".Submit_newAct"
             android:exported="false" />
         <activity
-            android:name=".Close_currentAct"
-            android:exported="false" />
-        <activity
             android:name=".biz_currentAct"
             android:exported="false" />
         <activity

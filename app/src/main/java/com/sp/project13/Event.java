@@ -10,12 +10,13 @@ public class Event {
     private String organizerId;
     private String newDescription; // This is the new field
     private String imageId; // New field for image ID
+    private String eventId; // This should be the eventId
 
     public Event() {
         // Default constructor required for calls to DataSnapshot.getValue(Event.class)
     }
 
-    public Event(String title, String eventCode, String date, String filter, String fullDescription, String imageUrl, String organizerId, String newDescription, String imageId) {
+    public Event(String title, String eventCode, String date, String interest, String fullDescription, String imageUrl, String organizer, String newDescription, String eventId) {
         this.title = title;
         this.eventCode = eventCode;
         this.date = date;
@@ -25,6 +26,7 @@ public class Event {
         this.organizerId = organizerId;
         this.newDescription = newDescription; // Initialize the new field
         this.imageId = imageId; // Initialize the new field
+        this.eventId = eventId; // Set the eventId
     }
 
     // Getters and Setters
@@ -101,4 +103,10 @@ public class Event {
         this.imageId = imageId;
     }
 
+    // Getter for eventId
+    public String getEventId() {
+        return eventId;
+    }
+
 }
+

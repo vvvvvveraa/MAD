@@ -204,10 +204,10 @@ public class NewActFragment extends Fragment {
                     imageRef.getDownloadUrl().addOnSuccessListener(uri -> {
                         String imageUrl = uri.toString();
                         // Create a unique key for the new event
-                        String eventId = rootDatabaseref.push().getKey();
+                        String eventId = rootDatabaseref.push().getKey(); // This is the correct eventId
 
                         // Create an Event object with the selected date
-                        Event newEvent = new Event(activityName, activityCode, selectedDate, interest, "Full description here", imageUrl, "organizer1", newDescription, imageId);
+                        Event newEvent = new Event(activityName, activityCode, selectedDate, interest, "Full description here", imageUrl, "organizer1", newDescription, eventId); // Pass the eventId here
 
                         // Set the event in the database
                         rootDatabaseref.child(eventId).setValue(newEvent).addOnCompleteListener(task -> {
@@ -217,7 +217,7 @@ public class NewActFragment extends Fragment {
                                 // Create an Intent to start Submit_newAct
                                 Intent intent = new Intent(getActivity(), Submit_newAct.class);
                                 intent.putExtra("activityName", activityName); // Pass the activity name
-                                intent.putExtra("eventId", eventId); // Optionally pass the event ID if needed
+                                intent.putExtra("eventId", eventId); // Pass the correct event ID
                                 startActivity(intent);
                             } else {
                                 Toast.makeText(getActivity(), "Failed to create event", Toast.LENGTH_SHORT).show();
