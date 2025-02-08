@@ -44,6 +44,9 @@ public class NewActFragment extends Fragment {
     private Uri imageUri;
     private DatabaseReference rootDatabaseref;
 
+    // New variable to store the selected date
+    private String selectedDate;
+
     public NewActFragment() {
         // Required empty public constructor
     }
@@ -168,9 +171,9 @@ public class NewActFragment extends Fragment {
         DatePickerDialog dialog = new DatePickerDialog(getActivity(), R.style.Theme_Project13, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                // Format the date
-                String formattedDate = String.format(Locale.getDefault(), "%02d %s %d", day, getMonthString(month), year);
-                text.setText(formattedDate);
+                // Format the date and store it in the selectedDate variable
+                selectedDate = String.format(Locale.getDefault(), "%02d %s %d", day, getMonthString(month), year);
+                text.setText(selectedDate);
             }
         }, year, month, day);
 
@@ -203,8 +206,8 @@ public class NewActFragment extends Fragment {
                         // Create a unique key for the new event
                         String eventId = rootDatabaseref.push().getKey();
 
-                        // Create an Event object with the imageId
-                        Event newEvent = new Event(activityName, activityCode, "05/02/2025", interest, "Full description here", imageUrl, "organizer1", newDescription, imageId);
+                        // Create an Event object with the selected date
+                        Event newEvent = new Event(activityName, activityCode, selectedDate, interest, "Full description here", imageUrl, "organizer1", newDescription, imageId);
 
                         // Set the event in the database
                         rootDatabaseref.child(eventId).setValue(newEvent).addOnCompleteListener(task -> {
