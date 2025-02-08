@@ -1,5 +1,6 @@
 package com.sp.project13;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,6 +42,19 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
         } else {
             holder.eventImage.setImageResource(R.drawable.sky); // Ensure this resource exists
         }
+
+        // Set an OnClickListener on the image
+        holder.eventImage.setOnClickListener(v -> {
+            // Create an Intent to start biz_currentAct
+            Intent intent = new Intent(holder.itemView.getContext(), biz_currentAct.class);
+            // Pass the event data
+            intent.putExtra("imageUrl", event.getImageUrl());
+            intent.putExtra("title", event.getTitle());
+            intent.putExtra("description", event.getNewDescription());
+            intent.putExtra("date", event.getDate()); // Assuming you have a date field in Event
+            intent.putExtra("activityCode", event.getEventCode()); // Assuming you have an event code field in Event
+            holder.itemView.getContext().startActivity(intent);
+        });
     }
 
     @Override
