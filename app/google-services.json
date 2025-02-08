@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "826431254257",
+    "firebase_url": "https://slivercloud-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "slivercloud",
     "storage_bucket": "slivercloud.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:826431254257:android:79c74221a1a9f595af8350",
+        "mobilesdk_app_id": "1:826431254257:android:d6e36beb7c96dd17af8350",
         "android_client_info": {
-          "package_name": "com.sp.project1"
+          "package_name": "com.sp.project13"
         }
       },
       "oauth_client": [],

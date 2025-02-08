@@ -1,70 +1,128 @@
 package com.sp.silvercloud;
 
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import javax.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link HomeFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class HomeFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+import java.util.ArrayList;
+import java.util.List;
 
-    public HomeFragment() {
-        // Required empty public constructor
-    }
+import androidx.appcompat.widget.SearchView;
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static HomeFragment newInstance(String param1, String param2) {
-        HomeFragment fragment = new HomeFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+public class HomeFragment extends Fragment implements EventItemAdapter.OnItemClickListener {
+
+    private RecyclerView recyclerView;
+    private EventItemAdapter adapter;
+    private List<EventItem> eventItemList;
+    private List<EventItem> filteredEventList;  // New list to store filtered data
+    private DatabaseReference databaseReference;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+
+        // Initialize RecyclerView
+        recyclerView = rootView.findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        eventItemList = new ArrayList<>();
+        filteredEventList = new ArrayList<>(); // Initialize filtered list
+        adapter = new EventItemAdapter(getContext(), filteredEventList, this);
+        recyclerView.setAdapter(adapter);
+
+        // Initialize Firebase Realtime Database reference
+        databaseReference = FirebaseDatabase.getInstance().getReference("events");
+
+        // Fetch data from Firebase and update RecyclerView
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                eventItemList.clear();
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    EventItem eventItem = snapshot.getValue(EventItem.class);
+                    if (eventItem != null) {
+                        eventItemList.add(eventItem);
+                    }
+                }
+                filteredEventList.clear();
+                filteredEventList.addAll(eventItemList);  // Initially, show all events
+                adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.w("Firebase", "loadPost:onCancelled", databaseError.toException());
+            }
+        });
+
+        // Set up SearchView listener to filter events based on user input
+        SearchView searchView = rootView.findViewById(R.id.searchView);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                // You can implement additional behavior when the search is submitted if needed
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filterEvents(newText);
+                return true;
+            }
+        });
+
+        return rootView;
+    }
+
+    // Filter the events based on the search query
+    private void filterEvents(String query) {
+        filteredEventList.clear();
+        if (query.isEmpty()) {
+            filteredEventList.addAll(eventItemList);  // If query is empty, show all events
+        } else {
+            for (EventItem eventItem : eventItemList) {
+                // Check if the title or fullDescription contains the query (case-insensitive)
+                if (eventItem.getTitle().toLowerCase().contains(query.toLowerCase()) ||
+                        eventItem.getFullDescription().toLowerCase().contains(query.toLowerCase())) {
+                    filteredEventList.add(eventItem);
+                }
+            }
+        }
+        adapter.notifyDataSetChanged();  // Notify the adapter to update the RecyclerView
+    }
+
+    @Override
+    public void onItemClick(EventItem eventItem) {
+        // Check if eventItem is valid
+        if (eventItem != null) {
+            Log.d("HomeFragment", "Item clicked: " + eventItem.getTitle());
+
+            // Create a new instance of the EventDetailsFragment and pass the EventItem as an argument
+            EventDetailsFragment eventDetailsFragment = EventDetailsFragment.newInstance(eventItem);
+
+            // Perform the fragment transaction to navigate to EventDetailsFragment
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.frame_layout, eventDetailsFragment)  // Replace with EventDetailsFragment
+                    .addToBackStack(null)  // Optionally add to back stack for navigation history
+                    .commit();
+        } else {
+            Log.w("HomeFragment", "Clicked item is null");
+        }
     }
 }
-
-
 
