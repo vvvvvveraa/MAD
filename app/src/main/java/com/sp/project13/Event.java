@@ -4,7 +4,7 @@ public class Event {
     private String title;
     private String eventCode;
     private String date;
-    private String filter;
+    private String interest;
     private String fullDescription;
     private String imageUrl;
     private String organizerId;
@@ -20,7 +20,7 @@ public class Event {
         this.title = title;
         this.eventCode = eventCode;
         this.date = date;
-        this.filter = filter;
+        this.interest = interest;
         this.fullDescription = fullDescription;
         this.imageUrl = imageUrl;
         this.organizerId = organizerId;
@@ -54,12 +54,12 @@ public class Event {
         this.date = date;
     }
 
-    public String getFilter() {
-        return filter;
+    public String getInterest() {
+        return interest;
     }
 
-    public void setFilter(String filter) {
-        this.filter = filter;
+    public void setInterest(String interest) {
+        this.interest = interest;
     }
 
     public String getFullDescription() {
