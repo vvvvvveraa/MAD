@@ -2,6 +2,9 @@ package com.sp.project13;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,6 +14,7 @@ public class biz_currentAct extends AppCompatActivity {
 
     private ImageView eventImage;
     private TextView textTitle, textDescription, textDate, textCode;
+    private ImageButton imageButtonBack; // Declare the back button
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,7 @@ public class biz_currentAct extends AppCompatActivity {
         textDescription = findViewById(R.id.textDescription);
         textDate = findViewById(R.id.textDate);
         textCode = findViewById(R.id.textCode);
+        imageButtonBack = findViewById(R.id.imageButtonBack); // Initialize the back button
 
         // Get the data from the Intent
         String imageUrl = getIntent().getStringExtra("imageUrl");
@@ -43,5 +48,13 @@ public class biz_currentAct extends AppCompatActivity {
                     .load(imageUrl)
                     .into(eventImage);
         }
+
+        // Set up the back button click listener
+        imageButtonBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // Close the current activity
+            }
+        });
     }
 }
