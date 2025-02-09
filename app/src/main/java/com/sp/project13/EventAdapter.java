@@ -33,6 +33,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
     public void onBindViewHolder(@NonNull EventViewHolder holder, int position) {
         Event event = eventList.get(position);
         holder.eventTitle.setText(event.getTitle());
+        holder.eventInterest.setText(event.getInterest());
         holder.eventNewDescription.setText(event.getNewDescription());
 
         if (event.getImageUrl() != null && !event.getImageUrl().isEmpty()) {
@@ -54,6 +55,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
             intent.putExtra("date", event.getDate()); // Assuming you have a date field in Event
             intent.putExtra("activityCode", event.getEventCode()); // Assuming you have an event code field in Event
             intent.putExtra("eventId", event.getEventId()); // Pass the correct eventId from the Event object
+            intent.putExtra("interest", event.getInterest()); // Pass the correct eventId from the Event object
             holder.itemView.getContext().startActivity(intent);
         });
     }
@@ -66,12 +68,14 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.EventViewHol
     public static class EventViewHolder extends RecyclerView.ViewHolder {
         ImageView eventImage;
         TextView eventTitle;
+        TextView eventInterest;
         TextView eventNewDescription;
 
         public EventViewHolder(@NonNull View itemView) {
             super(itemView);
             eventImage = itemView.findViewById(R.id.event_image);
             eventTitle = itemView.findViewById(R.id.event_title);
+            eventInterest = itemView.findViewById(R.id.event_interest);
             eventNewDescription = itemView.findViewById(R.id.event_new_description);
         }
     }
