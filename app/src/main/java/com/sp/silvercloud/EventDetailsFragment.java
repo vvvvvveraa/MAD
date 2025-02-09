@@ -20,6 +20,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class EventDetailsFragment extends Fragment {
 
     private TextView titleTextView, dateTextView, descriptionTextView, eventTextView;
@@ -29,6 +32,7 @@ public class EventDetailsFragment extends Fragment {
 
     private DatabaseReference databaseReference;
     private String userId = "user1"; // Static userId for simplicity; replace with dynamic userId if needed
+    private EventItem eventItem;  // Declare an EventItem to store the event details
 
     public static EventDetailsFragment newInstance(EventItem eventItem) {
         EventDetailsFragment fragment = new EventDetailsFragment();
@@ -55,7 +59,7 @@ public class EventDetailsFragment extends Fragment {
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
         if (getArguments() != null) {
-            EventItem eventItem = (EventItem) getArguments().getSerializable("event_item");
+            eventItem = (EventItem) getArguments().getSerializable("event_item");
             if (eventItem != null) {
                 displayEventDetails(eventItem);
                 checkIfUserJoined(eventItem.getEventCode()); // Check if user is already registered
@@ -121,8 +125,18 @@ public class EventDetailsFragment extends Fragment {
                         joinButton.setText("Joined");
                         joinButton.setEnabled(false);
 
+                        // Get the event start and end times from the eventItem
+                        long[] eventTimes = eventItem.parseEventTime();
+                        Log.d("EventDetailsFragment", "Event Start Time: " + eventTimes[0]);
+                        Log.d("EventDetailsFragment", "Event End Time: " + eventTimes[1]);
+
                         // Navigate to EventSuccess Activity
                         Intent intent = new Intent(getActivity(), EventSuccess.class);
+                        // Pass the event data to EventSuccess
+                        intent.putExtra("event_title", eventItem.getTitle());
+                        intent.putExtra("event_description", eventItem.getFullDescription());
+                        intent.putExtra("event_start_time", eventTimes[0]);
+                        intent.putExtra("event_end_time", eventTimes[1]);
                         startActivity(intent);
 
                         Log.d("EventDetailsFragment", "User successfully registered for the event");
