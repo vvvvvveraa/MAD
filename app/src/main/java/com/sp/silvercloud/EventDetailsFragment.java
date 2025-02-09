@@ -2,6 +2,7 @@ package com.sp.silvercloud;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,15 +14,22 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 
 import com.bumptech.glide.Glide;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class EventDetailsFragment extends Fragment {
 
     private TextView titleTextView, dateTextView, descriptionTextView, eventTextView;
-    private ImageView eventImageView;  // Add ImageView for the event image
-    private ImageButton backButton;    // Add ImageButton for the back button
-    private Button joinButton;    // Add Button for join event button
+    private ImageView eventImageView;
+    private ImageButton backButton;
+    private Button joinButton;
 
-    // Factory method to create a new instance of this fragment
+    private DatabaseReference databaseReference;
+    private String userId = "user1"; // Static userId for simplicity; replace with dynamic userId if needed
+
     public static EventDetailsFragment newInstance(EventItem eventItem) {
         EventDetailsFragment fragment = new EventDetailsFragment();
         Bundle args = new Bundle();
@@ -32,7 +40,6 @@ public class EventDetailsFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_event_details, container, false);
 
         // Initialize views
@@ -40,43 +47,88 @@ public class EventDetailsFragment extends Fragment {
         dateTextView = view.findViewById(R.id.dateTextView);
         descriptionTextView = view.findViewById(R.id.descriptionTextView);
         eventTextView = view.findViewById(R.id.eventCodeTextView);
-        eventImageView = view.findViewById(R.id.eventImageView);  // Initialize ImageView
-        backButton = view.findViewById(R.id.backButton);  // Get reference to the back button
+        eventImageView = view.findViewById(R.id.eventImageView);
+        backButton = view.findViewById(R.id.backButton);
         joinButton = view.findViewById(R.id.joinEventBtn);
 
-        joinButton.setOnClickListener(v -> {
-            // Navigate to EventSuccess Activity
-            Intent intent = new Intent(requireActivity(), EventSuccess.class);
-            startActivity(intent);
-        });
+        // Initialize Firebase reference
+        databaseReference = FirebaseDatabase.getInstance().getReference();
 
-        // Retrieve event details and display them
         if (getArguments() != null) {
             EventItem eventItem = (EventItem) getArguments().getSerializable("event_item");
             if (eventItem != null) {
                 displayEventDetails(eventItem);
+                checkIfUserJoined(eventItem.getEventCode()); // Check if user is already registered
             }
         }
 
-        // Set up the back button click listener
-        backButton.setOnClickListener(v -> {
-            // This will pop the current fragment from the back stack and return to the previous fragment
-            getActivity().getSupportFragmentManager().popBackStack();
+        // Set up the back button
+        backButton.setOnClickListener(v -> getActivity().getSupportFragmentManager().popBackStack());
+
+        // Set up the join button
+        joinButton.setOnClickListener(v -> {
+            if (joinButton.isEnabled()) {
+                String eventCode = eventTextView.getText().toString();
+                registerForEvent(eventCode);
+            }
         });
 
         return view;
     }
 
     private void displayEventDetails(EventItem eventItem) {
-        // Set text data
         titleTextView.setText(eventItem.getTitle());
         dateTextView.setText(eventItem.getDate());
         descriptionTextView.setText(eventItem.getFullDescription());
         eventTextView.setText(eventItem.getEventCode());
 
-        // Load image using Glide
-        Glide.with(getContext())  // Provide context
-                .load(eventItem.getImageUrl())  // URL or resource ID
-                .into(eventImageView);  // Target ImageView
+        Glide.with(getContext())
+                .load(eventItem.getImageUrl())
+                .into(eventImageView);
+    }
+
+    // Check if user has already joined the event
+    private void checkIfUserJoined(String eventCode) {
+        databaseReference.child("registrations").child(userId).child("eventCode")
+                .orderByValue()
+                .equalTo(eventCode)
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        // If the user has already registered for this event, change the button to "Joined" and disable it
+                        if (dataSnapshot.exists()) {
+                            joinButton.setText("Joined"); // Change button text to "Joined"
+                            joinButton.setEnabled(false); // Disable the button so it can't be clicked again
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        Log.w("EventDetailsFragment", "Check registration cancelled", databaseError.toException());
+                    }
+                });
+    }
+
+    // Method to register the user for the event
+    private void registerForEvent(String eventCode) {
+        // Use ArrayUnion to add the eventCode to the user's registrations array
+        databaseReference.child("registrations").child(userId).child("eventCode")
+                .push()  // Add to the eventCode array
+                .setValue(eventCode)
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        // If registration is successful, update the button text and disable it
+                        joinButton.setText("Joined");
+                        joinButton.setEnabled(false);
+
+                        // Navigate to EventSuccess Activity
+                        Intent intent = new Intent(getActivity(), EventSuccess.class);
+                        startActivity(intent);
+
+                        Log.d("EventDetailsFragment", "User successfully registered for the event");
+                    } else {
+                        Log.w("EventDetailsFragment", "Registration failed", task.getException());
+                    }
+                });
     }
 }

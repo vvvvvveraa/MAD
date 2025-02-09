@@ -1,64 +1,178 @@
 package com.sp.silvercloud;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link MyEventsFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class MyEventsFragment extends Fragment {
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+import androidx.appcompat.widget.SearchView;
 
-    public MyEventsFragment() {
-        // Required empty public constructor
-    }
+import java.util.ArrayList;
+import java.util.List;
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment MyEventsFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static MyEventsFragment newInstance(String param1, String param2) {
-        MyEventsFragment fragment = new MyEventsFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
+public class MyEventsFragment extends Fragment implements EventItemAdapter.OnItemClickListener {
+
+    private RecyclerView recyclerView;
+    private EventItemAdapter adapter;
+    private List<EventItem> eventItemList;
+    private List<EventItem> filteredEventList;
+    private DatabaseReference databaseReference;
+    private String userId = "user1"; // Static userId for simplicity; replace with dynamic userId if needed
+    private SearchView searchView;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        View rootView = inflater.inflate(R.layout.fragment_my_events, container, false);
+
+        // Initialize RecyclerView
+        recyclerView = rootView.findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        eventItemList = new ArrayList<>();
+        filteredEventList = new ArrayList<>();
+        adapter = new EventItemAdapter(getContext(), filteredEventList, this);
+        recyclerView.setAdapter(adapter);
+
+        // Initialize Firebase Realtime Database reference
+        databaseReference = FirebaseDatabase.getInstance().getReference();
+
+        // Initialize SearchView
+        searchView = rootView.findViewById(R.id.searchView);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                filterEvents(newText); // Filter the events as the user types
+                return true;
+            }
+        });
+
+        // Fetch user's registered event IDs
+        fetchRegisteredEventIds();
+
+        return rootView;
+    }
+
+    // Fetch registered event IDs for the user
+    private void fetchRegisteredEventIds() {
+        Log.d("MyEventsFragment", "Fetching registered event IDs for user: " + userId);
+
+        databaseReference.child("registrations").child(userId).child("eventCode")
+                .addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        List<String> eventIds = new ArrayList<>();
+                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                            String eventId = snapshot.getValue(String.class);
+                            if (eventId != null) {
+                                eventIds.add(eventId);
+                            }
+                        }
+
+                        // Log the fetched eventIds
+                        Log.d("MyEventsFragment", "Fetched event IDs: " + eventIds);
+
+                        // Now fetch the event details using eventIds
+                        fetchEventDetails(eventIds);
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        Log.w("MyEventsFragment", "loadPost:onCancelled", databaseError.toException());
+                    }
+                });
+    }
+
+    // Fetch event details for the provided event IDs
+    private void fetchEventDetails(List<String> eventIds) {
+        eventItemList.clear();  // Clear existing list
+        for (String eventId : eventIds) {
+            Log.d("MyEventsFragment", "Fetching event details for event ID: " + eventId);
+
+            // Instead of using eventId, we should fetch the event details using eventCode
+            // The eventCode is the key under the 'events' node.
+            databaseReference.child("events").orderByChild("eventCode").equalTo(eventId)
+                    .addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            if (dataSnapshot.exists()) {
+                                // Loop through the event snapshots returned, even if it's just one
+                                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                    Log.d("MyEventsFragment", "Event found: " + snapshot.getKey());
+                                    EventItem eventItem = snapshot.getValue(EventItem.class);
+                                    if (eventItem != null) {
+                                        eventItemList.add(eventItem);
+                                        Log.d("MyEventsFragment", "Event added: " + eventItem.getTitle());
+                                    }
+                                }
+                            } else {
+                                Log.d("MyEventsFragment", "Event not found for event ID: " + eventId);
+                            }
+                            updateRecyclerView();
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+                            Log.w("MyEventsFragment", "loadPost:onCancelled", databaseError.toException());
+                        }
+                    });
         }
     }
 
+    // Filter events based on search query
+    private void filterEvents(String query) {
+        filteredEventList.clear();
+        if (TextUtils.isEmpty(query)) {
+            filteredEventList.addAll(eventItemList);  // Show all events if query is empty
+        } else {
+            // Filter the list based on the query
+            for (EventItem eventItem : eventItemList) {
+                if (eventItem.getTitle().toLowerCase().contains(query.toLowerCase())) {
+                    filteredEventList.add(eventItem);
+                }
+            }
+        }
+        adapter.notifyDataSetChanged();  // Notify the adapter to update the list
+    }
+
+    // Update the RecyclerView after fetching the event details
+    private void updateRecyclerView() {
+        Log.d("MyEventsFragment", "Updating RecyclerView with " + eventItemList.size() + " events.");
+
+        filteredEventList.clear();
+        filteredEventList.addAll(eventItemList);  // Show all events initially
+        adapter.notifyDataSetChanged();
+    }
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_events, container, false);
+    public void onItemClick(EventItem eventItem) {
+        // Handle item click event, e.g., navigate to event details
+        Log.d("MyEventsFragment", "Item clicked: " + eventItem.getTitle());
+
+        // Create and show EventDetailsFragment
+        EventDetailsFragment eventDetailsFragment = EventDetailsFragment.newInstance(eventItem);
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.frame_layout, eventDetailsFragment)  // Replace with EventDetailsFragment
+                .addToBackStack(null)
+                .commit();
     }
 }
