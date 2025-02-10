@@ -8,10 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
+import androidx.annotation.NonNull;
+import android.graphics.Color;
 
 import com.bumptech.glide.Glide;
 import com.google.firebase.database.DataSnapshot;
@@ -24,11 +28,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class EventDetailsFragment extends Fragment {
-
-    private TextView titleTextView, dateTextView, descriptionTextView, interestTextView;
+    private TextView titleTextView, dateTextView, descriptionTextView, interestTextView, statusTextView;
     private ImageView eventImageView;
+    private EditText eventCodeInput;
     private ImageButton backButton;
-    private Button joinButton;
+    private Button joinButton, submitButton;
 
     private DatabaseReference databaseReference;
     private String userId = "user1"; // Static userId for simplicity; replace with dynamic userId if needed
@@ -51,12 +55,28 @@ public class EventDetailsFragment extends Fragment {
         dateTextView = view.findViewById(R.id.dateTextView);
         descriptionTextView = view.findViewById(R.id.descriptionTextView);
         interestTextView = view.findViewById(R.id.interestTextView);
+        statusTextView = view.findViewById(R.id.attendanceStatus);
         eventImageView = view.findViewById(R.id.eventImageView);
         backButton = view.findViewById(R.id.backButton);
         joinButton = view.findViewById(R.id.joinEventBtn);
+        submitButton = view.findViewById(R.id.submitAttendanceBtn);
+        eventCodeInput = view.findViewById(R.id.eventCodeEditText);
 
         // Initialize Firebase reference
         databaseReference = FirebaseDatabase.getInstance().getReference();
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String enteredCode = eventCodeInput.getText().toString().trim();
+
+                if (!enteredCode.isEmpty()) {
+                    verifyEventCode(enteredCode);
+                } else {
+                    Toast.makeText(requireContext(), "Please enter an event code", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         if (getArguments() != null) {
             eventItem = (EventItem) getArguments().getSerializable("event_item");
@@ -79,6 +99,84 @@ public class EventDetailsFragment extends Fragment {
 
         return view;
     }
+
+    private void verifyEventCode(String enteredCode) {
+        databaseReference.child("events").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                boolean isCodeValid = false;
+
+                Log.d("FirebaseDebug", "Total Events Retrieved: " + snapshot.getChildrenCount());
+
+                for (DataSnapshot eventSnapshot : snapshot.getChildren()) {
+                    EventItem eventItem = eventSnapshot.getValue(EventItem.class);
+
+                    if (eventItem != null) {
+                        String correctCode = eventItem.getEventCode();  // Get eventCode from EventItem
+
+                        Log.d("FirebaseDebug", "Checking Event Code: " + correctCode);
+
+                        if (enteredCode.equals(correctCode)) {
+                            isCodeValid = true;
+                            break;
+                        }
+                    } else {
+                        Log.e("FirebaseError", "EventItem is null for snapshot: " + eventSnapshot.getKey());
+                    }
+                }
+
+                if (isCodeValid) {
+                    getActivity().runOnUiThread(() -> {
+                        statusTextView.setText("Marked");
+                        statusTextView.setTextColor(Color.GREEN);
+                        Log.d("FirebaseDebug", "Event Code Matched! Status Updated.");
+                    });
+                } else {
+                    getActivity().runOnUiThread(() -> {
+                        Toast.makeText(getContext(), "Invalid Event Code", Toast.LENGTH_SHORT).show();
+                        Log.w("FirebaseDebug", "Entered Event Code NOT found.");
+                    });
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(getContext(), "Database error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                Log.e("FirebaseError", "Database read cancelled: " + error.getMessage());
+            }
+        });
+    }
+
+
+
+    /*private void verifyEventCode(String enteredCode) {
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                boolean isCodeValid = false;
+
+                for (DataSnapshot eventSnapshot : snapshot.getChildren()) {
+                    String correctCode = eventSnapshot.child("eventCode").getValue(String.class);
+                    if (enteredCode.equals(correctCode)) {
+                        isCodeValid = true;
+                        break;
+                    }
+                }
+
+                if (isCodeValid) {
+                    statusTextView.setText("Marked");
+                    statusTextView.setTextColor(Color.GREEN);
+                } else {
+                    Toast.makeText(requireContext(), "Invalid Event Code", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(requireContext(), "Database error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+    }*/
 
     private void displayEventDetails(EventItem eventItem) {
         titleTextView.setText(eventItem.getTitle());
