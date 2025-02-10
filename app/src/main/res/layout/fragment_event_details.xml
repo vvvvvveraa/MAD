@@ -119,6 +119,7 @@
             android:paddingBottom="20dp"
             android:textColor="@android:color/darker_gray"
             android:textSize="20sp"
+            android:text="Interest Value"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/interestLabelTextView"
