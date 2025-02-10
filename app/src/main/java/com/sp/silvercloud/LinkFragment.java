@@ -1,64 +1,54 @@
 package com.sp.silvercloud;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link LinkFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class LinkFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private ImageView ActiveSG;
+    private ImageView HealthHub;
+    private ImageView Healthy365;
+    private ImageView LifeSG;
+    private ImageView myENV;
+    private ImageView myResponder;
 
     public LinkFragment() {
         // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment LinkFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static LinkFragment newInstance(String param1, String param2) {
-        LinkFragment fragment = new LinkFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_link, container, false);
+        View view = inflater.inflate(R.layout.fragment_link, container, false);
+
+        // Initialize ImageViews
+        ActiveSG = view.findViewById(R.id.ActiveSG);
+        HealthHub = view.findViewById(R.id.HealthHub);
+        Healthy365 = view.findViewById(R.id.Health365);
+        LifeSG = view.findViewById(R.id.LifeSG);
+        myENV = view.findViewById(R.id.myENV);
+        myResponder = view.findViewById(R.id.myResponder);
+
+        // Set click listeners for each ImageView
+        ActiveSG.setOnClickListener(v -> gotoUrl("https://activesg.gov.sg/home"));
+        HealthHub.setOnClickListener(v -> gotoUrl("https://www.healthhub.sg/"));
+        Healthy365.setOnClickListener(v -> gotoUrl("https://www.healthhub.sg/programmes/healthyliving"));
+        LifeSG.setOnClickListener(v -> gotoUrl("https://www.life.gov.sg/"));
+        myENV.setOnClickListener(v -> gotoUrl("https://www.nea.gov.sg/"));
+        myResponder.setOnClickListener(v -> gotoUrl("https://www.scdf.gov.sg/home/community---volunteers/community-resources/myresponder-app"));
+
+        return view;
+    }
+
+    private void gotoUrl(String url) {
+        Uri uri = Uri.parse(url);
+        startActivity(new Intent(Intent.ACTION_VIEW, uri));
     }
 }

@@ -50,6 +50,7 @@
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:contentDescription="ActiveSG"
+                        android:id = "@+id/ActiveSG"
                         android:src="@drawable/activesg_logo" />
 
                     <TextView
@@ -71,6 +72,7 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
+                        android:id = "@+id/HealthHub"
                         android:contentDescription="HealthHub"
                         android:src="@drawable/healthhub_logo" />
 
@@ -93,6 +95,7 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
+                        android:id = "@+id/Health365"
                         android:contentDescription="Healthy 365"
                         android:src="@drawable/healthy365_logo" />
 
@@ -115,6 +118,7 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
+                        android:id = "@+id/LifeSG"
                         android:contentDescription="LifeSG"
                         android:src="@drawable/lifesg_logo" />
 
@@ -137,6 +141,7 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
+                        android:id = "@+id/myENV"
                         android:contentDescription="myENV"
                         android:src="@drawable/myenv_logo" />
 
@@ -159,6 +164,7 @@
                     <ImageView
                         android:layout_width="150dp"
                         android:layout_height="150dp"
+                        android:id = "@+id/myResponder"
                         android:contentDescription="myResponder"
                         android:src="@drawable/myresponder_logo" />
 
