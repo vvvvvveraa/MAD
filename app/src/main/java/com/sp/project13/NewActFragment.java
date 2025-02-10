@@ -207,7 +207,7 @@ public class NewActFragment extends Fragment {
                         String eventId = rootDatabaseref.push().getKey();
 
                         // Create an Event object with the selected date
-                        Event newEvent = new Event(activityName, activityCode, selectedDate, interest, "Full description here", imageUrl, "organizer1", newDescription, imageId);
+                        Event newEvent = new Event(activityName, activityCode, selectedDate, interest, "Full description here", imageUrl, "organizer1", newDescription,  eventId);
 
                         // Set the event in the database
                         rootDatabaseref.child(eventId).setValue(newEvent).addOnCompleteListener(task -> {
