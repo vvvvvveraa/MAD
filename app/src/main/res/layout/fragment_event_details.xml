@@ -94,14 +94,14 @@
             app:layout_constraintTop_toBottomOf="@id/dateLabelTextView"
             app:layout_constraintWidth_percent="0.8" />
 
-        <!-- Event Code label -->
+        <!-- Interest label -->
         <TextView
-            android:id="@+id/eventCodeLabelTextView"
+            android:id="@+id/interestLabelTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="start"
             android:paddingTop="16dp"
-            android:text="Event Code"
+            android:text="Interest"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -109,20 +109,73 @@
             app:layout_constraintTop_toBottomOf="@id/dateTextView"
             app:layout_constraintWidth_percent="0.8" />
 
-        <!-- Event Code value TextView -->
+        <!-- Interest value TextView -->
         <TextView
-            android:id="@+id/eventCodeTextView"
+            android:id="@+id/interestTextView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="start"
             android:paddingTop="8dp"
-            android:paddingBottom="50dp"
+            android:paddingBottom="20dp"
             android:textColor="@android:color/darker_gray"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/eventCodeLabelTextView"
+            app:layout_constraintTop_toBottomOf="@id/interestLabelTextView"
             app:layout_constraintWidth_percent="0.8" />
+
+        <TextView
+            android:id="@+id/eventCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Attendance"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/interestTextView" />
+
+        <EditText
+            android:id="@+id/eventCodeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Enter event code"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventCodeTextView" />
+
+        <TextView
+            android:id="@+id/attendanceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Not marked yet"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventCodeEditText" />
+
+        <Button
+            android:id="@+id/submitAttendanceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_200"
+            android:text="Submit"
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.871"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventCodeTextView" />
 
         <Button
             android:id="@+id/joinEventBtn"
@@ -131,9 +184,10 @@
             android:layout_marginBottom="-550dp"
             android:background="@color/purple_500"
             android:text="Join"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/eventCodeTextView"/>
+            app:layout_constraintTop_toBottomOf="@id/attendanceStatus"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

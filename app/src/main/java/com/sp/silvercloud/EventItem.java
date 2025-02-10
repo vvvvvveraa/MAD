@@ -36,6 +36,7 @@ public class EventItem implements Serializable {  // Make sure it implements Ser
         this.newDescription = newDescription;
         this.title = title;
         this.time = time;
+
     }
 
     // Getters and Setters

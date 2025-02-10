@@ -25,7 +25,7 @@ import java.util.Date;
 
 public class EventDetailsFragment extends Fragment {
 
-    private TextView titleTextView, dateTextView, descriptionTextView, eventTextView;
+    private TextView titleTextView, dateTextView, descriptionTextView, interestTextView;
     private ImageView eventImageView;
     private ImageButton backButton;
     private Button joinButton;
@@ -50,7 +50,7 @@ public class EventDetailsFragment extends Fragment {
         titleTextView = view.findViewById(R.id.titleTextView);
         dateTextView = view.findViewById(R.id.dateTextView);
         descriptionTextView = view.findViewById(R.id.descriptionTextView);
-        eventTextView = view.findViewById(R.id.eventCodeTextView);
+        interestTextView = view.findViewById(R.id.interestTextView);
         eventImageView = view.findViewById(R.id.eventImageView);
         backButton = view.findViewById(R.id.backButton);
         joinButton = view.findViewById(R.id.joinEventBtn);
@@ -72,7 +72,7 @@ public class EventDetailsFragment extends Fragment {
         // Set up the join button
         joinButton.setOnClickListener(v -> {
             if (joinButton.isEnabled()) {
-                String eventCode = eventTextView.getText().toString();
+                String eventCode = interestTextView.getText().toString();
                 registerForEvent(eventCode);
             }
         });
@@ -84,7 +84,7 @@ public class EventDetailsFragment extends Fragment {
         titleTextView.setText(eventItem.getTitle());
         dateTextView.setText(eventItem.getDate());
         descriptionTextView.setText(eventItem.getFullDescription());
-        eventTextView.setText(eventItem.getEventCode());
+        interestTextView.setText(eventItem.getInterest());
 
         Glide.with(getContext())
                 .load(eventItem.getImageUrl())
