@@ -81,8 +81,10 @@ public class MyEventsFragment extends Fragment implements EventItemAdapter.OnIte
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         List<String> eventIds = new ArrayList<>();
+                        Log.d("MyEventsFragment", "Raw Firebase Data: " + dataSnapshot.getValue());
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             String eventId = snapshot.getValue(String.class);
+                            Log.d("MyEventsFragment", "Event ID retrieved: " + eventId);
                             if (eventId != null) {
                                 eventIds.add(eventId);
                             }

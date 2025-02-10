@@ -92,7 +92,7 @@ public class EventDetailsFragment extends Fragment {
         // Set up the join button
         joinButton.setOnClickListener(v -> {
             if (joinButton.isEnabled()) {
-                String eventCode = interestTextView.getText().toString();
+                String eventCode = titleTextView.getText().toString();
                 registerForEvent(eventCode);
             }
         });
@@ -147,37 +147,6 @@ public class EventDetailsFragment extends Fragment {
         });
     }
 
-
-
-    /*private void verifyEventCode(String enteredCode) {
-        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                boolean isCodeValid = false;
-
-                for (DataSnapshot eventSnapshot : snapshot.getChildren()) {
-                    String correctCode = eventSnapshot.child("eventCode").getValue(String.class);
-                    if (enteredCode.equals(correctCode)) {
-                        isCodeValid = true;
-                        break;
-                    }
-                }
-
-                if (isCodeValid) {
-                    statusTextView.setText("Marked");
-                    statusTextView.setTextColor(Color.GREEN);
-                } else {
-                    Toast.makeText(requireContext(), "Invalid Event Code", Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(requireContext(), "Database error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
-    }*/
-
     private void displayEventDetails(EventItem eventItem) {
         titleTextView.setText(eventItem.getTitle());
         dateTextView.setText(eventItem.getDate());
@@ -191,6 +160,7 @@ public class EventDetailsFragment extends Fragment {
 
     // Check if user has already joined the event
     private void checkIfUserJoined(String eventCode) {
+        //databaseReference.child("registrations").child(userId)
         databaseReference.child("registrations").child(userId).child("eventCode")
                 .orderByValue()
                 .equalTo(eventCode)
@@ -214,11 +184,14 @@ public class EventDetailsFragment extends Fragment {
     // Method to register the user for the event
     private void registerForEvent(String eventCode) {
         // Use ArrayUnion to add the eventCode to the user's registrations array
+        Log.d("EventDetailsFragment", "Attempting to register user: " + userId + " for event: " + eventCode);
+
         databaseReference.child("registrations").child(userId).child("eventCode")
                 .push()  // Add to the eventCode array
                 .setValue(eventCode)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
+                        Log.d("EventDetailsFragment", "Successfully registered for event: " + eventCode);
                         // If registration is successful, update the button text and disable it
                         joinButton.setText("Joined");
                         joinButton.setEnabled(false);
