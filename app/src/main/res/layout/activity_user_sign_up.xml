@@ -14,12 +14,15 @@
         android:padding="16dp">
 
         <!-- Back Button -->
-        <ImageButton
+        <ImageView
             android:id="@+id/backButton"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:contentDescription="@string/back_button_description"
-            android:src="@drawable/backbutton" />
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/backbutton"
+            android:contentDescription="Back"
+            android:layout_alignParentStart="true" />
 
 
         <!-- Title -->
@@ -38,13 +41,14 @@
         <!-- Form Card -->
 
         <!-- Sign Up Button -->
+
         <LinearLayout
             android:id="@+id/formCard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/signUpTitle"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="16dp"
             android:background="#D3D3D3"
             android:backgroundTintMode="src_over"
@@ -133,12 +137,22 @@
                 android:textColor="#808080"
                 android:textSize="12sp" />
 
-            <Spinner
-                android:id="@+id/interestsSpinner"
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginBottom="16dp"
-                android:background="#FFFFFF" />
+                android:layout_height="wrap_content"
+                android:id="@+id/interest_layout2">
+
+                <AutoCompleteTextView
+                    android:id="@+id/interestInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="none"
+                    android:text="Indoor"
+                    app:simpleItems="@array/interest_list"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
 
         <Button
