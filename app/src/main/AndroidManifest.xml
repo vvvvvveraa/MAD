@@ -46,9 +46,6 @@
         <activity
             android:name=".UserSignUp"
             android:exported="false" />
-        <activity
-            android:name=".UserProfile"
-            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

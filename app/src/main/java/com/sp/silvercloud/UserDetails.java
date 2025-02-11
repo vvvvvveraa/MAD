@@ -4,20 +4,21 @@ import java.io.Serializable;
 
 public class UserDetails implements Serializable {  // Make sure it implements Serializable
     private String email;
-    private String interest;
     private String password;
     private String name;
+    private String interest;
+
 
     // Default constructor for Firebase
     public UserDetails() {
     }
 
     // Constructor to initialize an EventItem
-    public UserDetails(String email, String interest, String password, String name) {
+    public UserDetails(String email, String password, String name, String interest) {
         this.email = email;
-        this.interest = interest;
         this.password = password;
         this.name = name;
+        this.interest = interest;
     }
 
     // Getters and Setters
@@ -27,14 +28,6 @@ public class UserDetails implements Serializable {  // Make sure it implements S
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getInterest() {
-        return interest;
-    }
-
-    public void setInterest(String interest) {
-        this.interest = interest;
     }
 
     public String getPassword() {
@@ -51,5 +44,13 @@ public class UserDetails implements Serializable {  // Make sure it implements S
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getInterest() {
+        return interest;
+    }
+
+    public void setInterest(String interest) {
+        this.interest = interest;
     }
 }

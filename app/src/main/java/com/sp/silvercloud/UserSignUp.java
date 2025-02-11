@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
+import android.util.Log;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -68,18 +69,26 @@ public class UserSignUp extends AppCompatActivity {
             return;
         }
 
+        // Log values before storing
+        Log.d("DEBUG", "Email: " + email);
+        Log.d("DEBUG", "Password: " + password);
+        Log.d("DEBUG", "Name: " + name);
+        Log.d("DEBUG", "Interest: " + interest);
+
         // Create a unique key for each user
         String userId = databaseReference.push().getKey();
 
         // Create a User object
-        UserDetails user = new UserDetails(email, name, "Not Specified", interest);
+        UserDetails user = new UserDetails(email, password, name, interest);
 
         // Store user in Firebase
         databaseReference.child(userId).setValue(user)
                 .addOnSuccessListener(aVoid -> {
-                    Toast.makeText(UserSignUp.this, "User Registered Successfully! Press 'Click Here to Login", Toast.LENGTH_SHORT).show();
+                    Log.d("DEBUG", "User stored successfully: " + userId);
+                    Toast.makeText(UserSignUp.this, "User Registered Successfully!\nPress 'Click Here to Login", Toast.LENGTH_SHORT).show();
                 })
                 .addOnFailureListener(e -> {
+                    Log.e("DEBUG", "Firebase Error: " + e.getMessage());
                     Toast.makeText(UserSignUp.this, "Registration Failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                 });
     }
