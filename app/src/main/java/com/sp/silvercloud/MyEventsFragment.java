@@ -74,7 +74,7 @@ public class MyEventsFragment extends Fragment implements EventItemAdapter.OnIte
     }
 
     // Fetch registered event IDs for the user
-    /*private void fetchRegisteredEventIds() {
+    private void fetchRegisteredEventIds() {
         Log.d("MyEventsFragment", "Fetching registered event IDs for user: " + userId);
 
         databaseReference.child("registrations").child(userId).child("eventCode")
@@ -103,8 +103,8 @@ public class MyEventsFragment extends Fragment implements EventItemAdapter.OnIte
                         Log.w("MyEventsFragment", "loadPost:onCancelled", databaseError.toException());
                     }
                 });
-    }*/
-    @Override
+    }
+    /*@Override
     public void onStart() {
         super.onStart();
         fetchUserRegistrations();
@@ -161,24 +161,27 @@ public class MyEventsFragment extends Fragment implements EventItemAdapter.OnIte
                         Log.w("MyEventsFragment", "loadPost:onCancelled", databaseError.toException());
                     }
                 });
-    }
+    }*/
 
-    private void fetchRegisteredEventIds() {
+    /*private void fetchRegisteredEventIds() {
         Log.d("MyEventsFragment", "Fetching registered event IDs for user: " + userId);
 
         databaseReference.child("registrations").child(userId).child("eventCode")
                 .addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        List<String> registeredEventCodes = new ArrayList<>();
+                        List<String> eventIds = new ArrayList<>();
                         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                             String eventId = snapshot.getValue(String.class);
                             if (eventId != null) {
-                                registeredEventCodes.add(eventId);
+                                eventIds.add(eventId);
                             }
                         }
 
-                        Log.d("MyEventsFragment", "Fetched event IDs: " + registeredEventCodes);
+                        Log.d("MyEventsFragment", "Fetched event IDs: " + eventIds);
+
+                        // Now fetch the event details using eventIds
+                        fetchEventDetails(eventIds);
 
                         // Query events based on registeredEventCodes
                         databaseReference.child("events").addListenerForSingleValueEvent(new ValueEventListener() {
@@ -189,7 +192,7 @@ public class MyEventsFragment extends Fragment implements EventItemAdapter.OnIte
                                 for (DataSnapshot eventSnapshot : dataSnapshot.getChildren()) {
                                     EventItem event = eventSnapshot.getValue(EventItem.class);
 
-                                    if (event != null && registeredEventCodes.contains(event.getEventCode())) {
+                                    if (event != null && eventIds.contains(event.getEventCode())) {
                                         filteredEvents.add(event);
                                     }
                                 }
@@ -214,7 +217,7 @@ public class MyEventsFragment extends Fragment implements EventItemAdapter.OnIte
                         Log.w("MyEventsFragment", "loadPost:onCancelled", databaseError.toException());
                     }
                 });
-    }
+    }*/
 
     // Fetch event details for the provided event IDs
     private void fetchEventDetails(List<String> eventIds) {

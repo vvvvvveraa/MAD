@@ -21,6 +21,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import androidx.appcompat.widget.SearchView;
+import android.text.TextUtils;
+
 
 public class HomeFragment extends Fragment implements EventItemAdapter.OnItemClickListener {
 
@@ -92,19 +94,21 @@ public class HomeFragment extends Fragment implements EventItemAdapter.OnItemCli
     // Filter the events based on the search query
     private void filterEvents(String query) {
         filteredEventList.clear();
-        if (query.isEmpty()) {
-            filteredEventList.addAll(eventItemList);  // If query is empty, show all events
+
+        if (TextUtils.isEmpty(query)) {
+            filteredEventList.addAll(eventItemList);
         } else {
             for (EventItem eventItem : eventItemList) {
-                // Check if the title or fullDescription contains the query (case-insensitive)
-                if (eventItem.getTitle().toLowerCase().contains(query.toLowerCase()) ||
-                        eventItem.getFullDescription().toLowerCase().contains(query.toLowerCase())) {
+                // Prevent NullPointerException by checking if the title is null
+                if (eventItem.getTitle() != null && eventItem.getTitle().toLowerCase().contains(query.toLowerCase())) {
                     filteredEventList.add(eventItem);
                 }
             }
         }
-        adapter.notifyDataSetChanged();  // Notify the adapter to update the RecyclerView
+
+        adapter.notifyDataSetChanged();
     }
+
 
     @Override
     public void onItemClick(EventItem eventItem) {

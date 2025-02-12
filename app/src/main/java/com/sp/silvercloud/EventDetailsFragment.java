@@ -65,7 +65,7 @@ public class EventDetailsFragment extends Fragment {
         eventCodeInput = view.findViewById(R.id.eventCodeEditText);
 
         // Initialize Firebase reference
-        databaseReference = FirebaseDatabase.getInstance().getReference("events");
+        databaseReference = FirebaseDatabase.getInstance().getReference();
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -162,7 +162,6 @@ public class EventDetailsFragment extends Fragment {
 
     // Check if user has already joined the event
     private void checkIfUserJoined(String eventCode) {
-        //databaseReference.child("registrations").child(userId)
         databaseReference.child("registrations").child(userId).child("eventCode")
                 .orderByValue()
                 .equalTo(eventCode)
@@ -183,11 +182,12 @@ public class EventDetailsFragment extends Fragment {
                 });
     }
 
+    // Method to register the user for the event
     private void registerForEvent(String eventCode) {
         // Use ArrayUnion to add the eventCode to the user's registrations array
         Log.d("EventDetailsFragment", "Attempting to register user: " + userId + " for event: " + eventCode);
 
-        databaseReference.child("registrations").child(userId).child("eventCodes")
+        databaseReference.child("registrations").child(userId).child("eventCode")
                 .push()  // Add to the eventCode array
                 .setValue(eventCode)
                 .addOnCompleteListener(task -> {
