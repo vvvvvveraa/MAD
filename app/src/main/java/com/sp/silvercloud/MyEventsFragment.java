@@ -30,6 +30,7 @@ public class MyEventsFragment extends Fragment implements EventItemAdapter.OnIte
     private List<EventItem> eventItemList;
     private List<EventItem> filteredEventList;
     private DatabaseReference databaseReference;
+    private DatabaseError databaseError;
     private String userId = "user1"; // Static userId for simplicity; replace with dynamic userId if needed
     private SearchView searchView;
 
@@ -73,7 +74,7 @@ public class MyEventsFragment extends Fragment implements EventItemAdapter.OnIte
     }
 
     // Fetch registered event IDs for the user
-    private void fetchRegisteredEventIds() {
+    /*private void fetchRegisteredEventIds() {
         Log.d("MyEventsFragment", "Fetching registered event IDs for user: " + userId);
 
         databaseReference.child("registrations").child(userId).child("eventCode")
@@ -99,6 +100,117 @@ public class MyEventsFragment extends Fragment implements EventItemAdapter.OnIte
 
                     @Override
                     public void onCancelled(DatabaseError databaseError) {
+                        Log.w("MyEventsFragment", "loadPost:onCancelled", databaseError.toException());
+                    }
+                });
+    }*/
+    @Override
+    public void onStart() {
+        super.onStart();
+        fetchUserRegistrations();
+    }
+
+    private void fetchUserRegistrations() {
+        Log.d("MyEventsFragment", "Fetching registered event IDs for user: " + userId);
+
+        databaseReference.child("registrations").child(userId).child("eventCode")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        List<String> registeredEventCodes = new ArrayList<>();
+                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                            String eventId = snapshot.getValue(String.class);
+                            if (eventId != null) {
+                                registeredEventCodes.add(eventId);
+                            }
+                        }
+
+                        Log.d("MyEventsFragment", "Fetched event IDs: " + registeredEventCodes);
+
+                        // Query events based on registeredEventCodes
+                        databaseReference.child("events").addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                ArrayList<EventItem> filteredEvents = new ArrayList<>();
+
+                                for (DataSnapshot eventSnapshot : dataSnapshot.getChildren()) {
+                                    EventItem event = eventSnapshot.getValue(EventItem.class);
+
+                                    if (event != null && registeredEventCodes.contains(event.getEventCode())) {
+                                        filteredEvents.add(event);
+                                    }
+                                }
+
+                                // Update the RecyclerView with the filtered list of events
+                                eventItemList.clear();
+                                eventItemList.addAll(filteredEvents);
+                                filteredEventList.clear();
+                                filteredEventList.addAll(eventItemList);
+                                adapter.notifyDataSetChanged();
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+                                Log.w("MyEventsFragment", "Failed to read events", error.toException());
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                        Log.w("MyEventsFragment", "loadPost:onCancelled", databaseError.toException());
+                    }
+                });
+    }
+
+    private void fetchRegisteredEventIds() {
+        Log.d("MyEventsFragment", "Fetching registered event IDs for user: " + userId);
+
+        databaseReference.child("registrations").child(userId).child("eventCode")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        List<String> registeredEventCodes = new ArrayList<>();
+                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                            String eventId = snapshot.getValue(String.class);
+                            if (eventId != null) {
+                                registeredEventCodes.add(eventId);
+                            }
+                        }
+
+                        Log.d("MyEventsFragment", "Fetched event IDs: " + registeredEventCodes);
+
+                        // Query events based on registeredEventCodes
+                        databaseReference.child("events").addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                ArrayList<EventItem> filteredEvents = new ArrayList<>();
+
+                                for (DataSnapshot eventSnapshot : dataSnapshot.getChildren()) {
+                                    EventItem event = eventSnapshot.getValue(EventItem.class);
+
+                                    if (event != null && registeredEventCodes.contains(event.getEventCode())) {
+                                        filteredEvents.add(event);
+                                    }
+                                }
+
+                                // Update the RecyclerView with the filtered list of events
+                                eventItemList.clear();
+                                eventItemList.addAll(filteredEvents);
+                                filteredEventList.clear();
+                                filteredEventList.addAll(eventItemList);
+                                adapter.notifyDataSetChanged();
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError error) {
+                                Log.w("MyEventsFragment", "Failed to read events", error.toException());
+                            }
+                        });
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
                         Log.w("MyEventsFragment", "loadPost:onCancelled", databaseError.toException());
                     }
                 });

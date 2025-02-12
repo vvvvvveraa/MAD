@@ -12,6 +12,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Button;
 import android.widget.Toast;
+import java.util.ArrayList;
+import java.util.List;
 
 import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
@@ -50,7 +52,7 @@ public class EventDetailsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_event_details, container, false);
 
-        // Initialize views
+        // Initialize IDs
         titleTextView = view.findViewById(R.id.titleTextView);
         dateTextView = view.findViewById(R.id.dateTextView);
         descriptionTextView = view.findViewById(R.id.descriptionTextView);
@@ -63,7 +65,7 @@ public class EventDetailsFragment extends Fragment {
         eventCodeInput = view.findViewById(R.id.eventCodeEditText);
 
         // Initialize Firebase reference
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance().getReference("events");
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -181,8 +183,43 @@ public class EventDetailsFragment extends Fragment {
                 });
     }
 
-    // Method to register the user for the event
     private void registerForEvent(String eventCode) {
+        // Use ArrayUnion to add the eventCode to the user's registrations array
+        Log.d("EventDetailsFragment", "Attempting to register user: " + userId + " for event: " + eventCode);
+
+        databaseReference.child("registrations").child(userId).child("eventCodes")
+                .push()  // Add to the eventCode array
+                .setValue(eventCode)
+                .addOnCompleteListener(task -> {
+                    if (task.isSuccessful()) {
+                        Log.d("EventDetailsFragment", "Successfully registered for event: " + eventCode);
+                        // If registration is successful, update the button text and disable it
+                        joinButton.setText("Joined");
+                        joinButton.setEnabled(false);
+
+                        // Get the event start and end times from the eventItem
+                        long[] eventTimes = eventItem.parseEventTime();
+                        Log.d("EventDetailsFragment", "Event Start Time: " + eventTimes[0]);
+                        Log.d("EventDetailsFragment", "Event End Time: " + eventTimes[1]);
+
+                        // Navigate to EventSuccess Activity
+                        Intent intent = new Intent(getActivity(), EventSuccess.class);
+                        // Pass the event data to EventSuccess
+                        intent.putExtra("event_title", eventItem.getTitle());
+                        intent.putExtra("event_description", eventItem.getFullDescription());
+                        intent.putExtra("event_start_time", eventTimes[0]);
+                        intent.putExtra("event_end_time", eventTimes[1]);
+                        startActivity(intent);
+
+                        Log.d("EventDetailsFragment", "User successfully registered for the event");
+                    } else {
+                        Log.w("EventDetailsFragment", "Registration failed", task.getException());
+                    }
+                });
+    }
+
+    // Method to register the user for the event
+    /*private void registerForEvent(String eventCode) {
         // Use ArrayUnion to add the eventCode to the user's registrations array
         Log.d("EventDetailsFragment", "Attempting to register user: " + userId + " for event: " + eventCode);
 
@@ -215,5 +252,5 @@ public class EventDetailsFragment extends Fragment {
                         Log.w("EventDetailsFragment", "Registration failed", task.getException());
                     }
                 });
-    }
+    }*/
 }

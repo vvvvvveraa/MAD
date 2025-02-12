@@ -5,7 +5,6 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 import android.util.Log;
 import android.widget.Toast;
-import android.text.InputType;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
