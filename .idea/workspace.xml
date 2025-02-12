@@ -10,9 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="494c6ad3-153b-4a18-8d9e-49fe1dd29b9c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sp/silvercloud/EventDetailsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sp/silvercloud/EventDetailsFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sp/silvercloud/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sp/silvercloud/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sp/silvercloud/MyEventsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sp/silvercloud/MyEventsFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sp/silvercloud/ProfileFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sp/silvercloud/ProfileFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dropdown_interest.xml" beforeDir="false" />
     </list>
