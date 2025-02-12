@@ -1,0 +1,258 @@
+[
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_home_bottomnav.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\home_bottomnav.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_activity_organizer_sign_up.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_organizer_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_fragment_link.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_link.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_activity_user_sign_up.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_user_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_activity_user_login.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_user_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_fragment_rewards.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_rewards.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\font_poppins_semibold.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\font\\poppins_semibold.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_activity_organizer_login.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_organizer_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_eventitem_card.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\eventitem_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_exercise.jpeg.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\exercise.jpeg"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_coin_icon.png.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\coin_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_green_check.jpg.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\green_check.jpg"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_fragment_event_details.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_event_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_healthhub_logo.png.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\healthhub_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-xxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_backbutton.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\backbutton.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-mdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\font_anek_odia_medium.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\font\\anek_odia_medium.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_voucher_icon.png.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\voucher_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_activity_list.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_rewards_detail.png.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\rewards_detail.png"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_myresponder_logo.png.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\myresponder_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_item.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\item.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_filter_icon.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\filter_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_activity_eventsuccess.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_eventsuccess.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_activity_welcome.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_activity_listactivity.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_listactivity.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_test_cardview.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\test_cardview.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_myenv_logo.png.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\myenv_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_activesg_logo.jpg.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\activesg_logo.jpg"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_link_bottomnav.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\link_bottomnav.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_lifesg_logo.png.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\lifesg_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-hdpi\\ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_dropdown_interest.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\dropdown_interest.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_fragment_my_events.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_my_events.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_myevents_bottomnav.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\myevents_bottomnav.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_healthy365_logo.png.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\healthy365_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_app_logo.jpg.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\app_logo.jpg"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\layout_activity_item.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_profile_bottomnav.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\profile_bottomnav.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_rewards_bottomnav.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\rewards_bottomnav.xml"
+    },
+    {
+        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-5:\\drawable_filter.xml.flat",
+        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\drawable\\filter.xml"
+    }
+]
