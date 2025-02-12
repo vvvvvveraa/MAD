@@ -10,5 +10,7 @@
     <color name="Red">#FF0000</color>
     <color name="buttonBackground">#007BFF</color> <!-- Blue -->
     <color name="buttonTextColor">#FFFFFF</color> <!-- White -->
+    <color name="red">#CD5A5F</color>
+    <color name="green">#71bd6f</color>
 
 </resources>

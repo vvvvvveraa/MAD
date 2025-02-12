@@ -1,4 +1,4 @@
-package com.sp.project13;
+package com.sp.silvercloud;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
@@ -27,7 +27,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.UUID;
@@ -168,7 +167,7 @@ public class NewActFragment extends Fragment {
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
 
-        DatePickerDialog dialog = new DatePickerDialog(getActivity(), R.style.Theme_Project13, new DatePickerDialog.OnDateSetListener() {
+        DatePickerDialog dialog = new DatePickerDialog(getActivity(), R.style.Theme_SilverCloud, new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                 // Format the date and store it in the selectedDate variable

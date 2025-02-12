@@ -1,4 +1,4 @@
-package com.sp.project13;
+package com.sp.silvercloud;
 
 import android.content.Intent;
 import android.view.LayoutInflater;

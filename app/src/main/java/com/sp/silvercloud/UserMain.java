@@ -1,18 +1,17 @@
-package com.sp.project13;
+package com.sp.silvercloud;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.appcompat.widget.Toolbar;
-
-import android.os.Bundle;
-import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
-import com.sp.project13.databinding.ActivityMainOrganiserBinding;
+import com.sp.silvercloud.databinding.ActivityMainOrganiserBinding;
 
 public class UserMain extends AppCompatActivity {
     DrawerLayout drawerLayout; // for the navigation drawer

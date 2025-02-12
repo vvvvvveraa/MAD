@@ -1,4 +1,4 @@
-package com.sp.project13;
+package com.sp.silvercloud;
 
 public class Event {
     private String title;

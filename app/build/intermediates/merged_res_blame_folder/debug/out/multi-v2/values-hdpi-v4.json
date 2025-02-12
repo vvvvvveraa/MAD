@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.sp.silvercloud.app-mergeDebugResources-3:/values-hdpi-v4/values-hdpi-v4.xml",
+            "outputFile": "com.sp.silvercloud.app-mergeDebugResources-55:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\trini\\.gradle\\caches\\transforms-3\\437710e3f6b0d6dc68c3df68abb82455\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\veral\\.gradle\\caches\\transforms-3\\437710e3f6b0d6dc68c3df68abb82455\\transformed\\appcompat-1.7.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

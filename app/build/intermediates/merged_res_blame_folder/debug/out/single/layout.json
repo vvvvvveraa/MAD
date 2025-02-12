@@ -1,86 +1,126 @@
 [
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\activity_welcome.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_welcome.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\fragment_indoor__home.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\fragment_indoor__home.xml"
     },
     {
-        "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/fragment_profile.xml",
-        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_profile.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\fragment_my_events.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\fragment_my_events.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\activity_organizer_login.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_organizer_login.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_user_login.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_user_login.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\fragment_event_details.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\fragment_event_details.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\activity_user_login.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_user_login.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\fragment_biz__profile.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\fragment_biz__profile.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\fragment_profile.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_profile.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\fragment_outdoor_home.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\fragment_outdoor_home.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\item.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\item.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\fragment_home.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\activity_list.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_list.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\item.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\item.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\fragment_event_details.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_event_details.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_organizer_sign_up.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_organizer_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\fragment_link.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_link.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\fragment_rewards.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\fragment_rewards.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\test_cardview.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\test_cardview.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\eventitem_card.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\eventitem_card.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\fragment_rewards.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_rewards.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\fragment_link.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\fragment_link.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\activity_item.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_item.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\organiser_dropdown_interest.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\organiser_dropdown_interest.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\activity_eventsuccess.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_eventsuccess.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_user_sign_up.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_user_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\activity_listactivity.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_listactivity.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_listactivity.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_listactivity.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\activity_organizer_sign_up.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_organizer_sign_up.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\eventitem_card.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\eventitem_card.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_item.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_item.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\dropdown_interest.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\dropdown_interest.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_main_organiser.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_main_organiser.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\fragment_my_events.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\fragment_my_events.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\activity_user_sign_up.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_user_sign_up.xml"
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\test_cardview.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\test_cardview.xml"
     },
     {
-        "merged": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-4:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\trini\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-7:\\layout\\activity_main.xml"
+        "merged": "com.sp.silvercloud.app-mergeDebugResources-56:/layout/fragment_new_act.xml",
+        "source": "com.sp.silvercloud.app-main-59:/layout/fragment_new_act.xml"
+    },
+    {
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_submit_new.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_submit_new.xml"
+    },
+    {
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_welcome.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\fragment_new_act.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\fragment_new_act.xml"
+    },
+    {
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\item_event.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\item_event.xml"
+    },
+    {
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_eventsuccess.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_eventsuccess.xml"
+    },
+    {
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_list.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\nav_header.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\nav_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_biz_current.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_biz_current.xml"
+    },
+    {
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\activity_organizer_login.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\activity_organizer_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-mergeDebugResources-56:\\layout\\fragment_biz__home.xml",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\layout\\fragment_biz__home.xml"
     }
 ]
