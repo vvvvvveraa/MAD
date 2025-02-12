@@ -2,6 +2,7 @@ package com.sp.silvercloud;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.annotation.NonNull;
+import android.util.Log;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,13 +25,12 @@ import com.google.firebase.database.ValueEventListener;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.util.Log;
 import android.text.TextUtils;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
-
+import android.content.SharedPreferences;
 
 public class UserLogin extends AppCompatActivity {
     private ImageView backButton;
@@ -39,13 +39,19 @@ public class UserLogin extends AppCompatActivity {
     private EditText emailField, passwordField;
     private Button loginButton;
     private FirebaseAuth mAuth;
-    private DatabaseReference usersRef;
+    private DatabaseReference databaseReference;
+    private SharedPreferences sharedPreferences;
     private static final String TAG = "UserLogin";  // Log tag
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
+
+        // Link UI Elements
+        emailField = findViewById(R.id.emailField);
+        passwordField = findViewById(R.id.passwordField);
+        loginButton = findViewById(R.id.loginBtn);
 
         backButton = findViewById(R.id.backButton);
         backButton.setOnClickListener(onBack);
@@ -55,12 +61,15 @@ public class UserLogin extends AppCompatActivity {
 
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
-        usersRef = FirebaseDatabase.getInstance().getReference("users");
+        databaseReference = FirebaseDatabase.getInstance().getReference("users");
 
-        // Link UI Elements
-        emailField = findViewById(R.id.emailField);
-        passwordField = findViewById(R.id.passwordField);
-        loginButton = findViewById(R.id.loginBtn);
+        // Initialize SharedPreferences
+        sharedPreferences = getSharedPreferences("UserSession", Context.MODE_PRIVATE);
+
+        // Check if user is already logged in
+        if (sharedPreferences.getString("userId", null) != null) {
+            redirectToMainActivity();
+        }
 
         // Login Button Click Listener
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -80,24 +89,29 @@ public class UserLogin extends AppCompatActivity {
     }
 
     private void validateUser(String email, String password) {
-        usersRef.addListenerForSingleValueEvent(new ValueEventListener() {
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                boolean userFound = false;
                 for (DataSnapshot userSnapshot : snapshot.getChildren()) {
                     String storedEmail = userSnapshot.child("email").getValue(String.class);
                     String storedPassword = userSnapshot.child("password").getValue(String.class);
 
-                    if (storedEmail != null && storedEmail.equals(email) &&
-                            storedPassword != null && storedPassword.equals(password)) {
-                        userFound = true;
-                        authenticateUser(email, password);
-                        break;
+                    if (storedEmail != null && storedPassword != null &&
+                            storedEmail.equals(email) && storedPassword.equals(password)) {
+
+                        // Save user ID to SharedPreferences
+                        String userId = userSnapshot.getKey();
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putString("userId", userId);
+                        editor.apply();
+
+                        // Redirect to MainActivity
+                        redirectToMainActivity();
+                        return;
                     }
                 }
-                if (!userFound) {
-                    Toast.makeText(UserLogin.this, "Invalid email or password", Toast.LENGTH_SHORT).show();
-                }
+                // If no matching user is found
+                Toast.makeText(UserLogin.this, "Authentication failed. Invalid email or password.", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -105,6 +119,13 @@ public class UserLogin extends AppCompatActivity {
                 Toast.makeText(UserLogin.this, "Database error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    private void redirectToMainActivity() {
+        Intent intent = new Intent(UserLogin.this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK); // Clears backstack
+        startActivity(intent);
+        finish();
     }
 
     private void authenticateUser(String email, String password) {

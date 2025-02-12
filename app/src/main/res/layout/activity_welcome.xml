@@ -9,13 +9,13 @@
 
     <TextView
         android:id="@+id/silvercloud"
-        android:layout_width="226dp"
-        android:layout_height="87dp"
+        android:layout_width="296dp"
+        android:layout_height="164dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Welcome To Silver Cloud"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="34sp"
+        android:textSize="38dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"

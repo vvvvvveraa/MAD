@@ -2,6 +2,8 @@ package com.sp.silvercloud;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.content.SharedPreferences;
+import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
