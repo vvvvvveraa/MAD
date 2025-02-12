@@ -1,12 +1,18 @@
-package com.sp.project13;
+package com.sp.silvercloud;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button; // Ensure to import Button
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser ;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,12 +21,15 @@ import android.view.ViewGroup;
  */
 public class Biz_ProfileFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private FirebaseAuth auth;
+    private Button button;
+    private FirebaseUser  user;
+
+    // Parameter arguments
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
+    // Parameters
     private String mParam1;
     private String mParam2;
 
@@ -36,7 +45,6 @@ public class Biz_ProfileFragment extends Fragment {
      * @param param2 Parameter 2.
      * @return A new instance of fragment Biz_ProfileFragment.
      */
-    // TODO: Rename and change types and number of parameters
     public static Biz_ProfileFragment newInstance(String param1, String param2) {
         Biz_ProfileFragment fragment = new Biz_ProfileFragment();
         Bundle args = new Bundle();
@@ -49,6 +57,7 @@ public class Biz_ProfileFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -56,9 +65,38 @@ public class Biz_ProfileFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_biz__profile, container, false);
+        View view = inflater.inflate(R.layout.fragment_biz__profile, container, false);
+
+        // Initialize Firebase Auth
+        auth = FirebaseAuth.getInstance();
+        user = auth.getCurrentUser ();
+
+        // Check if user is logged in
+        if (user == null) {
+            // If not logged in, redirect to Welcome activity
+            Intent intent = new Intent(getActivity(), Welcome.class);
+            startActivity(intent);
+            // Optionally, you can call getActivity().finish() if you want to close this fragment
+            // getActivity().finish();
+        }
+
+        // Initialize button
+        button = view.findViewById(R.id.biz_logout);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Sign out the user
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(getActivity(), Welcome.class);
+                startActivity(intent);
+                // Optionally, you can call getActivity().finish() if you want to close this fragment
+                // getActivity().finish();
+            }
+        });
+
+        return view;
     }
 }

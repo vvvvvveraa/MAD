@@ -3456,6 +3456,7 @@ id dragRight
 id dragStart
 id dragUp
 id drawer_layout
+id drawer_layout_user
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3503,6 +3504,7 @@ id floating
 id forever
 id formCard
 id fragment_container_view_tag
+id fragment_home
 id frame_layout
 id frost
 id fullscreen_header
@@ -3561,7 +3563,6 @@ id jumpToStart
 id labeled
 id layout
 id left
-id leftButton
 id leftToRight
 id legacy
 id light
@@ -3650,7 +3651,10 @@ id nameLabel
 id nav_controller_view_tag
 id nav_home
 id nav_host_fragment_container
+id nav_indoor
+id nav_outdoor
 id nav_view
+id nav_view_user
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3861,6 +3865,7 @@ id title_template
 id title_text
 id toggle
 id toolbar
+id toolbar_user
 id top
 id topPanel
 id touch_outside
@@ -4055,10 +4060,12 @@ layout fragment_biz__profile
 layout fragment_event_details
 layout fragment_home
 layout fragment_indoor__home
+layout fragment_indoor__home_user
 layout fragment_link
 layout fragment_my_events
 layout fragment_new_act
 layout fragment_outdoor_home
+layout fragment_outdoor_home_user
 layout fragment_profile
 layout fragment_rewards
 layout ime_base_split_test_activity
@@ -4131,6 +4138,7 @@ layout support_simple_spinner_dropdown_item
 layout test_cardview
 menu bottom_nav_menu
 menu nav_filter
+menu nav_filter_user
 menu user_bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_foreground
@@ -4216,6 +4224,8 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string filter_indoor
+string filter_outdoor
 string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
@@ -4328,6 +4338,8 @@ string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string nav_close
+string nav_open
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -4635,6 +4647,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style DialogAnimation
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Animation
 style MaterialAlertDialog_Material3_Body_Text

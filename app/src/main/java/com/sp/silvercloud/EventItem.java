@@ -19,6 +19,7 @@ public class EventItem implements Serializable {  // Make sure it implements Ser
     private String newDescription;
     private String title;
     private String time;  // Add a field for time, for example "4pm to 6pm"
+    private String category; // Indoor or Outdoor
 
     // Default constructor for Firebase
     public EventItem() {
@@ -36,7 +37,7 @@ public class EventItem implements Serializable {  // Make sure it implements Ser
         this.newDescription = newDescription;
         this.title = title;
         this.time = time;
-
+        this.category = category;
     }
 
     // Getters and Setters
@@ -111,6 +112,13 @@ public class EventItem implements Serializable {  // Make sure it implements Ser
     public void setTime(String time) {
         this.time = time;
     }
+    public String getCategory() {
+        return category;
+    }
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
 
     // Method to parse the event time (e.g., "4pm to 6pm") and return the start and end time in milliseconds
     // Method to parse the event time (e.g., "10 am" or "3 pm") and return the start and end time in milliseconds

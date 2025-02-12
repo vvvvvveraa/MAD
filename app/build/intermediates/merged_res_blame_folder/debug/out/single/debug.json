@@ -16,6 +16,10 @@
         "source": "com.sp.silvercloud.app-main-7:/mipmap-mdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_indoor__home_user.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_indoor__home_user.xml"
+    },
+    {
         "merged": "com.sp.silvercloud.app-merged_res-5:/layout_eventitem_card.xml.flat",
         "source": "com.sp.silvercloud.app-main-7:/layout/eventitem_card.xml"
     },
@@ -26,6 +30,14 @@
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_outdoor_home.xml.flat",
         "source": "com.sp.silvercloud.app-main-7:/layout/fragment_outdoor_home.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/menu_nav_filter_user.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/menu/nav_filter_user.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_outdoor_home_user.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_outdoor_home_user.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_healthhub_logo.png.flat",
@@ -264,12 +276,12 @@
         "source": "com.sp.silvercloud.app-main-7:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_event_details.xml.flat",
-        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_event_details.xml"
-    },
-    {
         "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_profile.xml.flat",
         "source": "com.sp.silvercloud.app-main-7:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_event_details.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_event_details.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/mipmap-hdpi_ic_launcher_foreground.webp.flat",

@@ -7,7 +7,13 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="back_button_description">Go back</string>
+
+    <string name="nav_open">Open Navigation Drawer</string>
+    <string name="nav_close">Close Navigation Drawer</string>
+    >>>>>>> 95a2e8d4463b10c2138472fc94428160bc8aa671
     <string name="event_image">Event Image</string>
+    <string name="filter_indoor">Indoor</string>
+    <string name="filter_outdoor">Outdoor</string>
     <string-array name="interest_list">
         <item>Indoor</item>
         <item>Outdoor</item>

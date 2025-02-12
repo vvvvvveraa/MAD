@@ -1,11 +1,11 @@
 [
     {
-        "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/activity_user_login.xml",
-        "source": "com.sp.silvercloud.app-main-7:/layout/activity_user_login.xml"
-    },
-    {
         "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/fragment_profile.xml",
         "source": "com.sp.silvercloud.app-main-7:/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/activity_user_login.xml",
+        "source": "com.sp.silvercloud.app-main-7:/layout/activity_user_login.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/fragment_outdoor_home.xml",
@@ -60,6 +60,10 @@
         "source": "com.sp.silvercloud.app-main-7:/layout/activity_organizer_login.xml"
     },
     {
+        "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/fragment_outdoor_home_user.xml",
+        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_outdoor_home_user.xml"
+    },
+    {
         "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/activity_biz_current.xml",
         "source": "com.sp.silvercloud.app-main-7:/layout/activity_biz_current.xml"
     },
@@ -72,12 +76,12 @@
         "source": "com.sp.silvercloud.app-main-7:/layout/activity_main_organiser.xml"
     },
     {
-        "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/fragment_link.xml",
-        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_link.xml"
-    },
-    {
         "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/fragment_event_details.xml",
         "source": "com.sp.silvercloud.app-main-7:/layout/fragment_event_details.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/fragment_link.xml",
+        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_link.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/item.xml",
@@ -100,12 +104,12 @@
         "source": "com.sp.silvercloud.app-main-7:/layout/activity_organizer_sign_up.xml"
     },
     {
-        "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/activity_listactivity.xml",
-        "source": "com.sp.silvercloud.app-main-7:/layout/activity_listactivity.xml"
-    },
-    {
         "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/eventitem_card.xml",
         "source": "com.sp.silvercloud.app-main-7:/layout/eventitem_card.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/activity_listactivity.xml",
+        "source": "com.sp.silvercloud.app-main-7:/layout/activity_listactivity.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/fragment_my_events.xml",
@@ -118,5 +122,9 @@
     {
         "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/fragment_biz__home.xml",
         "source": "com.sp.silvercloud.app-main-7:/layout/fragment_biz__home.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-mergeDebugResources-4:/layout/fragment_indoor__home_user.xml",
+        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_indoor__home_user.xml"
     }
 ]

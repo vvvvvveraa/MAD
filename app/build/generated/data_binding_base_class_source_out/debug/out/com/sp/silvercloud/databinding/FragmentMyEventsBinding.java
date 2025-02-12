@@ -4,7 +4,6 @@ package com.sp.silvercloud.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
@@ -22,19 +21,14 @@ public final class FragmentMyEventsBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageButton leftButton;
-
-  @NonNull
   public final RecyclerView recyclerView;
 
   @NonNull
   public final SearchView searchView;
 
   private FragmentMyEventsBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageButton leftButton, @NonNull RecyclerView recyclerView,
-      @NonNull SearchView searchView) {
+      @NonNull RecyclerView recyclerView, @NonNull SearchView searchView) {
     this.rootView = rootView;
-    this.leftButton = leftButton;
     this.recyclerView = recyclerView;
     this.searchView = searchView;
   }
@@ -66,12 +60,6 @@ public final class FragmentMyEventsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.leftButton;
-      ImageButton leftButton = ViewBindings.findChildViewById(rootView, id);
-      if (leftButton == null) {
-        break missingId;
-      }
-
       id = R.id.recyclerView;
       RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
       if (recyclerView == null) {
@@ -84,8 +72,7 @@ public final class FragmentMyEventsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentMyEventsBinding((ConstraintLayout) rootView, leftButton, recyclerView,
-          searchView);
+      return new FragmentMyEventsBinding((ConstraintLayout) rootView, recyclerView, searchView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

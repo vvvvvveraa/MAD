@@ -8,6 +8,7 @@
         android:minSdkVersion="27"
         android:targetSdkVersion="34" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -57,6 +58,15 @@
             android:name="com.sp.silvercloud.ActivityList"
             android:exported="false" />
         <activity
+            android:name="com.sp.silvercloud.Submit_newAct"
+            android:exported="false" />
+        <activity
+            android:name="com.sp.silvercloud.biz_currentAct"
+            android:exported="false" />
+        <activity
+            android:name="com.sp.silvercloud.UserMain"
+            android:exported="false" />
+        <activity
             android:name="com.sp.silvercloud.MainActivity"
             android:exported="true" >
         </activity>
@@ -88,9 +98,6 @@
                 android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
@@ -101,6 +108,9 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"

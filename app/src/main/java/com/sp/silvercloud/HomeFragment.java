@@ -5,9 +5,16 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.view.MenuItem;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,14 +30,33 @@ import java.util.List;
 import androidx.appcompat.widget.SearchView;
 import android.text.TextUtils;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+import com.google.android.material.navigation.NavigationView;
+import com.sp.silvercloud.databinding.ActivityMainOrganiserBinding;
 
-public class HomeFragment extends Fragment implements EventItemAdapter.OnItemClickListener {
 
+
+
+public class HomeFragment extends Fragment implements EventItemAdapter.OnItemClickListener  {
+    private ImageButton filterButton;
+    private DrawerLayout drawerLayout; // for the navigation drawer
+    protected NavigationView navigationView;
+    private ActivityMainOrganiserBinding binding;
     private RecyclerView recyclerView;
     private EventItemAdapter adapter;
+    private EventItemAdapter eventItemAdapter;
     private List<EventItem> eventItemList;
+    private List<EventItem> eventItemsList;
     private List<EventItem> filteredEventList;  // New list to store filtered data
+    private List<EventItem> eventList;
     private DatabaseReference databaseReference;
+    private String userInterest = "All"; // Default filter
+    private GestureDetector gestureDetector;
+    private GestureListener gestureListener;
+
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -40,15 +66,36 @@ public class HomeFragment extends Fragment implements EventItemAdapter.OnItemCli
 
         // Initialize RecyclerView
         recyclerView = rootView.findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
+        if (recyclerView == null) {
+            Log.e("HomeFragment", "RecyclerView is NULL! Check fragment_home.xml.");
+        } else {
+            recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        }
+
+        eventItemsList = new ArrayList<>();
+        // Initialize eventItemAdapter and list for side nav panel
+        eventItemAdapter = new EventItemAdapter(getContext(), eventItemsList, (EventItemAdapter.OnItemClickListener) getActivity());
+        recyclerView.setAdapter(eventItemAdapter);
+
+        // Load default events (Outdoor initially)
+        loadEvents("Outdoor");
+
+
+
+
+
+        eventList = new ArrayList<>();
         eventItemList = new ArrayList<>();
         filteredEventList = new ArrayList<>(); // Initialize filtered list
+
+        // For filteredEventList, updates adapter
         adapter = new EventItemAdapter(getContext(), filteredEventList, this);
         recyclerView.setAdapter(adapter);
 
         // Initialize Firebase Realtime Database reference
         databaseReference = FirebaseDatabase.getInstance().getReference("events");
+
 
         // Fetch data from Firebase and update RecyclerView
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -91,6 +138,7 @@ public class HomeFragment extends Fragment implements EventItemAdapter.OnItemCli
         return rootView;
     }
 
+
     // Filter the events based on the search query
     private void filterEvents(String query) {
         filteredEventList.clear();
@@ -128,5 +176,40 @@ public class HomeFragment extends Fragment implements EventItemAdapter.OnItemCli
             Log.w("HomeFragment", "Clicked item is null");
         }
     }
+
+    public void loadEvents(String interest) {
+        databaseReference = FirebaseDatabase.getInstance().getReference("events").child("interest");
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                eventItemsList.clear();
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    EventItem event = snapshot.getValue(EventItem.class);
+
+                    if (event == null) {
+                        Log.e("Firebase", "Null event found, skipping...");
+                        continue;
+                    }
+
+                    String eventInterest = event.getInterest();
+                    if (eventInterest == null) {
+                        Log.e("Firebase", "Event missing 'interest' field, skipping...");
+                        continue;
+                    }
+
+                    if (eventInterest.equalsIgnoreCase(interest)) {
+                        eventItemsList.add(event);
+                    }
+                }
+                eventItemAdapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.e("Firebase", "Error loading data", databaseError.toException());
+            }
+        });
+    }
+
 }
 

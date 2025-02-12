@@ -4,7 +4,6 @@ package com.sp.silvercloud.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
@@ -22,7 +21,7 @@ public final class FragmentHomeBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageButton leftButton;
+  public final ConstraintLayout fragmentHome;
 
   @NonNull
   public final RecyclerView recyclerView;
@@ -30,10 +29,11 @@ public final class FragmentHomeBinding implements ViewBinding {
   @NonNull
   public final SearchView searchView;
 
-  private FragmentHomeBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton leftButton,
-      @NonNull RecyclerView recyclerView, @NonNull SearchView searchView) {
+  private FragmentHomeBinding(@NonNull ConstraintLayout rootView,
+      @NonNull ConstraintLayout fragmentHome, @NonNull RecyclerView recyclerView,
+      @NonNull SearchView searchView) {
     this.rootView = rootView;
-    this.leftButton = leftButton;
+    this.fragmentHome = fragmentHome;
     this.recyclerView = recyclerView;
     this.searchView = searchView;
   }
@@ -65,11 +65,7 @@ public final class FragmentHomeBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.leftButton;
-      ImageButton leftButton = ViewBindings.findChildViewById(rootView, id);
-      if (leftButton == null) {
-        break missingId;
-      }
+      ConstraintLayout fragmentHome = (ConstraintLayout) rootView;
 
       id = R.id.recyclerView;
       RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
@@ -83,7 +79,7 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentHomeBinding((ConstraintLayout) rootView, leftButton, recyclerView,
+      return new FragmentHomeBinding((ConstraintLayout) rootView, fragmentHome, recyclerView,
           searchView);
     }
     String missingId = rootView.getResources().getResourceName(id);
