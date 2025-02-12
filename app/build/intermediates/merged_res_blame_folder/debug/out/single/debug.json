@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_organiser_dropdown_interest.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/organiser_dropdown_interest.xml"
+    },
+    {
         "merged": "com.sp.silvercloud.app-merged_res-5:/menu_bottom_nav_menu.xml.flat",
         "source": "com.sp.silvercloud.app-main-7:/menu/bottom_nav_menu.xml"
     },
@@ -20,8 +24,16 @@
         "source": "com.sp.silvercloud.app-main-7:/layout/activity_organizer_login.xml"
     },
     {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_outdoor_home.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_outdoor_home.xml"
+    },
+    {
         "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_healthhub_logo.png.flat",
         "source": "com.sp.silvercloud.app-main-7:/drawable/healthhub_logo.png"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_indoor__home.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_indoor__home.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_rewards_detail.png.flat",
@@ -34,6 +46,10 @@
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "com.sp.silvercloud.app-main-7:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_baseline_home_24.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/drawable/baseline_home_24.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_home_bottomnav.xml.flat",
@@ -58,6 +74,18 @@
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/layout_activity_listactivity.xml.flat",
         "source": "com.sp.silvercloud.app-main-7:/layout/activity_listactivity.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_activity_main_organiser.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/activity_main_organiser.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_item_event.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/item_event.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_sky.png.flat",
+        "source": "com.sp.silvercloud.app-main-7:/drawable/sky.png"
     },
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/layout_test_cardview.xml.flat",
@@ -92,6 +120,14 @@
         "source": "com.sp.silvercloud.app-main-7:/layout/item.xml"
     },
     {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/anim_slide_in.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/anim/slide_in.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_baseline_add_24.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/drawable/baseline_add_24.xml"
+    },
+    {
         "merged": "com.sp.silvercloud.app-merged_res-5:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "com.sp.silvercloud.app-main-7:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
@@ -112,6 +148,14 @@
         "source": "com.sp.silvercloud.app-main-7:/layout/activity_main.xml"
     },
     {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_biz__profile.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_biz__profile.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_new_act.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_new_act.xml"
+    },
+    {
         "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_link_bottomnav.xml.flat",
         "source": "com.sp.silvercloud.app-main-7:/drawable/link_bottomnav.xml"
     },
@@ -124,8 +168,20 @@
         "source": "com.sp.silvercloud.app-main-7:/layout/activity_user_sign_up.xml"
     },
     {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_baseline_add_a_photo_24.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/drawable/baseline_add_a_photo_24.xml"
+    },
+    {
         "merged": "com.sp.silvercloud.app-merged_res-5:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
         "source": "com.sp.silvercloud.app-main-7:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_outline_done_24.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/drawable/outline_done_24.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_biz__home.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/fragment_biz__home.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/layout_activity_organizer_sign_up.xml.flat",
@@ -148,16 +204,40 @@
         "source": "com.sp.silvercloud.app-main-7:/drawable/ic_launcher_background.xml"
     },
     {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_activity_submit_new.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/activity_submit_new.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_activity_biz_current.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/activity_biz_current.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_baseline_calendar_month_24.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/drawable/baseline_calendar_month_24.xml"
+    },
+    {
         "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_backbutton.xml.flat",
         "source": "com.sp.silvercloud.app-main-7:/drawable/backbutton.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_baseline_arrow_back_24.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/drawable/baseline_arrow_back_24.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_green_check.jpg.flat",
         "source": "com.sp.silvercloud.app-main-7:/drawable/green_check.jpg"
     },
     {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/anim_slide_out.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/anim/slide_out.xml"
+    },
+    {
         "merged": "com.sp.silvercloud.app-merged_res-5:/layout_activity_welcome.xml.flat",
         "source": "com.sp.silvercloud.app-main-7:/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/menu_nav_filter.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/menu/nav_filter.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_lifesg_logo.png.flat",
@@ -178,6 +258,10 @@
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_rewards_bottomnav.xml.flat",
         "source": "com.sp.silvercloud.app-main-7:/drawable/rewards_bottomnav.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/drawable/ic_launcher_foreground.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/layout_fragment_event_details.xml.flat",
@@ -212,6 +296,10 @@
         "source": "com.sp.silvercloud.app-main-7:/layout/activity_eventsuccess.xml"
     },
     {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/layout_nav_header.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/layout/nav_header.xml"
+    },
+    {
         "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_voucher_icon.png.flat",
         "source": "com.sp.silvercloud.app-main-7:/drawable/voucher_icon.png"
     },
@@ -234,6 +322,14 @@
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_myenv_logo.png.flat",
         "source": "com.sp.silvercloud.app-main-7:/drawable/myenv_logo.png"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/drawable_baseline_person_24.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/drawable/baseline_person_24.xml"
+    },
+    {
+        "merged": "com.sp.silvercloud.app-merged_res-5:/menu_user_bottom_nav_menu.xml.flat",
+        "source": "com.sp.silvercloud.app-main-7:/menu/user_bottom_nav_menu.xml"
     },
     {
         "merged": "com.sp.silvercloud.app-merged_res-5:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
