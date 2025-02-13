@@ -9,6 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <list default="true" id="bc714920-4bc0-4619-90fd-9456fe3957e5" name="Changes" comment="">
 =======
@@ -609,12 +610,15 @@
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
 >>>>>>> 95a2e8d4463b10c2138472fc94428160bc8aa671
     </list>
+=======
+    <list default="true" id="e1dfd9f6-265f-47d3-93a2-1467d0a3d901" name="Changes" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VO557LF6MVIZ7L7P]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\veral\.android\avd\Nexus_5X_API_27.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -680,7 +684,10 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -689,6 +696,7 @@
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+<<<<<<< Updated upstream
     &quot;last_opened_file_path&quot;: &quot;C:/MAD/AndroidStudioProjects/1025hr&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
 =======
@@ -703,6 +711,10 @@
     "last_opened_file_path": "C:/Users/veral/AndroidStudioProjects/main/MAD/app/src/main/res/menu",
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
 >>>>>>> 95a2e8d4463b10c2138472fc94428160bc8aa671
+=======
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/veral/AndroidStudioProjects/main/MAD/app/src/main/res/menu&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
+>>>>>>> Stashed changes
   }
 }</component>
   <component name="RecentsManager">

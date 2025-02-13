@@ -89,7 +89,7 @@ public class OrganizerLogin extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             // Navigate to SecondActivity
-            String email, code, password;
+            String email, password;
             email = String.valueOf(emailInput.getText());
             password = String.valueOf(passwordInput.getText());
 

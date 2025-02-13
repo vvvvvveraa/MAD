@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #Thu Feb 13 04:22:57 SGT 2025
 base.0=C\:\\MAD\\AndroidStudioProjects\\MAD\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\MAD\\AndroidStudioProjects\\MAD\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
@@ -5,6 +6,15 @@ base.2=C\:\\MAD\\AndroidStudioProjects\\MAD\\app\\build\\intermediates\\dex\\deb
 base.3=C\:\\MAD\\AndroidStudioProjects\\MAD\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
 base.4=C\:\\MAD\\AndroidStudioProjects\\MAD\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 base.5=C\:\\MAD\\AndroidStudioProjects\\MAD\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+=======
+#Thu Feb 13 09:46:38 SGT 2025
+base.0=C\:\\Users\\veral\\AndroidStudioProjects\\main\\MAD\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\veral\\AndroidStudioProjects\\main\\MAD\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\veral\\AndroidStudioProjects\\main\\MAD\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.3=C\:\\Users\\veral\\AndroidStudioProjects\\main\\MAD\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.4=C\:\\Users\\veral\\AndroidStudioProjects\\main\\MAD\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.5=C\:\\Users\\veral\\AndroidStudioProjects\\main\\MAD\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
+>>>>>>> Stashed changes
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=3/classes.dex

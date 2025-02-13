@@ -406,6 +406,10 @@ com.sp.silvercloud:style/ShapeAppearanceOverlay.Material3.Chip = 0x7f150182
 com.sp.silvercloud:styleable/State = 0x7f160094
 com.sp.silvercloud:style/ShapeAppearance.MaterialComponents.Badge = 0x7f15017c
 com.sp.silvercloud:style/ShapeAppearance.MaterialComponents = 0x7f15017b
+<<<<<<< Updated upstream
+=======
+com.sp.silvercloud:style/ShapeAppearance.Material3.Tooltip = 0x7f15017a
+>>>>>>> Stashed changes
 com.sp.silvercloud:style/ShapeAppearance.Material3.SmallComponent = 0x7f150179
 com.sp.silvercloud:style/ShapeAppearance.Material3.NavigationBarView.ActiveIndicator = 0x7f150178
 com.sp.silvercloud:style/ShapeAppearance.Material3.LargeComponent = 0x7f150176
@@ -608,6 +612,7 @@ com.sp.silvercloud:style/Base.CardView = 0x7f150010
 com.sp.silvercloud:style/Animation.Design.BottomSheetDialog = 0x7f150005
 com.sp.silvercloud:style/AlertDialog.AppCompat.Light = 0x7f150001
 com.sp.silvercloud:style/AlertDialog.AppCompat = 0x7f150000
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/title_notifications = 0x7f1400d2
 com.sp.silvercloud:string/title_home = 0x7f1400d1
 com.sp.silvercloud:style/RtlOverlay.Widget.AppCompat.Search.DropDown = 0x7f15014e
@@ -682,6 +687,81 @@ com.sp.silvercloud:style/ThemeOverlay.Material3.Button = 0x7f15028d
 com.sp.silvercloud:string/gcm_defaultSenderId = 0x7f140051
 com.sp.silvercloud:string/firebase_database_url = 0x7f140050
 com.sp.silvercloud:string/filter_indoor = 0x7f14004e
+=======
+com.sp.silvercloud:string/title_notifications = 0x7f1400d0
+com.sp.silvercloud:string/title_home = 0x7f1400cf
+com.sp.silvercloud:style/RtlOverlay.Widget.AppCompat.Search.DropDown = 0x7f15014e
+com.sp.silvercloud:string/title_activity_user_home = 0x7f1400cd
+com.sp.silvercloud:string/status_bar_notification_info_overflow = 0x7f1400cc
+com.sp.silvercloud:string/searchview_navigation_content_description = 0x7f1400c9
+com.sp.silvercloud:string/searchview_clear_text_content_description = 0x7f1400c8
+com.sp.silvercloud:string/searchbar_scrolling_view_behavior = 0x7f1400c7
+com.sp.silvercloud:string/path_password_eye_mask_strike_through = 0x7f1400c2
+com.sp.silvercloud:string/password_toggle_content_description = 0x7f1400c0
+com.sp.silvercloud:string/nav_open = 0x7f1400bf
+com.sp.silvercloud:string/nav_app_bar_open_drawer_description = 0x7f1400bd
+com.sp.silvercloud:string/nav_app_bar_navigate_up_description = 0x7f1400bc
+com.sp.silvercloud:string/mtrl_timepicker_confirm = 0x7f1400bb
+com.sp.silvercloud:string/mtrl_switch_thumb_path_name = 0x7f1400b5
+com.sp.silvercloud:string/mtrl_switch_thumb_group_name = 0x7f1400b2
+com.sp.silvercloud:string/mtrl_picker_toggle_to_year_selection = 0x7f1400b1
+com.sp.silvercloud:string/mtrl_picker_toggle_to_text_input_mode = 0x7f1400b0
+com.sp.silvercloud:string/mtrl_picker_toggle_to_day_selection = 0x7f1400af
+com.sp.silvercloud:style/ThemeOverlay.MaterialComponents.Dark = 0x7f1502ce
+com.sp.silvercloud:style/TextAppearance.Compat.Notification.Line2 = 0x7f1501c6
+com.sp.silvercloud:style/Animation.Material3.BottomSheetDialog = 0x7f150006
+com.sp.silvercloud:string/mtrl_picker_text_input_year_abbr = 0x7f1400ac
+com.sp.silvercloud:string/mtrl_picker_text_input_month_abbr = 0x7f1400ab
+com.sp.silvercloud:string/mtrl_picker_text_input_day_abbr = 0x7f1400aa
+com.sp.silvercloud:string/mtrl_picker_text_input_date_hint = 0x7f1400a7
+com.sp.silvercloud:string/mtrl_picker_save = 0x7f1400a5
+com.sp.silvercloud:style/TextAppearance.Material3.MaterialTimePicker.Title = 0x7f1501f1
+com.sp.silvercloud:string/mtrl_picker_range_header_selected = 0x7f1400a2
+com.sp.silvercloud:string/mtrl_picker_range_header_only_start_selected = 0x7f1400a1
+com.sp.silvercloud:style/Widget.Material3.DrawerLayout = 0x7f150383
+com.sp.silvercloud:string/mtrl_picker_range_header_only_end_selected = 0x7f1400a0
+com.sp.silvercloud:string/mtrl_picker_navigate_to_current_year_description = 0x7f14009d
+com.sp.silvercloud:string/mtrl_picker_end_date_description = 0x7f140098
+com.sp.silvercloud:string/mtrl_picker_date_header_unselected = 0x7f140096
+com.sp.silvercloud:string/mtrl_picker_date_header_title = 0x7f140095
+com.sp.silvercloud:string/mtrl_picker_confirm = 0x7f140093
+com.sp.silvercloud:string/mtrl_picker_cancel = 0x7f140092
+com.sp.silvercloud:style/Base.Theme.MaterialComponents.Light.DialogWhenLarge = 0x7f150077
+com.sp.silvercloud:string/mtrl_picker_announce_current_selection_none = 0x7f140091
+com.sp.silvercloud:style/Widget.MaterialComponents.TimePicker.Display = 0x7f15045d
+com.sp.silvercloud:string/mtrl_picker_a11y_prev_month = 0x7f14008e
+com.sp.silvercloud:string/mtrl_picker_a11y_next_month = 0x7f14008d
+com.sp.silvercloud:string/mtrl_exceed_max_badge_number_suffix = 0x7f14008c
+com.sp.silvercloud:string/mtrl_checkbox_state_description_indeterminate = 0x7f140088
+com.sp.silvercloud:string/mtrl_checkbox_button_path_group_name = 0x7f140084
+com.sp.silvercloud:style/Widget.AppCompat.ListMenuView = 0x7f15031a
+com.sp.silvercloud:string/mtrl_checkbox_button_icon_path_checked = 0x7f14007f
+com.sp.silvercloud:string/material_timepicker_text_input_mode_description = 0x7f14007d
+com.sp.silvercloud:string/material_timepicker_select_time = 0x7f14007c
+com.sp.silvercloud:string/material_timepicker_pm = 0x7f14007b
+com.sp.silvercloud:style/Widget.Material3.CollapsingToolbar.Medium = 0x7f15037e
+com.sp.silvercloud:string/material_timepicker_minute = 0x7f14007a
+com.sp.silvercloud:string/material_timepicker_hour = 0x7f140079
+com.sp.silvercloud:string/material_timepicker_clock_mode_description = 0x7f140078
+com.sp.silvercloud:style/Theme.MaterialComponents.DayNight.Dialog = 0x7f150250
+com.sp.silvercloud:string/material_motion_easing_decelerated = 0x7f140070
+com.sp.silvercloud:string/material_motion_easing_accelerated = 0x7f14006f
+com.sp.silvercloud:string/material_clock_display_divider = 0x7f140068
+com.sp.silvercloud:string/m3_sys_motion_easing_standard_decelerate = 0x7f140067
+com.sp.silvercloud:style/Base.TextAppearance.AppCompat.Small.Inverse = 0x7f15002c
+com.sp.silvercloud:string/m3_sys_motion_easing_standard = 0x7f140065
+com.sp.silvercloud:string/m3_sys_motion_easing_linear = 0x7f140064
+com.sp.silvercloud:string/m3_sys_motion_easing_legacy_decelerate = 0x7f140063
+com.sp.silvercloud:string/m3_sys_motion_easing_legacy_accelerate = 0x7f140062
+com.sp.silvercloud:string/m3_sys_motion_easing_emphasized = 0x7f14005d
+com.sp.silvercloud:string/m3_ref_typeface_plain_medium = 0x7f14005b
+com.sp.silvercloud:string/hello_blank_fragment = 0x7f140054
+com.sp.silvercloud:string/google_app_id = 0x7f140051
+com.sp.silvercloud:string/google_api_key = 0x7f140050
+com.sp.silvercloud:style/ThemeOverlay.Material3.Button = 0x7f15028d
+com.sp.silvercloud:string/gcm_defaultSenderId = 0x7f14004f
+com.sp.silvercloud:string/firebase_database_url = 0x7f14004e
+>>>>>>> Stashed changes
 com.sp.silvercloud:string/fallback_menu_item_share_link = 0x7f14004d
 com.sp.silvercloud:string/fab_transformation_scrim_behavior = 0x7f140049
 com.sp.silvercloud:string/common_signin_button_text = 0x7f140042
@@ -689,7 +769,11 @@ com.sp.silvercloud:styleable/TextAppearance = 0x7f16009c
 com.sp.silvercloud:string/common_open_on_phone = 0x7f140041
 com.sp.silvercloud:string/common_google_play_services_updating_text = 0x7f14003f
 com.sp.silvercloud:string/common_google_play_services_unknown_issue = 0x7f14003a
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/mtrl_switch_thumb_path_pressed = 0x7f1400b8
+=======
+com.sp.silvercloud:string/mtrl_switch_thumb_path_pressed = 0x7f1400b6
+>>>>>>> Stashed changes
 com.sp.silvercloud:string/common_google_play_services_notification_ticker = 0x7f140039
 com.sp.silvercloud:string/common_google_play_services_install_title = 0x7f140037
 com.sp.silvercloud:string/common_google_play_services_install_text = 0x7f140036
@@ -708,7 +792,11 @@ com.sp.silvercloud:string/abc_search_hint = 0x7f140012
 com.sp.silvercloud:string/abc_prepend_shortcut_label = 0x7f140011
 com.sp.silvercloud:string/abc_menu_space_shortcut_label = 0x7f14000f
 com.sp.silvercloud:string/abc_menu_meta_shortcut_label = 0x7f14000d
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/mtrl_picker_start_date_description = 0x7f1400a8
+=======
+com.sp.silvercloud:string/mtrl_picker_start_date_description = 0x7f1400a6
+>>>>>>> Stashed changes
 com.sp.silvercloud:string/abc_menu_delete_shortcut_label = 0x7f14000a
 com.sp.silvercloud:style/Widget.Material3.Button.IconButton.Filled.Tonal = 0x7f150358
 com.sp.silvercloud:string/abc_action_menu_overflow_description = 0x7f140002
@@ -717,7 +805,11 @@ com.sp.silvercloud:plurals/mtrl_badge_content_description = 0x7f120000
 com.sp.silvercloud:navigation/mobile_navigation = 0x7f110000
 com.sp.silvercloud:style/ShapeAppearance.M3.Comp.NavigationDrawer.ActiveIndicator.Shape = 0x7f15015d
 com.sp.silvercloud:mipmap/ic_launcher_foreground = 0x7f100001
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/m3_sys_motion_easing_emphasized_path_data = 0x7f140062
+=======
+com.sp.silvercloud:string/m3_sys_motion_easing_emphasized_path_data = 0x7f140060
+>>>>>>> Stashed changes
 com.sp.silvercloud:mipmap/ic_launcher = 0x7f100000
 com.sp.silvercloud:style/ThemeOverlay.Material3.MaterialTimePicker.Display.TextInputEditText = 0x7f1502b3
 com.sp.silvercloud:style/Base.Widget.AppCompat.ProgressBar = 0x7f1500ed
@@ -843,7 +935,11 @@ com.sp.silvercloud:style/Widget.AppCompat.Spinner = 0x7f15032b
 com.sp.silvercloud:macro/m3_comp_outlined_autocomplete_text_field_input_text_type = 0x7f0e00a2
 com.sp.silvercloud:macro/m3_comp_outlined_autocomplete_text_field_caret_color = 0x7f0e00a1
 com.sp.silvercloud:style/Widget.AppCompat.Light.ActionBar.TabView.Inverse = 0x7f15030c
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/m3_ref_typeface_brand_regular = 0x7f14005c
+=======
+com.sp.silvercloud:string/m3_ref_typeface_brand_regular = 0x7f14005a
+>>>>>>> Stashed changes
 com.sp.silvercloud:macro/m3_comp_outlined_autocomplete_menu_container_color = 0x7f0e00a0
 com.sp.silvercloud:style/Base.Widget.MaterialComponents.AutoCompleteTextView = 0x7f150111
 com.sp.silvercloud:macro/m3_comp_navigation_rail_label_text_type = 0x7f0e009f
@@ -902,7 +998,11 @@ com.sp.silvercloud:style/Widget.Material3.TextInputEditText.FilledBox = 0x7f1503
 com.sp.silvercloud:macro/m3_comp_filled_button_label_text_type = 0x7f0e0045
 com.sp.silvercloud:macro/m3_comp_filled_button_label_text_color = 0x7f0e0044
 com.sp.silvercloud:macro/m3_comp_filled_autocomplete_menu_container_color = 0x7f0e0041
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/mtrl_timepicker_cancel = 0x7f1400bc
+=======
+com.sp.silvercloud:string/mtrl_timepicker_cancel = 0x7f1400ba
+>>>>>>> Stashed changes
 com.sp.silvercloud:macro/m3_comp_fab_tertiary_icon_color = 0x7f0e0040
 com.sp.silvercloud:xml/backup_rules = 0x7f170000
 com.sp.silvercloud:macro/m3_comp_fab_tertiary_container_color = 0x7f0e003f
@@ -925,7 +1025,11 @@ com.sp.silvercloud:macro/m3_comp_date_picker_modal_weekdays_label_text_type = 0x
 com.sp.silvercloud:macro/m3_comp_date_picker_modal_weekdays_label_text_color = 0x7f0e001d
 com.sp.silvercloud:macro/m3_comp_date_picker_modal_range_selection_month_subhead_type = 0x7f0e001c
 com.sp.silvercloud:macro/m3_comp_date_picker_modal_range_selection_month_subhead_color = 0x7f0e001b
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/title_dashboard = 0x7f1400d0
+=======
+com.sp.silvercloud:string/title_dashboard = 0x7f1400ce
+>>>>>>> Stashed changes
 com.sp.silvercloud:macro/m3_comp_date_picker_modal_header_headline_type = 0x7f0e0016
 com.sp.silvercloud:style/Base.V22.Theme.AppCompat = 0x7f1500ad
 com.sp.silvercloud:macro/m3_comp_date_picker_modal_date_today_container_outline_color = 0x7f0e0012
@@ -939,6 +1043,7 @@ com.sp.silvercloud:macro/m3_comp_checkbox_selected_disabled_container_color = 0x
 com.sp.silvercloud:macro/m3_comp_bottom_app_bar_container_color = 0x7f0e0005
 com.sp.silvercloud:macro/m3_comp_badge_large_label_text_color = 0x7f0e0003
 com.sp.silvercloud:macro/m3_comp_badge_color = 0x7f0e0002
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/select_dialog_multichoice_material = 0x7f0d0089
 com.sp.silvercloud:macro/m3_comp_outlined_card_disabled_outline_color = 0x7f0e00aa
 com.sp.silvercloud:layout/organiser_dropdown_interest = 0x7f0d0087
@@ -980,6 +1085,48 @@ com.sp.silvercloud:layout/fragment_rewards = 0x7f0d0048
 com.sp.silvercloud:layout/fragment_outdoor_home = 0x7f0d0045
 com.sp.silvercloud:layout/fragment_link = 0x7f0d0042
 com.sp.silvercloud:layout/fragment_indoor__home_user = 0x7f0d0041
+=======
+com.sp.silvercloud:layout/select_dialog_multichoice_material = 0x7f0d0087
+com.sp.silvercloud:macro/m3_comp_outlined_card_disabled_outline_color = 0x7f0e00aa
+com.sp.silvercloud:layout/organiser_dropdown_interest = 0x7f0d0085
+com.sp.silvercloud:layout/notification_template_part_time = 0x7f0d0084
+com.sp.silvercloud:style/Widget.Material3.Chip.Filter = 0x7f15036b
+com.sp.silvercloud:layout/notification_template_custom_big = 0x7f0d0081
+com.sp.silvercloud:layout/notification_action_tombstone = 0x7f0d0080
+com.sp.silvercloud:layout/notification_action = 0x7f0d007f
+com.sp.silvercloud:layout/mtrl_search_view = 0x7f0d007d
+com.sp.silvercloud:layout/mtrl_search_bar = 0x7f0d007c
+com.sp.silvercloud:layout/mtrl_picker_text_input_date_range = 0x7f0d007b
+com.sp.silvercloud:layout/mtrl_picker_header_fullscreen = 0x7f0d0076
+com.sp.silvercloud:layout/mtrl_picker_actions = 0x7f0d0072
+com.sp.silvercloud:layout/mtrl_navigation_rail_item = 0x7f0d0071
+com.sp.silvercloud:style/Widget.Material3.Slider.Label = 0x7f1503d2
+com.sp.silvercloud:layout/mtrl_calendar_vertical = 0x7f0d006d
+com.sp.silvercloud:layout/mtrl_calendar_months = 0x7f0d006c
+com.sp.silvercloud:layout/mtrl_calendar_month_navigation = 0x7f0d006b
+com.sp.silvercloud:layout/mtrl_calendar_month_labeled = 0x7f0d006a
+com.sp.silvercloud:layout/mtrl_calendar_horizontal = 0x7f0d0068
+com.sp.silvercloud:macro/m3_comp_outlined_text_field_label_text_color = 0x7f0e00c2
+com.sp.silvercloud:layout/mtrl_calendar_day = 0x7f0d0065
+com.sp.silvercloud:layout/mtrl_alert_select_dialog_singlechoice = 0x7f0d0063
+com.sp.silvercloud:layout/mtrl_alert_dialog_actions = 0x7f0d005f
+com.sp.silvercloud:layout/mtrl_alert_dialog = 0x7f0d005e
+com.sp.silvercloud:layout/material_timepicker_textinput_display = 0x7f0d005d
+com.sp.silvercloud:layout/material_time_chip = 0x7f0d0059
+com.sp.silvercloud:layout/material_clockface_textview = 0x7f0d0055
+com.sp.silvercloud:style/TextAppearance.Design.HelperText = 0x7f1501cd
+com.sp.silvercloud:layout/material_clock_period_toggle_land = 0x7f0d0054
+com.sp.silvercloud:layout/material_clock_display = 0x7f0d0051
+com.sp.silvercloud:style/Base.Widget.AppCompat.ListMenuView = 0x7f1500e5
+com.sp.silvercloud:layout/m3_side_sheet_dialog = 0x7f0d004f
+com.sp.silvercloud:layout/m3_auto_complete_simple_item = 0x7f0d004e
+com.sp.silvercloud:layout/m3_alert_dialog_actions = 0x7f0d004c
+com.sp.silvercloud:layout/item_event = 0x7f0d004a
+com.sp.silvercloud:layout/item = 0x7f0d0049
+com.sp.silvercloud:layout/fragment_rewards = 0x7f0d0046
+com.sp.silvercloud:layout/fragment_outdoor_home = 0x7f0d0044
+com.sp.silvercloud:layout/fragment_link = 0x7f0d0041
+>>>>>>> Stashed changes
 com.sp.silvercloud:layout/fragment_home = 0x7f0d003f
 com.sp.silvercloud:layout/fragment_event_details = 0x7f0d003e
 com.sp.silvercloud:layout/fragment_biz__profile = 0x7f0d003d
@@ -1004,7 +1151,11 @@ com.sp.silvercloud:layout/activity_organizer_sign_up = 0x7f0d0024
 com.sp.silvercloud:layout/activity_organizer_login = 0x7f0d0023
 com.sp.silvercloud:style/Base.ThemeOverlay.AppCompat.Light = 0x7f15007e
 com.sp.silvercloud:layout/activity_main_organiser = 0x7f0d0022
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/mtrl_picker_invalid_format = 0x7f14009b
+=======
+com.sp.silvercloud:string/mtrl_picker_invalid_format = 0x7f140099
+>>>>>>> Stashed changes
 com.sp.silvercloud:layout/activity_main = 0x7f0d0021
 com.sp.silvercloud:layout/activity_listactivity = 0x7f0d0020
 com.sp.silvercloud:layout/activity_list = 0x7f0d001f
@@ -1023,6 +1174,7 @@ com.sp.silvercloud:layout/abc_popup_menu_header_item_layout = 0x7f0d0012
 com.sp.silvercloud:layout/abc_list_menu_item_radio = 0x7f0d0011
 com.sp.silvercloud:layout/abc_alert_dialog_title_material = 0x7f0d000a
 com.sp.silvercloud:layout/abc_alert_dialog_material = 0x7f0d0009
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/mtrl_auto_complete_simple_item = 0x7f0d0066
 com.sp.silvercloud:layout/abc_alert_dialog_button_bar_material = 0x7f0d0008
 com.sp.silvercloud:layout/abc_activity_chooser_view_list_item = 0x7f0d0007
@@ -1032,6 +1184,17 @@ com.sp.silvercloud:layout/abc_action_mode_bar = 0x7f0d0004
 com.sp.silvercloud:layout/abc_action_menu_layout = 0x7f0d0003
 com.sp.silvercloud:interpolator/mtrl_fast_out_slow_in = 0x7f0c000f
 com.sp.silvercloud:string/mtrl_picker_toggle_to_calendar_input_mode = 0x7f1400b0
+=======
+com.sp.silvercloud:layout/mtrl_auto_complete_simple_item = 0x7f0d0064
+com.sp.silvercloud:layout/abc_alert_dialog_button_bar_material = 0x7f0d0008
+com.sp.silvercloud:layout/abc_activity_chooser_view_list_item = 0x7f0d0007
+com.sp.silvercloud:layout/abc_action_mode_close_item_material = 0x7f0d0005
+com.sp.silvercloud:layout/mtrl_picker_fullscreen = 0x7f0d0074
+com.sp.silvercloud:layout/abc_action_mode_bar = 0x7f0d0004
+com.sp.silvercloud:layout/abc_action_menu_layout = 0x7f0d0003
+com.sp.silvercloud:interpolator/mtrl_fast_out_slow_in = 0x7f0c000f
+com.sp.silvercloud:string/mtrl_picker_toggle_to_calendar_input_mode = 0x7f1400ae
+>>>>>>> Stashed changes
 com.sp.silvercloud:interpolator/mtrl_fast_out_linear_in = 0x7f0c000e
 com.sp.silvercloud:interpolator/m3_sys_motion_easing_standard_accelerate = 0x7f0c000c
 com.sp.silvercloud:interpolator/m3_sys_motion_easing_standard = 0x7f0c000b
@@ -1067,7 +1230,11 @@ com.sp.silvercloud:integer/mtrl_calendar_header_orientation = 0x7f0b0032
 com.sp.silvercloud:integer/mtrl_btn_anim_delay_ms = 0x7f0b0030
 com.sp.silvercloud:integer/mtrl_badge_max_character_count = 0x7f0b002f
 com.sp.silvercloud:integer/material_motion_path = 0x7f0b002e
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/material_motion_easing_emphasized = 0x7f140073
+=======
+com.sp.silvercloud:string/material_motion_easing_emphasized = 0x7f140071
+>>>>>>> Stashed changes
 com.sp.silvercloud:integer/material_motion_duration_short_2 = 0x7f0b002d
 com.sp.silvercloud:integer/material_motion_duration_long_1 = 0x7f0b0028
 com.sp.silvercloud:style/Base.V26.Theme.AppCompat = 0x7f1500b5
@@ -1095,6 +1262,7 @@ com.sp.silvercloud:integer/design_snackbar_text_max_lines = 0x7f0b0007
 com.sp.silvercloud:integer/config_tooltipAnimTime = 0x7f0b0006
 com.sp.silvercloud:integer/app_bar_elevation_anim_duration = 0x7f0b0002
 com.sp.silvercloud:integer/abc_config_activityDefaultDur = 0x7f0b0000
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/x_right = 0x7f0a0290
 com.sp.silvercloud:id/x_left = 0x7f0a028f
 com.sp.silvercloud:id/wrap_content = 0x7f0a028d
@@ -1456,6 +1624,366 @@ com.sp.silvercloud:macro/m3_comp_navigation_drawer_active_focus_icon_color = 0x7
 com.sp.silvercloud:id/easeIn = 0x7f0a00d0
 com.sp.silvercloud:macro/m3_comp_filled_text_field_input_text_type = 0x7f0e0050
 com.sp.silvercloud:id/dropdown_menu = 0x7f0a00cf
+=======
+com.sp.silvercloud:id/x_right = 0x7f0a028b
+com.sp.silvercloud:id/x_left = 0x7f0a028a
+com.sp.silvercloud:id/wrap_content = 0x7f0a0288
+com.sp.silvercloud:id/wide = 0x7f0a0283
+com.sp.silvercloud:id/west = 0x7f0a0282
+com.sp.silvercloud:style/Base.Theme.MaterialComponents.Light.Bridge = 0x7f15006f
+com.sp.silvercloud:id/visible_removing_fragment_view_tag = 0x7f0a0281
+com.sp.silvercloud:id/view_tree_view_model_store_owner = 0x7f0a027f
+com.sp.silvercloud:id/view_tree_on_back_pressed_dispatcher_owner = 0x7f0a027d
+com.sp.silvercloud:id/view_tree_lifecycle_owner = 0x7f0a027c
+com.sp.silvercloud:id/view_transition = 0x7f0a027b
+com.sp.silvercloud:id/view_offset_helper = 0x7f0a027a
+com.sp.silvercloud:id/user_button = 0x7f0a0277
+com.sp.silvercloud:id/userNameText = 0x7f0a0276
+com.sp.silvercloud:macro/m3_comp_time_picker_period_selector_label_text_type = 0x7f0e0153
+com.sp.silvercloud:id/useLogo = 0x7f0a0275
+com.sp.silvercloud:id/unlabeled = 0x7f0a0273
+com.sp.silvercloud:id/triangle = 0x7f0a0270
+com.sp.silvercloud:style/Theme.Design.Light.NoActionBar = 0x7f150226
+com.sp.silvercloud:id/transition_transform = 0x7f0a026f
+com.sp.silvercloud:id/transition_position = 0x7f0a026d
+com.sp.silvercloud:id/transition_pause_alpha = 0x7f0a026c
+com.sp.silvercloud:id/transition_current_scene = 0x7f0a0269
+com.sp.silvercloud:id/touch_outside = 0x7f0a0265
+com.sp.silvercloud:id/top = 0x7f0a0263
+com.sp.silvercloud:id/titleTextView = 0x7f0a025e
+com.sp.silvercloud:id/time = 0x7f0a025b
+com.sp.silvercloud:id/textinput_suffix_text = 0x7f0a025a
+com.sp.silvercloud:id/textinput_placeholder = 0x7f0a0258
+com.sp.silvercloud:id/textinput_helper_text = 0x7f0a0257
+com.sp.silvercloud:style/Widget.Material3.NavigationRailView.Badge = 0x7f1503c0
+com.sp.silvercloud:id/textinput_error = 0x7f0a0256
+com.sp.silvercloud:id/textinput_counter = 0x7f0a0255
+com.sp.silvercloud:id/text_input_error_icon = 0x7f0a0253
+com.sp.silvercloud:id/textView5 = 0x7f0a0251
+com.sp.silvercloud:id/textView3 = 0x7f0a024f
+com.sp.silvercloud:id/textView2 = 0x7f0a024e
+com.sp.silvercloud:style/Widget.AppCompat.Button = 0x7f1502f5
+com.sp.silvercloud:id/textStart = 0x7f0a024a
+com.sp.silvercloud:id/textSpacerNoTitle = 0x7f0a0249
+com.sp.silvercloud:id/wrap = 0x7f0a0287
+com.sp.silvercloud:id/textDescription = 0x7f0a0246
+com.sp.silvercloud:id/textDateLabel = 0x7f0a0245
+com.sp.silvercloud:id/text2 = 0x7f0a0241
+com.sp.silvercloud:id/text = 0x7f0a0240
+com.sp.silvercloud:string/material_minute_suffix = 0x7f14006e
+com.sp.silvercloud:id/tag_window_insets_animation_callback = 0x7f0a023f
+com.sp.silvercloud:id/tag_screen_reader_focusable = 0x7f0a023a
+com.sp.silvercloud:id/tag_on_receive_content_mime_types = 0x7f0a0239
+com.sp.silvercloud:id/tag_on_receive_content_listener = 0x7f0a0238
+com.sp.silvercloud:styleable/NavigationRailView = 0x7f160079
+com.sp.silvercloud:style/Widget.AppCompat.ActionBar.TabBar = 0x7f1502ec
+com.sp.silvercloud:id/tag_on_apply_window_listener = 0x7f0a0237
+com.sp.silvercloud:layout/mtrl_picker_header_dialog = 0x7f0d0075
+com.sp.silvercloud:id/tag_accessibility_heading = 0x7f0a0235
+com.sp.silvercloud:style/Widget.AppCompat.SeekBar.Discrete = 0x7f15032a
+com.sp.silvercloud:id/tag_accessibility_actions = 0x7f0a0233
+com.sp.silvercloud:id/successMessage = 0x7f0a0230
+com.sp.silvercloud:id/subtext = 0x7f0a022f
+com.sp.silvercloud:style/ThemeOverlay.Material3.ExtendedFloatingActionButton.Surface = 0x7f1502a3
+com.sp.silvercloud:id/submit_button = 0x7f0a022e
+com.sp.silvercloud:id/submit_area = 0x7f0a022d
+com.sp.silvercloud:id/submenuarrow = 0x7f0a022b
+com.sp.silvercloud:id/supportScrollUp = 0x7f0a0231
+com.sp.silvercloud:id/stop = 0x7f0a0229
+com.sp.silvercloud:id/staticPostLayout = 0x7f0a0228
+com.sp.silvercloud:id/staticLayout = 0x7f0a0227
+com.sp.silvercloud:styleable/AppCompatTextHelper = 0x7f160013
+com.sp.silvercloud:id/startHorizontal = 0x7f0a0224
+com.sp.silvercloud:layout/abc_action_bar_up_container = 0x7f0d0001
+com.sp.silvercloud:id/src_over = 0x7f0a0221
+com.sp.silvercloud:id/src_atop = 0x7f0a021f
+com.sp.silvercloud:id/spring = 0x7f0a021d
+com.sp.silvercloud:id/spread_inside = 0x7f0a021c
+com.sp.silvercloud:id/spread = 0x7f0a021b
+com.sp.silvercloud:id/split_action_bar = 0x7f0a021a
+com.sp.silvercloud:id/spline = 0x7f0a0219
+com.sp.silvercloud:id/south = 0x7f0a0216
+com.sp.silvercloud:style/Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle = 0x7f150049
+com.sp.silvercloud:macro/m3_comp_switch_unselected_pressed_handle_color = 0x7f0e013b
+com.sp.silvercloud:id/snap = 0x7f0a0214
+com.sp.silvercloud:layout/abc_list_menu_item_layout = 0x7f0d0010
+com.sp.silvercloud:id/snackbar_text = 0x7f0a0213
+com.sp.silvercloud:macro/m3_comp_extended_fab_tertiary_icon_color = 0x7f0e0035
+com.sp.silvercloud:id/snackbar_action = 0x7f0a0212
+com.sp.silvercloud:id/sliding_pane_layout = 0x7f0a0211
+com.sp.silvercloud:id/slide = 0x7f0a020f
+com.sp.silvercloud:id/skipCollapsed = 0x7f0a020d
+com.sp.silvercloud:style/Widget.MaterialComponents.Slider = 0x7f150446
+com.sp.silvercloud:id/sin = 0x7f0a020c
+com.sp.silvercloud:id/signUpTitle = 0x7f0a0209
+com.sp.silvercloud:id/signUpLink = 0x7f0a0208
+com.sp.silvercloud:styleable/ColorStateListItem = 0x7f160027
+com.sp.silvercloud:id/signUpButton = 0x7f0a0207
+com.sp.silvercloud:id/showTitle = 0x7f0a0206
+com.sp.silvercloud:style/Base.DialogWindowTitleBackground.AppCompat = 0x7f150012
+com.sp.silvercloud:id/showHome = 0x7f0a0204
+com.sp.silvercloud:style/Base.Theme.AppCompat.DialogWhenLarge = 0x7f150051
+com.sp.silvercloud:id/showCustom = 0x7f0a0203
+com.sp.silvercloud:id/shortcut = 0x7f0a0202
+com.sp.silvercloud:id/sharedValueSet = 0x7f0a0200
+com.sp.silvercloud:id/selected = 0x7f0a01fe
+com.sp.silvercloud:id/select_dialog_listview = 0x7f0a01fd
+com.sp.silvercloud:style/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog = 0x7f1500d0
+com.sp.silvercloud:id/search_src_text = 0x7f0a01fb
+com.sp.silvercloud:id/search_plate = 0x7f0a01fa
+com.sp.silvercloud:string/project_id = 0x7f1400c5
+com.sp.silvercloud:integer/mtrl_btn_anim_duration_ms = 0x7f0b0031
+com.sp.silvercloud:id/search_mag_icon = 0x7f0a01f9
+com.sp.silvercloud:style/Base.V14.Widget.MaterialComponents.AutoCompleteTextView = 0x7f1500a0
+com.sp.silvercloud:id/search_go_btn = 0x7f0a01f8
+com.sp.silvercloud:macro/m3_comp_switch_unselected_track_outline_color = 0x7f0e0141
+com.sp.silvercloud:id/search_edit_frame = 0x7f0a01f7
+com.sp.silvercloud:id/search_button = 0x7f0a01f5
+com.sp.silvercloud:id/searchView = 0x7f0a01f2
+com.sp.silvercloud:id/scrollable = 0x7f0a01f0
+com.sp.silvercloud:style/Widget.Material3.MaterialCalendar.Year.Today = 0x7f1503b1
+com.sp.silvercloud:id/scrollIndicatorUp = 0x7f0a01ee
+com.sp.silvercloud:style/Widget.AppCompat.Light.ActionBar.TabBar = 0x7f150307
+com.sp.silvercloud:macro/m3_comp_assist_chip_label_text_type = 0x7f0e0001
+com.sp.silvercloud:id/scrollIndicatorDown = 0x7f0a01ed
+com.sp.silvercloud:id/scale = 0x7f0a01ea
+com.sp.silvercloud:style/CardView.Dark = 0x7f150120
+com.sp.silvercloud:id/save_non_transition_alpha = 0x7f0a01e7
+com.sp.silvercloud:id/rounded = 0x7f0a01e4
+com.sp.silvercloud:id/right_icon = 0x7f0a01e2
+com.sp.silvercloud:id/rightToLeft = 0x7f0a01e1
+com.sp.silvercloud:id/report_drawn = 0x7f0a01dd
+com.sp.silvercloud:id/recyclerView = 0x7f0a01db
+com.sp.silvercloud:id/rectangles = 0x7f0a01da
+com.sp.silvercloud:id/radio = 0x7f0a01d8
+com.sp.silvercloud:style/Widget.AppCompat.Light.ActionBar.Solid.Inverse = 0x7f150306
+com.sp.silvercloud:string/abc_menu_ctrl_shortcut_label = 0x7f140009
+com.sp.silvercloud:id/progress_circular = 0x7f0a01d6
+com.sp.silvercloud:id/profileCard = 0x7f0a01d5
+com.sp.silvercloud:id/profile = 0x7f0a01d4
+com.sp.silvercloud:id/pressed = 0x7f0a01d3
+com.sp.silvercloud:id/postLayout = 0x7f0a01d2
+com.sp.silvercloud:id/position = 0x7f0a01d1
+com.sp.silvercloud:styleable/MotionEffect = 0x7f16006a
+com.sp.silvercloud:string/androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL = 0x7f14001c
+com.sp.silvercloud:id/pooling_container_listener_holder_tag = 0x7f0a01d0
+com.sp.silvercloud:id/pin = 0x7f0a01cf
+com.sp.silvercloud:id/percent = 0x7f0a01ce
+com.sp.silvercloud:id/peekHeight = 0x7f0a01cd
+com.sp.silvercloud:id/pathRelative = 0x7f0a01cc
+com.sp.silvercloud:id/path = 0x7f0a01cb
+com.sp.silvercloud:id/password_toggle = 0x7f0a01ca
+com.sp.silvercloud:style/ShapeAppearance.M3.Comp.Badge.Large.Shape = 0x7f150156
+com.sp.silvercloud:id/passwordLabel = 0x7f0a01c9
+com.sp.silvercloud:id/passwordInput = 0x7f0a01c8
+com.sp.silvercloud:id/parent_matrix = 0x7f0a01c6
+com.sp.silvercloud:id/parentRelative = 0x7f0a01c5
+com.sp.silvercloud:id/parent = 0x7f0a01c3
+com.sp.silvercloud:macro/m3_comp_top_app_bar_small_container_color = 0x7f0e016f
+com.sp.silvercloud:id/passwordField = 0x7f0a01c7
+com.sp.silvercloud:id/parallax = 0x7f0a01c2
+com.sp.silvercloud:styleable/Slider = 0x7f16008d
+com.sp.silvercloud:style/Base.Widget.AppCompat.ImageButton = 0x7f1500dc
+com.sp.silvercloud:id/packed = 0x7f0a01c1
+com.sp.silvercloud:id/overshoot = 0x7f0a01c0
+com.sp.silvercloud:style/Theme.Material3.DayNight.SideSheetDialog = 0x7f150238
+com.sp.silvercloud:id/outward = 0x7f0a01bf
+com.sp.silvercloud:style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored = 0x7f1501bb
+com.sp.silvercloud:id/open_search_view_toolbar_container = 0x7f0a01bb
+com.sp.silvercloud:id/open_search_view_toolbar = 0x7f0a01ba
+com.sp.silvercloud:id/open_search_view_status_bar_spacer = 0x7f0a01b9
+com.sp.silvercloud:id/open_search_view_search_prefix = 0x7f0a01b8
+com.sp.silvercloud:style/Theme.Material3.DynamicColors.Dark = 0x7f150239
+com.sp.silvercloud:id/open_search_view_scrim = 0x7f0a01b7
+com.sp.silvercloud:id/open_search_view_header_container = 0x7f0a01b5
+com.sp.silvercloud:id/open_search_view_edit_text = 0x7f0a01b4
+com.sp.silvercloud:id/open_search_view_dummy_toolbar = 0x7f0a01b3
+com.sp.silvercloud:style/ThemeOverlay.MaterialComponents.TimePicker.Display = 0x7f1502e5
+com.sp.silvercloud:id/open_search_view_content_container = 0x7f0a01b1
+com.sp.silvercloud:id/off = 0x7f0a01ab
+com.sp.silvercloud:id/ntucView3 = 0x7f0a01aa
+com.sp.silvercloud:id/ntucView2 = 0x7f0a01a9
+com.sp.silvercloud:id/notification_main_column_container = 0x7f0a01a8
+com.sp.silvercloud:id/notification_background = 0x7f0a01a6
+com.sp.silvercloud:id/north = 0x7f0a01a5
+com.sp.silvercloud:id/none = 0x7f0a01a3
+com.sp.silvercloud:id/noScroll = 0x7f0a01a1
+com.sp.silvercloud:id/textEnd = 0x7f0a0247
+com.sp.silvercloud:id/noAttendees = 0x7f0a01a0
+com.sp.silvercloud:id/silvercloud = 0x7f0a020a
+com.sp.silvercloud:id/newDescriptionTextView = 0x7f0a019f
+com.sp.silvercloud:id/newDescription = 0x7f0a019e
+com.sp.silvercloud:styleable/GradientColorItem = 0x7f160041
+com.sp.silvercloud:id/neverCompleteToEnd = 0x7f0a019c
+com.sp.silvercloud:id/never = 0x7f0a019b
+com.sp.silvercloud:id/navigation_header_container = 0x7f0a0198
+com.sp.silvercloud:id/navigation_bar_item_small_label_view = 0x7f0a0196
+com.sp.silvercloud:styleable/MaterialCheckBox = 0x7f16005b
+com.sp.silvercloud:id/navigation_bar_item_icon_container = 0x7f0a0192
+com.sp.silvercloud:macro/m3_comp_slider_disabled_handle_color = 0x7f0e010d
+com.sp.silvercloud:id/nav_host_fragment_container = 0x7f0a018f
+com.sp.silvercloud:id/nav_home = 0x7f0a018e
+com.sp.silvercloud:id/nameInput = 0x7f0a018b
+com.sp.silvercloud:id/nameField = 0x7f0a018a
+com.sp.silvercloud:id/myResponder = 0x7f0a0188
+com.sp.silvercloud:style/Base.Animation.AppCompat.Tooltip = 0x7f15000f
+com.sp.silvercloud:id/myENV = 0x7f0a0187
+com.sp.silvercloud:style/Widget.MaterialComponents.MaterialCalendar.HeaderCancelButton = 0x7f150429
+com.sp.silvercloud:macro/m3_comp_sheet_bottom_docked_container_color = 0x7f0e0104
+com.sp.silvercloud:id/mtrl_picker_title_text = 0x7f0a0184
+com.sp.silvercloud:id/mtrl_picker_text_input_range_end = 0x7f0a0182
+com.sp.silvercloud:id/unchecked = 0x7f0a0271
+com.sp.silvercloud:id/mtrl_picker_header_title_and_selection = 0x7f0a017f
+com.sp.silvercloud:id/mtrl_picker_header_selection_text = 0x7f0a017e
+com.sp.silvercloud:id/mtrl_picker_header = 0x7f0a017d
+com.sp.silvercloud:id/mtrl_picker_fullscreen = 0x7f0a017c
+com.sp.silvercloud:style/Widget.AppCompat.ActionBar = 0x7f1502ea
+com.sp.silvercloud:string/appbar_scrolling_view_behavior = 0x7f14001f
+com.sp.silvercloud:id/mtrl_motion_snapshot_view = 0x7f0a017b
+com.sp.silvercloud:id/mtrl_child_content_container = 0x7f0a0179
+com.sp.silvercloud:style/ShapeAppearance.Material3.MediumComponent = 0x7f150177
+com.sp.silvercloud:id/scroll = 0x7f0a01ec
+com.sp.silvercloud:id/mtrl_card_checked_layer_id = 0x7f0a0178
+com.sp.silvercloud:layout/select_dialog_singlechoice_material = 0x7f0d0088
+com.sp.silvercloud:id/mtrl_calendar_text_input_frame = 0x7f0a0176
+com.sp.silvercloud:macro/m3_comp_outlined_text_field_hover_outline_color = 0x7f0e00be
+com.sp.silvercloud:id/mtrl_calendar_months = 0x7f0a0174
+com.sp.silvercloud:id/mtrl_anchor_parent = 0x7f0a016f
+com.sp.silvercloud:id/month_navigation_bar = 0x7f0a0169
+com.sp.silvercloud:id/month_grid = 0x7f0a0168
+com.sp.silvercloud:id/middle = 0x7f0a0165
+com.sp.silvercloud:id/vertical = 0x7f0a0278
+com.sp.silvercloud:id/message = 0x7f0a0164
+com.sp.silvercloud:id/material_value_index = 0x7f0a0162
+com.sp.silvercloud:id/material_timepicker_view = 0x7f0a0161
+com.sp.silvercloud:id/material_timepicker_cancel_button = 0x7f0a015d
+com.sp.silvercloud:style/Widget.MaterialComponents.MaterialCalendar.YearNavigationButton = 0x7f150438
+com.sp.silvercloud:id/material_minute_tv = 0x7f0a015b
+com.sp.silvercloud:id/material_hour_tv = 0x7f0a0158
+com.sp.silvercloud:id/material_clock_period_toggle = 0x7f0a0156
+com.sp.silvercloud:id/material_clock_period_am_button = 0x7f0a0154
+com.sp.silvercloud:style/TextAppearance.Material3.BodySmall = 0x7f1501e7
+com.sp.silvercloud:string/abc_menu_shift_shortcut_label = 0x7f14000e
+com.sp.silvercloud:id/material_clock_hand = 0x7f0a0152
+com.sp.silvercloud:id/material_clock_display = 0x7f0a014f
+com.sp.silvercloud:id/match_parent = 0x7f0a014e
+com.sp.silvercloud:style/Base.Widget.AppCompat.PopupWindow = 0x7f1500ec
+com.sp.silvercloud:id/match_constraint = 0x7f0a014d
+com.sp.silvercloud:id/masked = 0x7f0a014c
+com.sp.silvercloud:id/main = 0x7f0a014a
+com.sp.silvercloud:id/ltr = 0x7f0a0148
+com.sp.silvercloud:id/loginTitle = 0x7f0a0146
+com.sp.silvercloud:id/loginFormContainer = 0x7f0a0144
+com.sp.silvercloud:macro/m3_comp_switch_disabled_unselected_track_outline_color = 0x7f0e011f
+com.sp.silvercloud:id/textSpacerNoButtons = 0x7f0a0248
+com.sp.silvercloud:id/loginButton = 0x7f0a0143
+com.sp.silvercloud:string/material_slider_range_end = 0x7f140074
+com.sp.silvercloud:id/loginBtn = 0x7f0a0142
+com.sp.silvercloud:id/locale = 0x7f0a0141
+com.sp.silvercloud:style/Theme.MaterialComponents.Dialog = 0x7f15025b
+com.sp.silvercloud:string/mtrl_picker_out_of_range = 0x7f14009f
+com.sp.silvercloud:id/list_item = 0x7f0a0140
+com.sp.silvercloud:macro/m3_comp_primary_navigation_tab_container_color = 0x7f0e00cb
+com.sp.silvercloud:id/linear = 0x7f0a013d
+com.sp.silvercloud:macro/m3_comp_search_view_header_supporting_text_type = 0x7f0e00f8
+com.sp.silvercloud:id/line3 = 0x7f0a013c
+com.sp.silvercloud:id/line1 = 0x7f0a013b
+com.sp.silvercloud:id/legacy = 0x7f0a0139
+com.sp.silvercloud:id/leftButton = 0x7f0a0137
+com.sp.silvercloud:id/transition_clip = 0x7f0a0268
+com.sp.silvercloud:id/layout = 0x7f0a0135
+com.sp.silvercloud:style/Base.V24.Theme.Material3.Light = 0x7f1500b3
+com.sp.silvercloud:layout/mtrl_alert_dialog_title = 0x7f0d0060
+com.sp.silvercloud:id/labeled = 0x7f0a0134
+com.sp.silvercloud:styleable/ScrollingViewBehavior_Layout = 0x7f160086
+com.sp.silvercloud:id/jumpToEnd = 0x7f0a0132
+com.sp.silvercloud:id/joinEventBtn = 0x7f0a0131
+com.sp.silvercloud:id/italic = 0x7f0a012f
+com.sp.silvercloud:id/is_pooling_container_tag = 0x7f0a012e
+com.sp.silvercloud:style/Base.Theme.MaterialComponents.Light.DarkActionBar = 0x7f150070
+com.sp.silvercloud:id/interest_layout2 = 0x7f0a0128
+com.sp.silvercloud:id/interest_layout = 0x7f0a0127
+com.sp.silvercloud:string/mtrl_checkbox_button_path_name = 0x7f140085
+com.sp.silvercloud:id/interestTV = 0x7f0a0125
+com.sp.silvercloud:id/interestLabelTextView = 0x7f0a0124
+com.sp.silvercloud:id/info = 0x7f0a0122
+com.sp.silvercloud:style/TextAppearance.Material3.HeadlineSmall = 0x7f1501ed
+com.sp.silvercloud:macro/m3_comp_navigation_drawer_inactive_focus_state_layer_color = 0x7f0e0088
+com.sp.silvercloud:id/indoor = 0x7f0a0121
+com.sp.silvercloud:id/included = 0x7f0a011f
+com.sp.silvercloud:styleable/ActivityRule = 0x7f160008
+com.sp.silvercloud:id/immediateStop = 0x7f0a011e
+com.sp.silvercloud:id/imageViewReward = 0x7f0a011c
+com.sp.silvercloud:id/imageView = 0x7f0a011b
+com.sp.silvercloud:id/imageButtonBack = 0x7f0a011a
+com.sp.silvercloud:id/ignore = 0x7f0a0117
+com.sp.silvercloud:macro/m3_comp_time_picker_period_selector_unselected_focus_state_layer_color = 0x7f0e015a
+com.sp.silvercloud:id/ifRoom = 0x7f0a0116
+com.sp.silvercloud:id/icon_only = 0x7f0a0115
+com.sp.silvercloud:style/Base.TextAppearance.AppCompat.Subhead.Inverse = 0x7f15002e
+com.sp.silvercloud:id/horizontal_only = 0x7f0a0112
+com.sp.silvercloud:id/horizontal = 0x7f0a0111
+com.sp.silvercloud:id/silvercloudlogo = 0x7f0a020b
+com.sp.silvercloud:id/honorRequest = 0x7f0a0110
+com.sp.silvercloud:style/Widget.Material3.MaterialTimePicker.Clock = 0x7f1503b7
+com.sp.silvercloud:id/home = 0x7f0a010e
+com.sp.silvercloud:macro/m3_comp_radio_button_disabled_selected_icon_color = 0x7f0e00d6
+com.sp.silvercloud:id/hideable = 0x7f0a010d
+com.sp.silvercloud:style/Theme.MaterialComponents.DayNight.BottomSheetDialog = 0x7f15024c
+com.sp.silvercloud:string/bottomsheet_action_collapse = 0x7f140022
+com.sp.silvercloud:id/hide_ime_id = 0x7f0a010c
+com.sp.silvercloud:id/header_title = 0x7f0a010b
+com.sp.silvercloud:id/groups = 0x7f0a0109
+com.sp.silvercloud:id/grouping = 0x7f0a0108
+com.sp.silvercloud:id/graph = 0x7f0a0104
+com.sp.silvercloud:style/Widget.MaterialComponents.Chip.Entry = 0x7f150410
+com.sp.silvercloud:id/gone = 0x7f0a0103
+com.sp.silvercloud:macro/m3_comp_outlined_text_field_input_text_type = 0x7f0e00c1
+com.sp.silvercloud:id/glide_custom_view_target_tag = 0x7f0a0102
+com.sp.silvercloud:macro/m3_comp_outlined_button_pressed_outline_color = 0x7f0e00a7
+com.sp.silvercloud:id/ghost_view_holder = 0x7f0a0101
+com.sp.silvercloud:id/ghost_view = 0x7f0a0100
+com.sp.silvercloud:id/formCard = 0x7f0a00fb
+com.sp.silvercloud:string/mtrl_checkbox_state_description_checked = 0x7f140087
+com.sp.silvercloud:id/flip = 0x7f0a00f8
+com.sp.silvercloud:id/fixed = 0x7f0a00f7
+com.sp.silvercloud:id/fitXY = 0x7f0a00f6
+com.sp.silvercloud:id/fitStart = 0x7f0a00f4
+com.sp.silvercloud:id/fitCenter = 0x7f0a00f2
+com.sp.silvercloud:id/filled = 0x7f0a00f1
+com.sp.silvercloud:id/fill_vertical = 0x7f0a00f0
+com.sp.silvercloud:style/Base.V14.Theme.MaterialComponents.Light = 0x7f150095
+com.sp.silvercloud:macro/m3_comp_text_button_hover_state_layer_color = 0x7f0e0143
+com.sp.silvercloud:id/fill = 0x7f0a00ee
+com.sp.silvercloud:style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title = 0x7f150035
+com.sp.silvercloud:id/expanded_menu = 0x7f0a00ec
+com.sp.silvercloud:id/expand_activities_button = 0x7f0a00eb
+com.sp.silvercloud:id/exitUntilCollapsed = 0x7f0a00ea
+com.sp.silvercloud:macro/m3_comp_menu_list_item_selected_container_color = 0x7f0e005e
+com.sp.silvercloud:id/event_title = 0x7f0a00e9
+com.sp.silvercloud:id/escape = 0x7f0a00e1
+com.sp.silvercloud:id/errMsg = 0x7f0a00e0
+com.sp.silvercloud:styleable/Snackbar = 0x7f16008e
+com.sp.silvercloud:id/enterAlwaysCollapsed = 0x7f0a00df
+com.sp.silvercloud:id/endToStart = 0x7f0a00dd
+com.sp.silvercloud:style/ThemeOverlay.Material3.Search = 0x7f1502b7
+com.sp.silvercloud:id/end = 0x7f0a00dc
+com.sp.silvercloud:layout/ime_base_split_test_activity = 0x7f0d0047
+com.sp.silvercloud:id/embed = 0x7f0a00db
+com.sp.silvercloud:style/Widget.Material3.SideSheet.Modal.Detached = 0x7f1503d0
+com.sp.silvercloud:id/emailLabel = 0x7f0a00da
+com.sp.silvercloud:id/emailField = 0x7f0a00d8
+com.sp.silvercloud:id/elastic = 0x7f0a00d7
+com.sp.silvercloud:id/edge = 0x7f0a00d3
+com.sp.silvercloud:id/east = 0x7f0a00d2
+com.sp.silvercloud:id/easeOut = 0x7f0a00d1
+com.sp.silvercloud:id/easeInOut = 0x7f0a00d0
+com.sp.silvercloud:macro/m3_comp_navigation_drawer_inactive_pressed_icon_color = 0x7f0e008e
+com.sp.silvercloud:macro/m3_comp_navigation_drawer_active_focus_icon_color = 0x7f0e0078
+com.sp.silvercloud:id/easeIn = 0x7f0a00cf
+com.sp.silvercloud:macro/m3_comp_filled_text_field_input_text_type = 0x7f0e0050
+com.sp.silvercloud:id/dropdown_menu = 0x7f0a00ce
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/drawer_layout = 0x7f0a00cd
 com.sp.silvercloud:id/dragStart = 0x7f0a00cb
 com.sp.silvercloud:style/Widget.MaterialComponents.Button.UnelevatedButton = 0x7f15040a
@@ -1485,7 +2013,11 @@ com.sp.silvercloud:id/dateLabelTextView = 0x7f0a00ae
 com.sp.silvercloud:id/customPanel = 0x7f0a00ab
 com.sp.silvercloud:id/cradle = 0x7f0a00a8
 com.sp.silvercloud:id/counterclockwise = 0x7f0a00a7
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/mtrl_calendar_day_of_week = 0x7f0d0068
+=======
+com.sp.silvercloud:layout/mtrl_calendar_day_of_week = 0x7f0d0066
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/cos = 0x7f0a00a6
 com.sp.silvercloud:id/continuousVelocity = 0x7f0a00a4
 com.sp.silvercloud:style/Base.Theme.Material3.Light.Dialog = 0x7f150061
@@ -1496,7 +2028,11 @@ com.sp.silvercloud:style/ThemeOverlay.MaterialComponents.BottomSheetDialog = 0x7
 com.sp.silvercloud:id/collapseActionView = 0x7f0a009c
 com.sp.silvercloud:id/clockwise = 0x7f0a009a
 com.sp.silvercloud:id/clip_vertical = 0x7f0a0099
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/mtrl_switch_thumb_path_unchecked = 0x7f1400b9
+=======
+com.sp.silvercloud:string/mtrl_switch_thumb_path_unchecked = 0x7f1400b7
+>>>>>>> Stashed changes
 com.sp.silvercloud:macro/m3_comp_primary_navigation_tab_with_label_text_label_text_type = 0x7f0e00d3
 com.sp.silvercloud:id/clip_horizontal = 0x7f0a0098
 com.sp.silvercloud:style/Base.Theme.AppCompat.Dialog.FixedSize = 0x7f15004f
@@ -1504,7 +2040,11 @@ com.sp.silvercloud:id/circle_center = 0x7f0a0096
 com.sp.silvercloud:id/checkimageView = 0x7f0a0094
 com.sp.silvercloud:id/checked = 0x7f0a0093
 com.sp.silvercloud:style/Base.ThemeOverlay.MaterialComponents.Dialog.Alert = 0x7f150085
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/mtrl_picker_header_selection_text = 0x7f0d0079
+=======
+com.sp.silvercloud:layout/mtrl_picker_header_selection_text = 0x7f0d0077
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/checkbox = 0x7f0a0092
 com.sp.silvercloud:id/chains = 0x7f0a0091
 com.sp.silvercloud:id/chain2 = 0x7f0a0090
@@ -1523,7 +2063,11 @@ com.sp.silvercloud:id/bounce = 0x7f0a007b
 com.sp.silvercloud:id/below = 0x7f0a0074
 com.sp.silvercloud:id/beginning = 0x7f0a0073
 com.sp.silvercloud:id/beginOnFirstDraw = 0x7f0a0072
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/topPanel = 0x7f0a0269
+=======
+com.sp.silvercloud:id/topPanel = 0x7f0a0264
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/axisRelative = 0x7f0a006c
 com.sp.silvercloud:id/autoComplete = 0x7f0a0069
 com.sp.silvercloud:string/event_image = 0x7f140047
@@ -1536,19 +2080,33 @@ com.sp.silvercloud:id/animateToEnd = 0x7f0a0060
 com.sp.silvercloud:style/Base.Theme.Material3.Dark.Dialog = 0x7f15005b
 com.sp.silvercloud:id/always = 0x7f0a005e
 com.sp.silvercloud:id/all = 0x7f0a005c
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/mtrl_picker_navigate_to_year_description = 0x7f1400a0
+=======
+com.sp.silvercloud:string/mtrl_picker_navigate_to_year_description = 0x7f14009e
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/aligned = 0x7f0a005b
 com.sp.silvercloud:id/adjust_height = 0x7f0a0058
 com.sp.silvercloud:id/add = 0x7f0a0055
 com.sp.silvercloud:style/Widget.AppCompat.ActionMode = 0x7f1502f2
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/title_template = 0x7f0a0263
 com.sp.silvercloud:id/activity_name = 0x7f0a0054
 com.sp.silvercloud:id/open_search_view_divider = 0x7f0a01b6
+=======
+com.sp.silvercloud:id/title_template = 0x7f0a025f
+com.sp.silvercloud:id/activity_name = 0x7f0a0054
+com.sp.silvercloud:id/open_search_view_divider = 0x7f0a01b2
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/activity_description = 0x7f0a0052
 com.sp.silvercloud:id/blocking = 0x7f0a0078
 com.sp.silvercloud:id/activity_code = 0x7f0a0051
 com.sp.silvercloud:id/activityRecyclerView = 0x7f0a004f
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/notification_template_icon_group = 0x7f0d0084
+=======
+com.sp.silvercloud:layout/notification_template_icon_group = 0x7f0d0082
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/activityList = 0x7f0a004e
 com.sp.silvercloud:id/actions = 0x7f0a004d
 com.sp.silvercloud:id/action_text = 0x7f0a004c
@@ -1575,7 +2133,11 @@ com.sp.silvercloud:style/Widget.MaterialComponents.ExtendedFloatingActionButton.
 com.sp.silvercloud:id/accessibility_custom_action_9 = 0x7f0a0034
 com.sp.silvercloud:id/accessibility_custom_action_7 = 0x7f0a0032
 com.sp.silvercloud:id/accessibility_custom_action_6 = 0x7f0a0031
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/search_bar = 0x7f0a01f8
+=======
+com.sp.silvercloud:id/search_bar = 0x7f0a01f4
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/accessibility_custom_action_29 = 0x7f0a002b
 com.sp.silvercloud:integer/m3_sys_shape_corner_extra_large_corner_family = 0x7f0b0022
 com.sp.silvercloud:id/accessibility_custom_action_28 = 0x7f0a002a
@@ -1597,14 +2159,22 @@ com.sp.silvercloud:id/accessibility_custom_action_11 = 0x7f0a0018
 com.sp.silvercloud:id/accessibility_custom_action_10 = 0x7f0a0017
 com.sp.silvercloud:id/accessibility_custom_action_1 = 0x7f0a0016
 com.sp.silvercloud:id/accessibility_action_clickable_span = 0x7f0a0014
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/mtrl_picker_text_input_range_start = 0x7f0a0184
+=======
+com.sp.silvercloud:id/mtrl_picker_text_input_range_start = 0x7f0a0183
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/above = 0x7f0a0012
 com.sp.silvercloud:id/async = 0x7f0a0066
 com.sp.silvercloud:id/TOP_START = 0x7f0a0011
 com.sp.silvercloud:macro/m3_comp_time_input_time_input_field_supporting_text_color = 0x7f0e014a
 com.sp.silvercloud:id/TOP_END = 0x7f0a0010
 com.sp.silvercloud:id/SHOW_PROGRESS = 0x7f0a000e
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/snapMargins = 0x7f0a0219
+=======
+com.sp.silvercloud:id/snapMargins = 0x7f0a0215
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/SHOW_PATH = 0x7f0a000d
 com.sp.silvercloud:id/SHOW_ALL = 0x7f0a000c
 com.sp.silvercloud:id/META = 0x7f0a0009
@@ -1619,7 +2189,11 @@ com.sp.silvercloud:style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.Fi
 com.sp.silvercloud:id/ActiveSG = 0x7f0a0001
 com.sp.silvercloud:id/ALT = 0x7f0a0000
 com.sp.silvercloud:style/Animation.AppCompat.Dialog = 0x7f150002
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/test_cardview = 0x7f0d008c
+=======
+com.sp.silvercloud:layout/test_cardview = 0x7f0d008a
+>>>>>>> Stashed changes
 com.sp.silvercloud:font/poppins_semibold = 0x7f090001
 com.sp.silvercloud:font/anek_odia_medium = 0x7f090000
 com.sp.silvercloud:drawable/voucher_icon = 0x7f08011a
@@ -1629,6 +2203,7 @@ com.sp.silvercloud:drawable/test_level_drawable = 0x7f080117
 com.sp.silvercloud:drawable/sky = 0x7f080116
 com.sp.silvercloud:drawable/rewards_detail = 0x7f080115
 com.sp.silvercloud:drawable/outline_done_24 = 0x7f080112
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/mtrl_picker_header_toggle = 0x7f0a0181
 com.sp.silvercloud:drawable/notification_tile_bg = 0x7f080110
 com.sp.silvercloud:layout/nav_header = 0x7f0d0080
@@ -1636,6 +2211,15 @@ com.sp.silvercloud:drawable/notification_bg_normal_pressed = 0x7f08010b
 com.sp.silvercloud:drawable/notification_bg_normal = 0x7f08010a
 com.sp.silvercloud:drawable/notification_bg_low_pressed = 0x7f080109
 com.sp.silvercloud:id/fade = 0x7f0a00ee
+=======
+com.sp.silvercloud:id/mtrl_picker_header_toggle = 0x7f0a0180
+com.sp.silvercloud:drawable/notification_tile_bg = 0x7f080110
+com.sp.silvercloud:layout/nav_header = 0x7f0d007e
+com.sp.silvercloud:drawable/notification_bg_normal_pressed = 0x7f08010b
+com.sp.silvercloud:drawable/notification_bg_normal = 0x7f08010a
+com.sp.silvercloud:drawable/notification_bg_low_pressed = 0x7f080109
+com.sp.silvercloud:id/fade = 0x7f0a00ed
+>>>>>>> Stashed changes
 com.sp.silvercloud:drawable/notification_action_background = 0x7f080105
 com.sp.silvercloud:drawable/navigation_empty_icon = 0x7f080104
 com.sp.silvercloud:drawable/myevents_bottomnav = 0x7f080102
@@ -1703,7 +2287,11 @@ com.sp.silvercloud:style/Widget.MaterialComponents.LinearProgressIndicator = 0x7
 com.sp.silvercloud:string/call_notification_incoming_text = 0x7f14002b
 com.sp.silvercloud:drawable/ic_mtrl_chip_checked_circle = 0x7f0800be
 com.sp.silvercloud:drawable/ic_mtrl_checked_circle = 0x7f0800bc
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/mtrl_picker_header_title_text = 0x7f0d007a
+=======
+com.sp.silvercloud:layout/mtrl_picker_header_title_text = 0x7f0d0078
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/hintAnimationEnabled = 0x7f040239
 com.sp.silvercloud:dimen/material_bottom_sheet_max_width = 0x7f070225
 com.sp.silvercloud:drawable/ic_m3_chip_check = 0x7f0800b9
@@ -1731,7 +2319,11 @@ com.sp.silvercloud:attr/layout_constrainedWidth = 0x7f040295
 com.sp.silvercloud:drawable/common_google_signin_btn_text_light_focused = 0x7f08009c
 com.sp.silvercloud:attr/circleRadius = 0x7f0400d9
 com.sp.silvercloud:drawable/common_google_signin_btn_text_dark_normal_background = 0x7f080099
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/material_clock_period_pm_button = 0x7f0a0156
+=======
+com.sp.silvercloud:id/material_clock_period_pm_button = 0x7f0a0155
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/addAct = 0x7f0a0056
 com.sp.silvercloud:dimen/mtrl_exposed_dropdown_menu_popup_vertical_offset = 0x7f0702a8
 com.sp.silvercloud:attr/springMass = 0x7f040410
@@ -1773,7 +2365,11 @@ com.sp.silvercloud:id/mini = 0x7f0a0167
 com.sp.silvercloud:attr/colorScheme = 0x7f040123
 com.sp.silvercloud:drawable/abc_switch_thumb_material = 0x7f08006a
 com.sp.silvercloud:integer/m3_sys_motion_duration_long4 = 0x7f0b0018
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/fitToContents = 0x7f0a00f6
+=======
+com.sp.silvercloud:id/fitToContents = 0x7f0a00f5
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_comp_top_app_bar_medium_container_height = 0x7f0701ad
 com.sp.silvercloud:color/m3_sys_color_light_inverse_on_surface = 0x7f0601e2
 com.sp.silvercloud:drawable/abc_star_half_black_48dp = 0x7f080069
@@ -1787,7 +2383,11 @@ com.sp.silvercloud:attr/arcMode = 0x7f04003c
 com.sp.silvercloud:drawable/abc_seekbar_tick_mark_material = 0x7f080064
 com.sp.silvercloud:drawable/abc_scrubber_track_mtrl_alpha = 0x7f080062
 com.sp.silvercloud:drawable/abc_scrubber_control_to_pressed_mtrl_000 = 0x7f08005f
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/mtrl_picker_announce_current_range_selection = 0x7f140091
+=======
+com.sp.silvercloud:string/mtrl_picker_announce_current_range_selection = 0x7f14008f
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/subtitleTextAppearance = 0x7f040435
 com.sp.silvercloud:drawable/abc_scrubber_control_off_mtrl_alpha = 0x7f08005e
 com.sp.silvercloud:drawable/abc_list_selector_holo_dark = 0x7f080057
@@ -1810,12 +2410,20 @@ com.sp.silvercloud:drawable/abc_btn_radio_to_on_mtrl_015 = 0x7f080035
 com.sp.silvercloud:color/m3_ref_palette_primary40 = 0x7f06013f
 com.sp.silvercloud:drawable/abc_btn_radio_material_anim = 0x7f080033
 com.sp.silvercloud:drawable/abc_btn_radio_material = 0x7f080032
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/light = 0x7f0a013b
+=======
+com.sp.silvercloud:id/light = 0x7f0a013a
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/design_fab_shadow_end_color = 0x7f06005f
 com.sp.silvercloud:drawable/abc_btn_colored_material = 0x7f080030
 com.sp.silvercloud:style/RtlOverlay.Widget.AppCompat.Search.DropDown.Icon1 = 0x7f15014f
 com.sp.silvercloud:style/Base.Widget.MaterialComponents.MaterialCalendar.HeaderToggleButton = 0x7f150114
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/navigation_dashboard = 0x7f0a019b
+=======
+com.sp.silvercloud:id/navigation_dashboard = 0x7f0a0197
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/material_personalized_color_text_primary_inverse_disable_only = 0x7f0602b8
 com.sp.silvercloud:drawable/abc_btn_check_to_on_mtrl_015 = 0x7f08002f
 com.sp.silvercloud:drawable/$mtrl_switch_thumb_unchecked_checked__0 = 0x7f080026
@@ -1824,11 +2432,18 @@ com.sp.silvercloud:string/android.credentials.TYPE_PASSWORD_CREDENTIAL = 0x7f140
 com.sp.silvercloud:drawable/$mtrl_switch_thumb_checked_pressed__0 = 0x7f080021
 com.sp.silvercloud:style/Widget.MaterialComponents.BottomSheet = 0x7f1503fe
 com.sp.silvercloud:drawable/$mtrl_checkbox_button_unchecked_checked__2 = 0x7f080020
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/search_voice_btn = 0x7f0a0200
 com.sp.silvercloud:dimen/abc_list_item_height_material = 0x7f070031
 com.sp.silvercloud:drawable/$mtrl_checkbox_button_unchecked_checked__1 = 0x7f08001f
 com.sp.silvercloud:layout/fragment_outdoor_home_user = 0x7f0d0046
 com.sp.silvercloud:id/src_in = 0x7f0a0224
+=======
+com.sp.silvercloud:id/search_voice_btn = 0x7f0a01fc
+com.sp.silvercloud:dimen/abc_list_item_height_material = 0x7f070031
+com.sp.silvercloud:drawable/$mtrl_checkbox_button_unchecked_checked__1 = 0x7f08001f
+com.sp.silvercloud:id/src_in = 0x7f0a0220
+>>>>>>> Stashed changes
 com.sp.silvercloud:drawable/$mtrl_checkbox_button_icon_unchecked_indeterminate__0 = 0x7f08001b
 com.sp.silvercloud:drawable/$mtrl_checkbox_button_icon_unchecked_checked__0 = 0x7f080018
 com.sp.silvercloud:drawable/$mtrl_checkbox_button_icon_indeterminate_unchecked__2 = 0x7f080017
@@ -1845,7 +2460,11 @@ com.sp.silvercloud:drawable/$mtrl_checkbox_button_icon_checked_unchecked__0 = 0x
 com.sp.silvercloud:style/Theme.Hidden = 0x7f150228
 com.sp.silvercloud:drawable/$mtrl_switch_thumb_unchecked_checked__1 = 0x7f080027
 com.sp.silvercloud:drawable/$mtrl_checkbox_button_checked_unchecked__2 = 0x7f08000f
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/mtrl_calendar_year = 0x7f0d0070
+=======
+com.sp.silvercloud:layout/mtrl_calendar_year = 0x7f0d006e
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/bottomInsetScrimEnabled = 0x7f04007e
 com.sp.silvercloud:attr/windowFixedHeightMinor = 0x7f04050e
 com.sp.silvercloud:drawable/$m3_avd_hide_password__0 = 0x7f080007
@@ -1871,8 +2490,13 @@ com.sp.silvercloud:macro/m3_comp_outlined_text_field_disabled_supporting_text_co
 com.sp.silvercloud:drawable/abc_vector_test = 0x7f080077
 com.sp.silvercloud:dimen/notification_action_icon_size = 0x7f070310
 com.sp.silvercloud:dimen/mtrl_tooltip_minWidth = 0x7f07030d
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/eventCodeEditText = 0x7f0a00e3
 com.sp.silvercloud:id/edit_query = 0x7f0a00d6
+=======
+com.sp.silvercloud:id/eventCodeEditText = 0x7f0a00e2
+com.sp.silvercloud:id/edit_query = 0x7f0a00d5
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/mtrl_calendar_day_today_stroke = 0x7f07027d
 com.sp.silvercloud:dimen/mtrl_tooltip_minHeight = 0x7f07030c
 com.sp.silvercloud:attr/collapsingToolbarLayoutLargeSize = 0x7f0400f5
@@ -1897,7 +2521,11 @@ com.sp.silvercloud:attr/grid_rows = 0x7f040225
 com.sp.silvercloud:dimen/mtrl_slider_label_padding = 0x7f0702ea
 com.sp.silvercloud:drawable/backbutton = 0x7f08007c
 com.sp.silvercloud:dimen/mtrl_slider_halo_radius = 0x7f0702e9
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/start = 0x7f0a0227
+=======
+com.sp.silvercloud:id/start = 0x7f0a0223
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/mtrl_progress_circular_track_thickness_medium = 0x7f0702e2
 com.sp.silvercloud:color/material_dynamic_secondary95 = 0x7f060267
 com.sp.silvercloud:dimen/mtrl_progress_circular_size_small = 0x7f0702e0
@@ -1910,7 +2538,11 @@ com.sp.silvercloud:attr/checkedIconSize = 0x7f0400bf
 com.sp.silvercloud:dimen/mtrl_progress_circular_size = 0x7f0702dd
 com.sp.silvercloud:attr/textInputFilledExposedDropdownMenuStyle = 0x7f040492
 com.sp.silvercloud:dimen/mtrl_progress_circular_inset = 0x7f0702d8
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/multiply = 0x7f0a0187
+=======
+com.sp.silvercloud:id/multiply = 0x7f0a0186
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/tintMode = 0x7f0404be
 com.sp.silvercloud:dimen/mtrl_navigation_rail_icon_margin = 0x7f0702d3
 com.sp.silvercloud:dimen/mtrl_navigation_rail_compact_width = 0x7f0702d0
@@ -1927,23 +2559,39 @@ com.sp.silvercloud:styleable/ActivityFilter = 0x7f160006
 com.sp.silvercloud:style/ThemeOverlay.Material3.MaterialCalendar.Fullscreen = 0x7f1502b0
 com.sp.silvercloud:dimen/mtrl_navigation_item_horizontal_padding = 0x7f0702ca
 com.sp.silvercloud:styleable/MaterialCalendar = 0x7f160058
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/interestsField = 0x7f0a012b
+=======
+com.sp.silvercloud:id/interestsField = 0x7f0a0129
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/mtrl_low_ripple_hovered_alpha = 0x7f0702c4
 com.sp.silvercloud:dimen/mtrl_high_ripple_default_alpha = 0x7f0702be
 com.sp.silvercloud:macro/m3_comp_navigation_bar_active_pressed_label_text_color = 0x7f0e0069
 com.sp.silvercloud:attr/layout_constraintRight_toRightOf = 0x7f0402b3
 com.sp.silvercloud:dimen/mtrl_fab_translation_z_pressed = 0x7f0702bd
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/mtrl_alert_select_dialog_item = 0x7f0d0063
+=======
+com.sp.silvercloud:layout/mtrl_alert_select_dialog_item = 0x7f0d0061
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/mtrl_fab_translation_z_hovered_focused = 0x7f0702bc
 com.sp.silvercloud:dimen/mtrl_fab_elevation = 0x7f0702ba
 com.sp.silvercloud:dimen/mtrl_navigation_rail_margin = 0x7f0702d5
 com.sp.silvercloud:dimen/mtrl_extended_fab_min_width = 0x7f0702b3
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/save_overlay_view = 0x7f0a01ec
+=======
+com.sp.silvercloud:id/save_overlay_view = 0x7f0a01e8
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/m3_sys_color_dynamic_primary_fixed_dim = 0x7f0601da
 com.sp.silvercloud:dimen/mtrl_extended_fab_icon_text_spacing = 0x7f0702b1
 com.sp.silvercloud:style/TextAppearance.AppCompat.Body1 = 0x7f150195
 com.sp.silvercloud:macro/m3_comp_search_bar_trailing_icon_color = 0x7f0e00f0
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/image_picker = 0x7f0a011f
+=======
+com.sp.silvercloud:id/image_picker = 0x7f0a011d
+>>>>>>> Stashed changes
 com.sp.silvercloud:drawable/ic_search_black_24 = 0x7f0800c3
 com.sp.silvercloud:dimen/mtrl_extended_fab_end_padding_icon = 0x7f0702af
 com.sp.silvercloud:style/ThemeOverlay.Material3.Chip = 0x7f150295
@@ -1959,8 +2607,13 @@ com.sp.silvercloud:macro/m3_comp_primary_navigation_tab_inactive_focus_state_lay
 com.sp.silvercloud:dimen/mtrl_chip_pressed_translation_z = 0x7f0702a5
 com.sp.silvercloud:style/ThemeOverlay.Material3.ExtendedFloatingActionButton.Secondary = 0x7f1502a2
 com.sp.silvercloud:dimen/mtrl_card_spacing = 0x7f0702a4
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/textCode = 0x7f0a0246
 com.sp.silvercloud:id/eventImageView = 0x7f0a00e6
+=======
+com.sp.silvercloud:id/textCode = 0x7f0a0242
+com.sp.silvercloud:id/eventImageView = 0x7f0a00e5
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/mtrl_card_elevation = 0x7f0702a3
 com.sp.silvercloud:attr/maxHeight = 0x7f040325
 com.sp.silvercloud:dimen/mtrl_card_dragged_z = 0x7f0702a2
@@ -2009,20 +2662,32 @@ com.sp.silvercloud:dimen/mtrl_btn_icon_padding = 0x7f070265
 com.sp.silvercloud:color/m3_sys_color_dark_outline_variant = 0x7f06017f
 com.sp.silvercloud:attr/floatingActionButtonSmallPrimaryStyle = 0x7f0401f1
 com.sp.silvercloud:dimen/mtrl_btn_focused_z = 0x7f070262
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/material_timepicker_dialog = 0x7f0d005e
+=======
+com.sp.silvercloud:layout/material_timepicker_dialog = 0x7f0d005c
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/flow_maxElementsWrap = 0x7f040205
 com.sp.silvercloud:dimen/mtrl_btn_elevation = 0x7f070261
 com.sp.silvercloud:color/m3_sys_color_light_error_container = 0x7f0601e1
 com.sp.silvercloud:dimen/mtrl_bottomappbar_fab_cradle_vertical_offset = 0x7f07025b
 com.sp.silvercloud:dimen/mtrl_bottomappbar_fab_cradle_margin = 0x7f070259
 com.sp.silvercloud:dimen/mtrl_bottomappbar_fab_bottom_margin = 0x7f070258
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/material_textinput_timepicker = 0x7f0d005a
+=======
+com.sp.silvercloud:layout/material_textinput_timepicker = 0x7f0d0058
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/mtrl_badge_toolbar_action_menu_item_vertical_offset = 0x7f070255
 com.sp.silvercloud:dimen/mtrl_badge_toolbar_action_menu_item_horizontal_offset = 0x7f070254
 com.sp.silvercloud:style/ThemeOverlay.Material3.Button.TextButton.Snackbar = 0x7f150293
 com.sp.silvercloud:dimen/mtrl_badge_text_size = 0x7f070253
 com.sp.silvercloud:dimen/mtrl_badge_horizontal_edge_offset = 0x7f07024f
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/listMode = 0x7f0a0140
+=======
+com.sp.silvercloud:id/listMode = 0x7f0a013f
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/colorOnTertiaryFixedVariant = 0x7f040118
 com.sp.silvercloud:dimen/mtrl_alert_dialog_background_inset_bottom = 0x7f07024a
 com.sp.silvercloud:style/Widget.AppCompat.CompoundButton.CheckBox = 0x7f1502fd
@@ -2105,7 +2770,11 @@ com.sp.silvercloud:style/Widget.Material3.FloatingActionButton.Large.Primary = 0
 com.sp.silvercloud:dimen/m3_sys_motion_easing_legacy_accelerate_control_y2 = 0x7f070205
 com.sp.silvercloud:style/Base.Widget.MaterialComponents.PopupMenu.ContextMenu = 0x7f150117
 com.sp.silvercloud:dimen/m3_sys_motion_easing_legacy_accelerate_control_y1 = 0x7f070204
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/navigation_home = 0x7f0a019d
+=======
+com.sp.silvercloud:id/navigation_home = 0x7f0a0199
+>>>>>>> Stashed changes
 com.sp.silvercloud:drawable/notify_panel_notification_icon_bg = 0x7f080111
 com.sp.silvercloud:dimen/m3_sys_motion_easing_legacy_accelerate_control_x1 = 0x7f070202
 com.sp.silvercloud:style/Base.Theme.MaterialComponents.Dialog.Alert = 0x7f150069
@@ -2116,7 +2785,11 @@ com.sp.silvercloud:layout/abc_activity_chooser_view = 0x7f0d0006
 com.sp.silvercloud:dimen/m3_sys_motion_easing_emphasized_accelerate_control_y1 = 0x7f0701fc
 com.sp.silvercloud:attr/endIconMinSize = 0x7f0401b2
 com.sp.silvercloud:dimen/m3_sys_elevation_level4 = 0x7f0701f8
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/textDate = 0x7f0a0248
+=======
+com.sp.silvercloud:id/textDate = 0x7f0a0244
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/counterEnabled = 0x7f040160
 com.sp.silvercloud:dimen/m3_sys_elevation_level2 = 0x7f0701f6
 com.sp.silvercloud:attr/crossfade = 0x7f040166
@@ -2146,21 +2819,33 @@ com.sp.silvercloud:dimen/m3_ripple_default_alpha = 0x7f0701d9
 com.sp.silvercloud:dimen/m3_navigation_rail_item_padding_top_with_large_font = 0x7f0701d7
 com.sp.silvercloud:dimen/design_navigation_icon_size = 0x7f07007b
 com.sp.silvercloud:dimen/m3_navigation_rail_item_padding_top = 0x7f0701d6
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/searchBar = 0x7f0a01f5
+=======
+com.sp.silvercloud:id/searchBar = 0x7f0a01f1
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_navigation_rail_elevation = 0x7f0701ce
 com.sp.silvercloud:dimen/m3_navigation_rail_default_width = 0x7f0701cd
 com.sp.silvercloud:dimen/m3_navigation_menu_headline_horizontal_padding = 0x7f0701cc
 com.sp.silvercloud:dimen/m3_navigation_item_shape_inset_end = 0x7f0701c7
 com.sp.silvercloud:dimen/mtrl_alert_dialog_picker_background_inset = 0x7f07024e
 com.sp.silvercloud:dimen/m3_navigation_item_icon_padding = 0x7f0701c5
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/m3_sys_motion_easing_legacy = 0x7f140063
+=======
+com.sp.silvercloud:string/m3_sys_motion_easing_legacy = 0x7f140061
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_navigation_item_horizontal_padding = 0x7f0701c4
 com.sp.silvercloud:style/Base.ThemeOverlay.AppCompat = 0x7f150078
 com.sp.silvercloud:attr/chipStartPadding = 0x7f0400d3
 com.sp.silvercloud:dimen/m3_menu_elevation = 0x7f0701c0
 com.sp.silvercloud:attr/materialCalendarTheme = 0x7f040308
 com.sp.silvercloud:dimen/m3_large_text_vertical_offset_adjustment = 0x7f0701bf
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/mtrl_picker_announce_current_selection = 0x7f140092
+=======
+com.sp.silvercloud:string/mtrl_picker_announce_current_selection = 0x7f140090
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/passwordToggleContentDescription = 0x7f04038e
 com.sp.silvercloud:color/m3_ref_palette_dynamic_neutral_variant95 = 0x7f0600dd
 com.sp.silvercloud:dimen/m3_fab_translation_z_hovered_focused = 0x7f0701bb
@@ -2168,7 +2853,11 @@ com.sp.silvercloud:dimen/m3_extended_fab_top_padding = 0x7f0701b8
 com.sp.silvercloud:attr/SharedValueId = 0x7f040001
 com.sp.silvercloud:dimen/m3_divider_heavy_thickness = 0x7f0701b2
 com.sp.silvercloud:dimen/m3_comp_top_app_bar_large_container_height = 0x7f0701ac
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/image = 0x7f0a011b
+=======
+com.sp.silvercloud:id/image = 0x7f0a0119
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_comp_time_picker_time_selector_pressed_state_layer_opacity = 0x7f0701ab
 com.sp.silvercloud:attr/counterOverflowTextAppearance = 0x7f040162
 com.sp.silvercloud:dimen/m3_comp_time_picker_time_selector_hover_state_layer_opacity = 0x7f0701aa
@@ -2189,7 +2878,11 @@ com.sp.silvercloud:style/Widget.MaterialComponents.MaterialCalendar.Day.Today = 
 com.sp.silvercloud:dimen/m3_comp_switch_disabled_track_opacity = 0x7f070195
 com.sp.silvercloud:dimen/m3_comp_suggestion_chip_with_leading_icon_leading_icon_size = 0x7f070192
 com.sp.silvercloud:dimen/m3_comp_suggestion_chip_elevated_container_elevation = 0x7f07018f
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/textTitle = 0x7f0a024f
+=======
+com.sp.silvercloud:id/textTitle = 0x7f0a024b
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_comp_slider_inactive_track_height = 0x7f07018b
 com.sp.silvercloud:dimen/m3_comp_slider_disabled_inactive_track_opacity = 0x7f07018a
 com.sp.silvercloud:dimen/m3_comp_slider_active_handle_width = 0x7f070187
@@ -2210,14 +2903,22 @@ com.sp.silvercloud:style/Base.Theme.MaterialComponents.Bridge = 0x7f150066
 com.sp.silvercloud:macro/m3_comp_filled_autocomplete_text_field_input_text_type = 0x7f0e0042
 com.sp.silvercloud:dimen/m3_comp_search_bar_container_elevation = 0x7f070173
 com.sp.silvercloud:dimen/m3_comp_radio_button_unselected_hover_state_layer_opacity = 0x7f07016f
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/support_simple_spinner_dropdown_item = 0x7f0d008b
+=======
+com.sp.silvercloud:layout/support_simple_spinner_dropdown_item = 0x7f0d0089
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/m3_ref_palette_tertiary95 = 0x7f06015f
 com.sp.silvercloud:attr/restoreState = 0x7f0403c7
 com.sp.silvercloud:dimen/fastscroll_margin = 0x7f070095
 com.sp.silvercloud:dimen/mtrl_low_ripple_pressed_alpha = 0x7f0702c5
 com.sp.silvercloud:attr/expandedTitleMarginStart = 0x7f0401cd
 com.sp.silvercloud:dimen/m3_comp_radio_button_selected_hover_state_layer_opacity = 0x7f07016c
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/transitionToStart = 0x7f0a026c
+=======
+com.sp.silvercloud:id/transitionToStart = 0x7f0a0267
+>>>>>>> Stashed changes
 com.sp.silvercloud:drawable/mtrl_switch_thumb_checked_unchecked = 0x7f0800f7
 com.sp.silvercloud:dimen/m3_comp_radio_button_disabled_unselected_icon_opacity = 0x7f07016a
 com.sp.silvercloud:dimen/m3_comp_radio_button_disabled_selected_icon_opacity = 0x7f070169
@@ -2230,7 +2931,11 @@ com.sp.silvercloud:dimen/m3_comp_outlined_card_container_elevation = 0x7f070154
 com.sp.silvercloud:dimen/m3_comp_outlined_autocomplete_menu_container_elevation = 0x7f070151
 com.sp.silvercloud:attr/layout_scrollFlags = 0x7f0402d1
 com.sp.silvercloud:dimen/material_clock_hand_padding = 0x7f07022c
+<<<<<<< Updated upstream
 com.sp.silvercloud:layout/fragment_profile = 0x7f0d0047
+=======
+com.sp.silvercloud:layout/fragment_profile = 0x7f0d0045
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_comp_navigation_rail_hover_state_layer_opacity = 0x7f07014e
 com.sp.silvercloud:dimen/m3_comp_primary_navigation_tab_with_icon_icon_size = 0x7f070165
 com.sp.silvercloud:dimen/m3_comp_navigation_rail_focus_state_layer_opacity = 0x7f07014d
@@ -2242,7 +2947,11 @@ com.sp.silvercloud:styleable/MaterialAlertDialog = 0x7f160053
 com.sp.silvercloud:dimen/m3_comp_navigation_drawer_pressed_state_layer_opacity = 0x7f070147
 com.sp.silvercloud:dimen/m3_comp_navigation_drawer_modal_container_elevation = 0x7f070146
 com.sp.silvercloud:dimen/m3_comp_navigation_drawer_hover_state_layer_opacity = 0x7f070144
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/right = 0x7f0a01e4
+=======
+com.sp.silvercloud:id/right = 0x7f0a01e0
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/thumbIconSize = 0x7f0404a9
 com.sp.silvercloud:dimen/m3_sys_motion_easing_linear_control_x1 = 0x7f07020e
 com.sp.silvercloud:dimen/m3_comp_navigation_drawer_focus_state_layer_opacity = 0x7f070143
@@ -2268,9 +2977,15 @@ com.sp.silvercloud:dimen/m3_comp_filter_chip_flat_unselected_outline_width = 0x7
 com.sp.silvercloud:dimen/m3_comp_filter_chip_elevated_container_elevation = 0x7f070130
 com.sp.silvercloud:dimen/m3_comp_filter_chip_container_height = 0x7f07012f
 com.sp.silvercloud:dimen/m3_comp_filled_text_field_disabled_active_indicator_opacity = 0x7f07012e
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/m3_exceed_max_badge_text_suffix = 0x7f14005a
 com.sp.silvercloud:dimen/m3_comp_filled_card_hover_state_layer_opacity = 0x7f07012b
 com.sp.silvercloud:id/recycler_view = 0x7f0a01e0
+=======
+com.sp.silvercloud:string/m3_exceed_max_badge_text_suffix = 0x7f140058
+com.sp.silvercloud:dimen/m3_comp_filled_card_hover_state_layer_opacity = 0x7f07012b
+com.sp.silvercloud:id/recycler_view = 0x7f0a01dc
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_navigation_rail_icon_size = 0x7f0701cf
 com.sp.silvercloud:style/Base.Widget.AppCompat.Button.Borderless.Colored = 0x7f1500cf
 com.sp.silvercloud:dimen/m3_comp_filled_card_focus_state_layer_opacity = 0x7f07012a
@@ -2304,7 +3019,11 @@ com.sp.silvercloud:style/Animation.AppCompat.DropDownUp = 0x7f150003
 com.sp.silvercloud:dimen/m3_comp_elevated_button_container_elevation = 0x7f07010c
 com.sp.silvercloud:id/alertTitle = 0x7f0a005a
 com.sp.silvercloud:dimen/m3_comp_divider_thickness = 0x7f07010b
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/material_hour_selection = 0x7f14006d
+=======
+com.sp.silvercloud:string/material_hour_selection = 0x7f14006b
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/mtrl_calendar_selected_range = 0x7f0602d3
 com.sp.silvercloud:color/material_dynamic_secondary10 = 0x7f06025d
 com.sp.silvercloud:dimen/m3_comp_date_picker_modal_range_selection_header_container_height = 0x7f07010a
@@ -2315,12 +3034,20 @@ com.sp.silvercloud:dimen/m3_comp_checkbox_selected_disabled_container_opacity = 
 com.sp.silvercloud:style/Widget.AppCompat.DrawerArrowToggle = 0x7f150300
 com.sp.silvercloud:dimen/m3_comp_badge_large_size = 0x7f070103
 com.sp.silvercloud:dimen/m3_comp_assist_chip_with_icon_icon_size = 0x7f070102
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/sharedValueUnset = 0x7f0a0205
+=======
+com.sp.silvercloud:id/sharedValueUnset = 0x7f0a0201
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/trackColorActive = 0x7f0404de
 com.sp.silvercloud:color/m3_sys_color_dark_surface_bright = 0x7f060185
 com.sp.silvercloud:dimen/m3_comp_assist_chip_flat_container_elevation = 0x7f070100
 com.sp.silvercloud:style/Base.Widget.AppCompat.Light.PopupMenu.Overflow = 0x7f1500e4
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/inward = 0x7f0a012f
+=======
+com.sp.silvercloud:id/inward = 0x7f0a012d
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_large_fab_size = 0x7f0701be
 com.sp.silvercloud:dimen/m3_comp_assist_chip_container_height = 0x7f0700fe
 com.sp.silvercloud:attr/title = 0x7f0404c0
@@ -2370,11 +3097,19 @@ com.sp.silvercloud:style/ThemeOverlay.AppCompat.Light = 0x7f150280
 com.sp.silvercloud:color/m3_ref_palette_dynamic_primary20 = 0x7f0600e4
 com.sp.silvercloud:dimen/m3_btn_disabled_translation_z = 0x7f0700d2
 com.sp.silvercloud:dimen/m3_btn_dialog_btn_spacing = 0x7f0700d0
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/spacer = 0x7f0a021b
 com.sp.silvercloud:dimen/m3_bottom_nav_min_height = 0x7f0700c5
 com.sp.silvercloud:style/TextAppearance.AppCompat.Large.Inverse = 0x7f1501a0
 com.sp.silvercloud:dimen/m3_bottom_nav_item_active_indicator_height = 0x7f0700c0
 com.sp.silvercloud:string/m3_sys_motion_easing_emphasized_decelerate = 0x7f140061
+=======
+com.sp.silvercloud:id/spacer = 0x7f0a0217
+com.sp.silvercloud:dimen/m3_bottom_nav_min_height = 0x7f0700c5
+com.sp.silvercloud:style/TextAppearance.AppCompat.Large.Inverse = 0x7f1501a0
+com.sp.silvercloud:dimen/m3_bottom_nav_item_active_indicator_height = 0x7f0700c0
+com.sp.silvercloud:string/m3_sys_motion_easing_emphasized_decelerate = 0x7f14005f
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_badge_with_text_vertical_offset = 0x7f0700be
 com.sp.silvercloud:string/abc_toolbar_collapse_description = 0x7f14001a
 com.sp.silvercloud:macro/m3_comp_switch_selected_focus_state_layer_color = 0x7f0e0122
@@ -2395,7 +3130,11 @@ com.sp.silvercloud:dimen/m3_alert_dialog_title_bottom_margin = 0x7f0700a7
 com.sp.silvercloud:dimen/m3_alert_dialog_icon_size = 0x7f0700a6
 com.sp.silvercloud:dimen/m3_alert_dialog_elevation = 0x7f0700a4
 com.sp.silvercloud:style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox = 0x7f1503f5
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/withinBounds = 0x7f0a028b
+=======
+com.sp.silvercloud:id/withinBounds = 0x7f0a0286
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_comp_navigation_bar_container_elevation = 0x7f07013c
 com.sp.silvercloud:dimen/m3_alert_dialog_corner_size = 0x7f0700a3
 com.sp.silvercloud:attr/dayInvalidStyle = 0x7f040177
@@ -2418,7 +3157,11 @@ com.sp.silvercloud:dimen/design_tab_text_size_2line = 0x7f070090
 com.sp.silvercloud:dimen/design_tab_text_size = 0x7f07008f
 com.sp.silvercloud:macro/m3_comp_radio_button_selected_icon_color = 0x7f0e00dc
 com.sp.silvercloud:dimen/m3_searchbar_height = 0x7f0701df
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/material_clock_face = 0x7f0a0152
+=======
+com.sp.silvercloud:id/material_clock_face = 0x7f0a0151
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/design_tab_max_width = 0x7f07008d
 com.sp.silvercloud:macro/m3_comp_filter_chip_container_shape = 0x7f0e0057
 com.sp.silvercloud:dimen/design_snackbar_padding_vertical_2lines = 0x7f07008b
@@ -2434,7 +3177,11 @@ com.sp.silvercloud:dimen/design_snackbar_action_text_color_alpha = 0x7f070083
 com.sp.silvercloud:dimen/design_navigation_max_width = 0x7f07007f
 com.sp.silvercloud:macro/m3_comp_icon_button_selected_icon_color = 0x7f0e0059
 com.sp.silvercloud:integer/mtrl_switch_thumb_viewport_size = 0x7f0b003d
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/showText = 0x7f0a0209
+=======
+com.sp.silvercloud:id/showText = 0x7f0a0205
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/design_navigation_item_horizontal_padding = 0x7f07007c
 com.sp.silvercloud:dimen/design_fab_size_normal = 0x7f070076
 com.sp.silvercloud:dimen/m3_sys_motion_easing_standard_accelerate_control_x1 = 0x7f070212
@@ -2527,7 +3274,11 @@ com.sp.silvercloud:drawable/coin_icon = 0x7f08008b
 com.sp.silvercloud:dimen/abc_search_view_preferred_width = 0x7f070037
 com.sp.silvercloud:style/Base.Theme.AppCompat.Light.Dialog.MinWidth = 0x7f150057
 com.sp.silvercloud:dimen/abc_progress_bar_height_material = 0x7f070035
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/headerTitle = 0x7f0a010c
+=======
+com.sp.silvercloud:id/headerTitle = 0x7f0a010a
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/abc_panel_menu_list_width = 0x7f070034
 com.sp.silvercloud:style/Base.Theme.MaterialComponents.Dialog.Bridge = 0x7f15006a
 com.sp.silvercloud:color/mtrl_switch_thumb_icon_tint = 0x7f0602f2
@@ -2554,7 +3305,11 @@ com.sp.silvercloud:style/Widget.MaterialComponents.Chip.Action = 0x7f15040e
 com.sp.silvercloud:dimen/abc_dialog_fixed_width_major = 0x7f07001e
 com.sp.silvercloud:attr/dragScale = 0x7f040192
 com.sp.silvercloud:dimen/abc_dialog_fixed_height_minor = 0x7f07001d
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/reverseSawtooth = 0x7f0a01e2
+=======
+com.sp.silvercloud:id/reverseSawtooth = 0x7f0a01de
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/useDrawerArrowDrawable = 0x7f0404f7
 com.sp.silvercloud:dimen/abc_control_inset_material = 0x7f070019
 com.sp.silvercloud:dimen/m3_comp_progress_indicator_active_indicator_track_space = 0x7f070166
@@ -2582,10 +3337,17 @@ com.sp.silvercloud:string/call_notification_decline_action = 0x7f140029
 com.sp.silvercloud:attr/tabBackground = 0x7f040440
 com.sp.silvercloud:dimen/abc_action_bar_stacked_max_height = 0x7f070009
 com.sp.silvercloud:style/Base.V14.Theme.MaterialComponents.Light.Dialog = 0x7f150098
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/google_storage_bucket = 0x7f140055
 com.sp.silvercloud:dimen/abc_action_bar_icon_vertical_padding_material = 0x7f070006
 com.sp.silvercloud:dimen/abc_action_bar_default_padding_start_material = 0x7f070004
 com.sp.silvercloud:string/material_clock_toggle_content_description = 0x7f14006b
+=======
+com.sp.silvercloud:string/google_storage_bucket = 0x7f140053
+com.sp.silvercloud:dimen/abc_action_bar_icon_vertical_padding_material = 0x7f070006
+com.sp.silvercloud:dimen/abc_action_bar_default_padding_start_material = 0x7f070004
+com.sp.silvercloud:string/material_clock_toggle_content_description = 0x7f140069
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/material_slider_thumb_color = 0x7f0602c4
 com.sp.silvercloud:dimen/abc_action_bar_default_padding_end_material = 0x7f070003
 com.sp.silvercloud:dimen/mtrl_extended_fab_disabled_elevation = 0x7f0702ab
@@ -2614,8 +3376,13 @@ com.sp.silvercloud:attr/contentInsetStart = 0x7f040147
 com.sp.silvercloud:attr/shouldRemoveExpandedCorners = 0x7f0403ec
 com.sp.silvercloud:color/ripple_material_light = 0x7f060310
 com.sp.silvercloud:dimen/design_appbar_elevation = 0x7f070062
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/mtrl_picker_range_header_unselected = 0x7f1400a6
 com.sp.silvercloud:id/onInterceptTouchReturnSwipe = 0x7f0a01b1
+=======
+com.sp.silvercloud:string/mtrl_picker_range_header_unselected = 0x7f1400a4
+com.sp.silvercloud:id/onInterceptTouchReturnSwipe = 0x7f0a01ad
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/itemTextAppearanceActive = 0x7f04027b
 com.sp.silvercloud:attr/textBackgroundPanY = 0x7f04048a
 com.sp.silvercloud:color/ripple_material_dark = 0x7f06030f
@@ -2623,7 +3390,11 @@ com.sp.silvercloud:drawable/abc_ratingbar_material = 0x7f08005c
 com.sp.silvercloud:color/purple_700 = 0x7f06030d
 com.sp.silvercloud:macro/m3_comp_switch_selected_pressed_icon_color = 0x7f0e012b
 com.sp.silvercloud:color/purple_500 = 0x7f06030c
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/tag_accessibility_clickable_spans = 0x7f0a0238
+=======
+com.sp.silvercloud:id/tag_accessibility_clickable_spans = 0x7f0a0234
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_timepicker_display_stroke_width = 0x7f070222
 com.sp.silvercloud:color/purple_200 = 0x7f06030b
 com.sp.silvercloud:color/primary_material_dark = 0x7f060305
@@ -2647,7 +3418,11 @@ com.sp.silvercloud:id/container = 0x7f0a00a0
 com.sp.silvercloud:attr/grid_horizontalGaps = 0x7f040222
 com.sp.silvercloud:color/mtrl_switch_track_decoration_tint = 0x7f0602f4
 com.sp.silvercloud:color/mtrl_scrim_color = 0x7f0602f1
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/material_hour_suffix = 0x7f14006e
+=======
+com.sp.silvercloud:string/material_hour_suffix = 0x7f14006c
+>>>>>>> Stashed changes
 com.sp.silvercloud:macro/m3_comp_outlined_card_dragged_outline_color = 0x7f0e00ab
 com.sp.silvercloud:attr/dropDownBackgroundTint = 0x7f0401a1
 com.sp.silvercloud:color/mtrl_popupmenu_overlay_color = 0x7f0602f0
@@ -2696,7 +3471,11 @@ com.sp.silvercloud:color/mtrl_btn_stroke_color_selector = 0x7f0602cc
 com.sp.silvercloud:style/Widget.Material3.Button.IconButton.Filled = 0x7f150357
 com.sp.silvercloud:drawable/common_google_signin_btn_text_light = 0x7f08009b
 com.sp.silvercloud:style/ThemeOverlay.AppCompat.Dialog = 0x7f15027e
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/selection_type = 0x7f0a0203
+=======
+com.sp.silvercloud:id/selection_type = 0x7f0a01ff
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/mtrl_btn_bg_color_selector = 0x7f0602ca
 com.sp.silvercloud:style/ShapeAppearance.Material3.Corner.Full = 0x7f150171
 com.sp.silvercloud:dimen/mtrl_extended_fab_end_padding = 0x7f0702ae
@@ -2731,7 +3510,11 @@ com.sp.silvercloud:color/material_personalized_color_surface_inverse = 0x7f0602b
 com.sp.silvercloud:attr/itemIconPadding = 0x7f040267
 com.sp.silvercloud:color/material_personalized_color_surface_container_low = 0x7f0602af
 com.sp.silvercloud:dimen/hint_alpha_material_light = 0x7f07009b
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/mtrl_checkbox_button_icon_path_group_name = 0x7f140082
+=======
+com.sp.silvercloud:string/mtrl_checkbox_button_icon_path_group_name = 0x7f140080
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/material_personalized_color_surface_container_highest = 0x7f0602ae
 com.sp.silvercloud:style/Widget.MaterialComponents.Chip.Filter = 0x7f150411
 com.sp.silvercloud:color/material_personalized_color_surface_container_high = 0x7f0602ad
@@ -2746,7 +3529,11 @@ com.sp.silvercloud:style/ThemeOverlay.MaterialComponents.MaterialAlertDialog.Pic
 com.sp.silvercloud:attr/defaultNavHost = 0x7f04017d
 com.sp.silvercloud:animator/mtrl_fab_transformation_sheet_collapse_spec = 0x7f020020
 com.sp.silvercloud:color/material_personalized_color_secondary_container = 0x7f0602a7
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/frame_layout = 0x7f0a00ff
+=======
+com.sp.silvercloud:id/frame_layout = 0x7f0a00fd
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/material_personalized_color_primary_text = 0x7f0602a4
 com.sp.silvercloud:color/material_personalized_color_primary_inverse = 0x7f0602a3
 com.sp.silvercloud:dimen/mtrl_btn_z = 0x7f070274
@@ -2776,13 +3563,22 @@ com.sp.silvercloud:attr/clearsTag = 0x7f0400e1
 com.sp.silvercloud:color/material_personalized_color_background = 0x7f06028d
 com.sp.silvercloud:style/Widget.Material3.Search.ActionButton.Overflow = 0x7f1503c6
 com.sp.silvercloud:style/Widget.Material3.Chip.Input.Icon.Elevated = 0x7f150370
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/mtrl_switch_thumb_path_checked = 0x7f1400b5
 com.sp.silvercloud:id/ratio = 0x7f0a01dd
+=======
+com.sp.silvercloud:string/mtrl_switch_thumb_path_checked = 0x7f1400b3
+com.sp.silvercloud:id/ratio = 0x7f0a01d9
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_comp_outlined_button_disabled_outline_opacity = 0x7f070152
 com.sp.silvercloud:style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse = 0x7f1501b3
 com.sp.silvercloud:color/material_divider_color = 0x7f06022c
 com.sp.silvercloud:color/material_personalized__highlighted_text_inverse = 0x7f06028c
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/organizer_button = 0x7f0a01c0
+=======
+com.sp.silvercloud:id/organizer_button = 0x7f0a01bc
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/material_on_surface_stroke = 0x7f06028a
 com.sp.silvercloud:style/ThemeOverlay.Material3.Dialog.Alert = 0x7f15029c
 com.sp.silvercloud:integer/m3_sys_motion_path = 0x7f0b0021
@@ -2816,7 +3612,11 @@ com.sp.silvercloud:color/material_dynamic_neutral_variant50 = 0x7f060248
 com.sp.silvercloud:color/material_personalized_color_on_surface_variant = 0x7f06029c
 com.sp.silvercloud:color/material_grey_850 = 0x7f06027b
 com.sp.silvercloud:macro/m3_comp_navigation_bar_inactive_focus_label_text_color = 0x7f0e006d
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/normal = 0x7f0a01a8
+=======
+com.sp.silvercloud:id/normal = 0x7f0a01a4
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/material_grey_50 = 0x7f060278
 com.sp.silvercloud:color/material_grey_100 = 0x7f060276
 com.sp.silvercloud:color/material_dynamic_tertiary99 = 0x7f060275
@@ -2824,7 +3624,11 @@ com.sp.silvercloud:color/material_dynamic_neutral10 = 0x7f060236
 com.sp.silvercloud:color/material_dynamic_tertiary95 = 0x7f060274
 com.sp.silvercloud:style/Widget.MaterialComponents.ChipGroup = 0x7f150412
 com.sp.silvercloud:color/material_dynamic_tertiary80 = 0x7f060272
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/progress_horizontal = 0x7f0a01db
+=======
+com.sp.silvercloud:id/progress_horizontal = 0x7f0a01d7
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_comp_filled_card_icon_size = 0x7f07012c
 com.sp.silvercloud:style/Base.Widget.Material3.MaterialCalendar.NavigationButton = 0x7f15010c
 com.sp.silvercloud:attr/dialogTheme = 0x7f040187
@@ -2913,14 +3717,22 @@ com.sp.silvercloud:attr/textBackground = 0x7f040488
 com.sp.silvercloud:color/material_dynamic_color_dark_on_error_container = 0x7f060230
 com.sp.silvercloud:dimen/abc_seekbar_track_background_height_material = 0x7f070038
 com.sp.silvercloud:macro/m3_comp_navigation_rail_inactive_focus_state_layer_color = 0x7f0e009a
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/parentPanel = 0x7f0a01c8
+=======
+com.sp.silvercloud:id/parentPanel = 0x7f0a01c4
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/m3_sys_motion_easing_emphasized_decelerate_control_x2 = 0x7f0701ff
 com.sp.silvercloud:color/material_dynamic_color_dark_error = 0x7f06022d
 com.sp.silvercloud:attr/maxNumber = 0x7f040328
 com.sp.silvercloud:dimen/m3_comp_fab_primary_pressed_state_layer_opacity = 0x7f070122
 com.sp.silvercloud:dimen/abc_edit_text_inset_top_material = 0x7f07002e
 com.sp.silvercloud:color/material_deep_teal_500 = 0x7f06022b
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/uniform = 0x7f0a0277
+=======
+com.sp.silvercloud:id/uniform = 0x7f0a0272
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/perpendicularPath_percent = 0x7f040399
 com.sp.silvercloud:color/material_cursor_color = 0x7f060229
 com.sp.silvercloud:attr/endIconScaleType = 0x7f0401b4
@@ -2945,7 +3757,11 @@ com.sp.silvercloud:macro/m3_comp_date_picker_modal_year_selection_year_selected_
 com.sp.silvercloud:dimen/m3_comp_fab_primary_small_icon_size = 0x7f070124
 com.sp.silvercloud:color/m3_textfield_label_color = 0x7f060219
 com.sp.silvercloud:color/m3_textfield_indicator_text_color = 0x7f060217
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/editSaveButton = 0x7f0a00d5
+=======
+com.sp.silvercloud:id/editSaveButton = 0x7f0a00d4
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/mtrl_calendar_dialog_background_inset = 0x7f070281
 com.sp.silvercloud:dimen/abc_text_size_display_1_material = 0x7f070043
 com.sp.silvercloud:color/m3_textfield_filled_background_color = 0x7f060216
@@ -2958,7 +3774,11 @@ com.sp.silvercloud:color/m3_text_button_background_color_selector = 0x7f060213
 com.sp.silvercloud:macro/m3_comp_switch_selected_hover_icon_color = 0x7f0e0126
 com.sp.silvercloud:color/m3_sys_color_light_surface = 0x7f0601f6
 com.sp.silvercloud:dimen/mtrl_navigation_rail_elevation = 0x7f0702d2
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/mtrl_picker_text_input_date = 0x7f0a0182
+=======
+com.sp.silvercloud:id/mtrl_picker_text_input_date = 0x7f0a0181
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/m3_tabs_text_color = 0x7f060211
 com.sp.silvercloud:color/m3_tabs_ripple_color_secondary = 0x7f060210
 com.sp.silvercloud:dimen/mtrl_extended_fab_min_height = 0x7f0702b2
@@ -3005,10 +3825,17 @@ com.sp.silvercloud:color/m3_sys_color_light_on_primary = 0x7f0601e8
 com.sp.silvercloud:dimen/m3_comp_fab_primary_container_height = 0x7f07011a
 com.sp.silvercloud:anim/mtrl_card_lowers_interpolator = 0x7f01002b
 com.sp.silvercloud:color/m3_sys_color_light_on_background = 0x7f0601e5
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/noState = 0x7f0a01a6
 com.sp.silvercloud:dimen/m3_comp_outlined_text_field_disabled_label_text_opacity = 0x7f07015a
 com.sp.silvercloud:color/m3_sys_color_light_inverse_surface = 0x7f0601e4
 com.sp.silvercloud:id/material_clock_display_and_toggle = 0x7f0a0151
+=======
+com.sp.silvercloud:id/noState = 0x7f0a01a2
+com.sp.silvercloud:dimen/m3_comp_outlined_text_field_disabled_label_text_opacity = 0x7f07015a
+com.sp.silvercloud:color/m3_sys_color_light_inverse_surface = 0x7f0601e4
+com.sp.silvercloud:id/material_clock_display_and_toggle = 0x7f0a0150
+>>>>>>> Stashed changes
 com.sp.silvercloud:id/chronometer = 0x7f0a0095
 com.sp.silvercloud:color/material_dynamic_primary10 = 0x7f060250
 com.sp.silvercloud:color/m3_sys_color_light_inverse_primary = 0x7f0601e3
@@ -3020,7 +3847,11 @@ com.sp.silvercloud:color/m3_sys_color_dynamic_tertiary_fixed_dim = 0x7f0601de
 com.sp.silvercloud:color/m3_sys_color_dynamic_secondary_fixed_dim = 0x7f0601dc
 com.sp.silvercloud:style/RtlOverlay.Widget.AppCompat.ActionBar.TitleItem = 0x7f150146
 com.sp.silvercloud:color/m3_sys_color_dynamic_on_tertiary_fixed_variant = 0x7f0601d8
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/open_search_view_clear_button = 0x7f0a01b4
+=======
+com.sp.silvercloud:id/open_search_view_clear_button = 0x7f0a01b0
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/tickVisible = 0x7f0404bc
 com.sp.silvercloud:color/m3_sys_color_dynamic_on_tertiary_fixed = 0x7f0601d7
 com.sp.silvercloud:color/m3_sys_color_dynamic_light_tertiary = 0x7f0601d1
@@ -3029,9 +3860,15 @@ com.sp.silvercloud:color/mtrl_chip_text_color = 0x7f0602d9
 com.sp.silvercloud:dimen/m3_sys_motion_easing_legacy_accelerate_control_x2 = 0x7f070203
 com.sp.silvercloud:color/m3_assist_chip_icon_tint_color = 0x7f060074
 com.sp.silvercloud:color/m3_sys_color_dynamic_light_surface_container_low = 0x7f0601cd
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/stretch = 0x7f0a022e
 com.sp.silvercloud:color/material_personalized_color_tertiary_container = 0x7f0602b5
 com.sp.silvercloud:string/mtrl_checkbox_button_icon_path_name = 0x7f140084
+=======
+com.sp.silvercloud:id/stretch = 0x7f0a022a
+com.sp.silvercloud:color/material_personalized_color_tertiary_container = 0x7f0602b5
+com.sp.silvercloud:string/mtrl_checkbox_button_icon_path_name = 0x7f140082
+>>>>>>> Stashed changes
 com.sp.silvercloud:string/error_icon_content_description = 0x7f140046
 com.sp.silvercloud:color/primary_material_light = 0x7f060306
 com.sp.silvercloud:color/m3_sys_color_dynamic_light_surface_container = 0x7f0601ca
@@ -3084,7 +3921,11 @@ com.sp.silvercloud:color/m3_sys_color_dynamic_dark_secondary_container = 0x7f060
 com.sp.silvercloud:dimen/notification_subtext_size = 0x7f07031c
 com.sp.silvercloud:color/m3_sys_color_dynamic_dark_primary = 0x7f0601a2
 com.sp.silvercloud:color/m3_sys_color_dynamic_dark_on_tertiary_container = 0x7f06019f
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/invisible = 0x7f0a012e
+=======
+com.sp.silvercloud:id/invisible = 0x7f0a012c
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/m3_sys_color_dynamic_dark_on_surface_variant = 0x7f06019d
 com.sp.silvercloud:color/m3_sys_color_dynamic_dark_on_surface = 0x7f06019c
 com.sp.silvercloud:color/m3_sys_color_dynamic_dark_on_primary = 0x7f060198
@@ -3108,7 +3949,11 @@ com.sp.silvercloud:drawable/abc_list_divider_material = 0x7f08004d
 com.sp.silvercloud:color/m3_sys_color_dynamic_dark_error_container = 0x7f060191
 com.sp.silvercloud:style/Widget.Material3.MaterialDivider = 0x7f1503b3
 com.sp.silvercloud:macro/m3_comp_time_picker_time_selector_selected_label_text_color = 0x7f0e0163
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/title_text = 0x7f0a0264
+=======
+com.sp.silvercloud:id/title_text = 0x7f0a0260
+>>>>>>> Stashed changes
 com.sp.silvercloud:attr/iconEndPadding = 0x7f040243
 com.sp.silvercloud:color/m3_ref_palette_dynamic_tertiary70 = 0x7f060103
 com.sp.silvercloud:color/m3_sys_color_dynamic_dark_error = 0x7f060190
@@ -3133,7 +3978,11 @@ com.sp.silvercloud:dimen/abc_button_inset_horizontal_material = 0x7f070012
 com.sp.silvercloud:dimen/abc_action_bar_default_height_material = 0x7f070002
 com.sp.silvercloud:color/mtrl_error = 0x7f0602dd
 com.sp.silvercloud:style/TextAppearance.AppCompat.Widget.ActionMode.Title = 0x7f1501b8
+<<<<<<< Updated upstream
 com.sp.silvercloud:id/nav_controller_view_tag = 0x7f0a018e
+=======
+com.sp.silvercloud:id/nav_controller_view_tag = 0x7f0a018d
+>>>>>>> Stashed changes
 com.sp.silvercloud:color/m3_sys_color_dark_secondary_container = 0x7f060183
 com.sp.silvercloud:attr/compatShadowEnabled = 0x7f040139
 com.sp.silvercloud:color/m3_sys_color_dark_secondary = 0x7f060182
@@ -3184,7 +4033,11 @@ com.sp.silvercloud:color/m3_slider_halo_color_legacy = 0x7f060166
 com.sp.silvercloud:color/m3_sys_color_dynamic_dark_secondary = 0x7f0601a4
 com.sp.silvercloud:style/Theme.AppCompat.Dialog.Alert = 0x7f150216
 com.sp.silvercloud:color/m3_slider_active_track_color_legacy = 0x7f060165
+<<<<<<< Updated upstream
 com.sp.silvercloud:string/google_crash_reporting_api_key = 0x7f140054
+=======
+com.sp.silvercloud:string/google_crash_reporting_api_key = 0x7f140052
+>>>>>>> Stashed changes
 com.sp.silvercloud:dimen/abc_list_item_height_large_material = 0x7f070030
 com.sp.silvercloud:color/m3_simple_item_ripple_color = 0x7f060163
 com.sp.silvercloud:style/Widget.Material3.Button.TextButton.Dialog.Flush = 0x7f15035e
