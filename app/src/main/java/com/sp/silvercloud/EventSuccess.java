@@ -1,5 +1,7 @@
     package com.sp.silvercloud;
 
+    import static android.content.ContentValues.TAG;
+
     import androidx.appcompat.app.AppCompatActivity;
     import android.content.Intent;
     import android.os.Bundle;
@@ -13,10 +15,13 @@
     public class EventSuccess extends AppCompatActivity {
         private Button calendarBtn, homeBtn;
 
+        private static final int REQUEST_CALENDAR_PERMISSION = 100;
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_eventsuccess);
+
 
             // Get event data from the intent
             Intent intent = getIntent();

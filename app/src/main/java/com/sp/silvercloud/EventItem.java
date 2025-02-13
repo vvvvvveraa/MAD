@@ -197,3 +197,4 @@ public class EventItem implements Serializable {  // Make sure it implements Ser
         }
     }
 }
+
