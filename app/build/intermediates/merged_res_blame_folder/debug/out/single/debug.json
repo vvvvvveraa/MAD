@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-57:\\drawable_home_bottomnav.xml.flat",
-        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\drawable\\home_bottomnav.xml"
-    },
-    {
         "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-57:\\drawable_backbutton.xml.flat",
         "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\drawable\\backbutton.xml"
+    },
+    {
+        "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-57:\\drawable_home_bottomnav.xml.flat",
+        "source": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-main-59:\\drawable\\home_bottomnav.xml"
     },
     {
         "merged": "C:\\Users\\veral\\.gradle\\daemon\\8.0\\com.sp.silvercloud.app-merged_res-57:\\layout_fragment_link.xml.flat",
