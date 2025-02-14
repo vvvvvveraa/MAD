@@ -72,17 +72,16 @@ public class OrganizerSignUp extends AppCompatActivity {
                 password = String.valueOf(passwordInput.getText());
                 code = String.valueOf(codeInput.getText());
 
-
+                if (TextUtils.isEmpty(code)) {
+                    Toast.makeText(OrganizerSignUp.this, "Enter Code", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 if (TextUtils.isEmpty(email)) {
                     Toast.makeText(OrganizerSignUp.this, "Enter email", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (TextUtils.isEmpty(password)) {
                     Toast.makeText(OrganizerSignUp.this, "Enter Password", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(code)) {
-                    Toast.makeText(OrganizerSignUp.this, "Enter Code", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 if (code.equals("Company")) {
@@ -103,7 +102,6 @@ public class OrganizerSignUp extends AppCompatActivity {
                 }
                 else{
                     Toast.makeText(OrganizerSignUp.this, "Enter vaild code", Toast.LENGTH_SHORT).show();
-                    return;
                 }
             }
         });

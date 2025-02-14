@@ -51,7 +51,7 @@ public class MyEventsFragment extends Fragment implements EventItemAdapter.OnIte
         if (currentUser != null) {
             userId = currentUser.getUid(); // Get the current user's ID
             Log.d("MyEventsFragment", "User ID: " + userId);
-            Toast.makeText(getContext(), "User ID: " + userId, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(getContext(), "User ID: " + userId, Toast.LENGTH_SHORT).show();
         } else {
             // Handle the case where the user is not logged in
             Toast.makeText(getContext(), "User not logged in", Toast.LENGTH_SHORT).show();

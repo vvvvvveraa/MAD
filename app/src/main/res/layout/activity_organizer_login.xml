@@ -69,6 +69,16 @@
                 android:hint="Password"
                 android:background="@android:drawable/edit_text"
                 android:padding="10dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/codeField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Company Code"
+                android:background="@android:drawable/edit_text"
+                android:padding="10dp"
                 android:inputType="textPassword" />
         </LinearLayout>
 

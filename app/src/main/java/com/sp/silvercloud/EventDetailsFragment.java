@@ -112,7 +112,7 @@ public class EventDetailsFragment extends Fragment {
     private void displayEventDetails(EventItem eventItem) {
         titleTextView.setText(eventItem.getTitle());
         dateTextView.setText(eventItem.getDate());
-        descriptionTextView.setText(eventItem.getFullDescription());
+        descriptionTextView.setText(eventItem.getNewDescription());
         interestTextView.setText(eventItem.getInterest());
 
         // Load the event image using Glide

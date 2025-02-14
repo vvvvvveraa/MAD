@@ -78,6 +78,7 @@ id biz_name
 id bottomNavigationView
 id buttonEventCompleted
 id checkimageView
+id codeField
 id dateLabelTextView
 id dateTextView
 id descriptionTextView

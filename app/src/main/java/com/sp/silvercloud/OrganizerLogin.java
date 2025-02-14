@@ -22,7 +22,7 @@ import org.checkerframework.checker.nullness.qual.NonNull;
 
 public class OrganizerLogin extends AppCompatActivity {
 
-    EditText emailInput,passwordInput;
+    EditText codeInput,emailInput,passwordInput;
     FirebaseAuth mAuth;
 
     private ImageView backButton;
@@ -55,6 +55,7 @@ public class OrganizerLogin extends AppCompatActivity {
 
         emailInput = findViewById(R.id.emailField);
         passwordInput = findViewById(R.id.passwordField);
+        codeInput = findViewById(R.id.codeField);
         mAuth = FirebaseAuth.getInstance();
 
         loginBtn = findViewById(R.id.loginButton);
@@ -89,9 +90,10 @@ public class OrganizerLogin extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             // Navigate to SecondActivity
-            String email, password;
+            String code, email, password;
             email = String.valueOf(emailInput.getText());
             password = String.valueOf(passwordInput.getText());
+            code = String.valueOf(codeInput.getText());
 
 
             if(TextUtils.isEmpty(email)){
@@ -102,27 +104,33 @@ public class OrganizerLogin extends AppCompatActivity {
                 Toast.makeText(OrganizerLogin.this, "Enter Password", Toast.LENGTH_SHORT).show();
                 return;
             }
-
-            mAuth.signInWithEmailAndPassword(email, password)
-                    .addOnCompleteListener( new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (task.isSuccessful()) {
-                                Toast.makeText(OrganizerLogin.this, "Login Successful.",
-                                        Toast.LENGTH_SHORT).show();
-                                // Vera, please change the "HomeFragment.class" to your main Organizer Homepage file name
-                                Intent intent = new Intent(OrganizerLogin.this, UserMain.class);
-                                startActivity(intent);
-                                // To close current Activity class and exit
-                                finish();
-                            } else {
-                                Toast.makeText(OrganizerLogin.this, "Authentication failed.",
-                                        Toast.LENGTH_SHORT).show();
+            if (TextUtils.isEmpty(code)) {
+                Toast.makeText(OrganizerLogin.this, "Enter Code", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            if (code.equals("Company")) {
+                mAuth.signInWithEmailAndPassword(email, password)
+                        .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    Toast.makeText(OrganizerLogin.this, "Login Successful.",
+                                            Toast.LENGTH_SHORT).show();
+                                    // Vera, please change the "HomeFragment.class" to your main Organizer Homepage file name
+                                    Intent intent = new Intent(OrganizerLogin.this, UserMain.class);
+                                    startActivity(intent);
+                                    // To close current Activity class and exit
+                                    finish();
+                                } else {
+                                    Toast.makeText(OrganizerLogin.this, "Authentication failed.",
+                                            Toast.LENGTH_SHORT).show();
+                                }
                             }
-                        }
-                    });
-
-
+                        });
+            }
+            else{
+                Toast.makeText(OrganizerLogin.this, "Enter vaild code", Toast.LENGTH_SHORT).show();
+            }
         }
     };
 }

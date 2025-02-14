@@ -27,6 +27,9 @@ public final class ActivityOrganizerLoginBinding implements ViewBinding {
   public final ImageView backButton;
 
   @NonNull
+  public final EditText codeField;
+
+  @NonNull
   public final EditText emailField;
 
   @NonNull
@@ -45,11 +48,12 @@ public final class ActivityOrganizerLoginBinding implements ViewBinding {
   public final TextView signUpLink;
 
   private ActivityOrganizerLoginBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView backButton, @NonNull EditText emailField, @NonNull Button loginButton,
-      @NonNull LinearLayout loginFormContainer, @NonNull TextView loginTitle,
-      @NonNull EditText passwordField, @NonNull TextView signUpLink) {
+      @NonNull ImageView backButton, @NonNull EditText codeField, @NonNull EditText emailField,
+      @NonNull Button loginButton, @NonNull LinearLayout loginFormContainer,
+      @NonNull TextView loginTitle, @NonNull EditText passwordField, @NonNull TextView signUpLink) {
     this.rootView = rootView;
     this.backButton = backButton;
+    this.codeField = codeField;
     this.emailField = emailField;
     this.loginButton = loginButton;
     this.loginFormContainer = loginFormContainer;
@@ -91,6 +95,12 @@ public final class ActivityOrganizerLoginBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.codeField;
+      EditText codeField = ViewBindings.findChildViewById(rootView, id);
+      if (codeField == null) {
+        break missingId;
+      }
+
       id = R.id.emailField;
       EditText emailField = ViewBindings.findChildViewById(rootView, id);
       if (emailField == null) {
@@ -127,8 +137,8 @@ public final class ActivityOrganizerLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityOrganizerLoginBinding((ConstraintLayout) rootView, backButton, emailField,
-          loginButton, loginFormContainer, loginTitle, passwordField, signUpLink);
+      return new ActivityOrganizerLoginBinding((ConstraintLayout) rootView, backButton, codeField,
+          emailField, loginButton, loginFormContainer, loginTitle, passwordField, signUpLink);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

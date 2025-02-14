@@ -3406,6 +3406,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
+id codeField
 id collapseActionView
 id compress
 id confirm_button

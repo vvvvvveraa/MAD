@@ -3405,6 +3405,7 @@ int id clip_horizontal 0x7f0a0098
 int id clip_vertical 0x7f0a0099
 int id clockwise 0x7f0a009a
 int id closest 0x7f0a009b
+int id codeField 0x7f0a0291
 int id collapseActionView 0x7f0a009c
 int id compress 0x7f0a009d
 int id confirm_button 0x7f0a009e
